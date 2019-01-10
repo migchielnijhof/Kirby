@@ -1,0 +1,12 @@
+Sucking up an enemy: 200
+Sucking up a big enemy: 400
+Sucking up a block: 10
+Spitting out an enemy: 0
+Hitting an enemy with a (spat out) star: 400
+Hitting a block with a (spat out) star: 20
+Getting hit: 400
+Killing an enemy by blowing air on them: 400
+Healing: 0
+Getting a warp star: 0
+Beating a mini-boss: 3030 total, including required scores for hitting/sucking.
+Beating a boss: 11200 total, including required scores for hitting/sucking.

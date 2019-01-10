@@ -1,0 +1,6 @@
+De pixel linksbovenin de UI is 0,0. De posities hieronder zijn de links-boven posities van de sprites
+Health: 6 life-dingen, beginnen (48, 9), elk met één pixel whitespace tot de volgende
+Score: Rechts uitlijnen. Spritepos meeste rechtse getal is (89,1), andere getallen hier links van, een pixel whitespace ertussen.
+Lives: Counter pos is (129, 9). Altijd 2 digits, dus bijv. 04.
+Boss Icon: Pos (25, 1). Zorg ervoor dat de tekst "Sc:" niet zichtbaat is eronder.
+Boss Health: Pos (28, 1). Verdwijnt wanneer geraakt wordt. Geen whitespace tussen health bars!!
