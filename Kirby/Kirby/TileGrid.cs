@@ -40,7 +40,7 @@ class TileGrid : GameObject
     /// <param name="x">The x position.</param>
     public byte GetIndexX(float x)
     {
-        return (byte) ((x - 0.5) / Tile.spriteWidth);
+        return (byte) ((x - 0.5) / Tile.SpriteWidth);
     }
 
     /// <summary>
@@ -49,7 +49,18 @@ class TileGrid : GameObject
     /// <param name="x">The y position.</param>
     public byte GetIndexY(float y)
     {
-        return (byte)((y - 0.5) / Tile.spriteHeight);
+        return (byte) ((y - 0.5) / Tile.SpriteHeight);
+    }
+
+    /// <summary>
+    /// Retrieves the bounding box of a tile at (x, y).
+    /// </summary>
+    /// <param name="x">x index of the tile.</param>
+    /// <param name="y">y index of the tile.</param>
+    /// <returns></returns>
+    public Rectangle GetBoundingBox(int x, int y)
+    {
+        return new Rectangle(new Point(x * Tile.SpriteWidth, y * Tile.SpriteHeight), new Point(Tile.SpriteWidth, Tile.SpriteHeight));
     }
 
     /// <summary>
@@ -59,7 +70,7 @@ class TileGrid : GameObject
     {
         for (int x = 0; x < width; x++)
             for (int y = 0; y < height; y++)
-                tiles[x, y].Draw(spriteBatch, new Vector2(Tile.spriteWidth * x, Tile.spriteHeight * y) - (parent as Level).CameraPosition);
+                tiles[x, y].Draw(spriteBatch, new Vector2(Tile.SpriteWidth * x, Tile.SpriteHeight * y) - (parent as Level).CameraPosition);
     }
 
 }

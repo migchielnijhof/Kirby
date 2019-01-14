@@ -21,7 +21,7 @@ class GameObject
     /// A type of gameobject.
     /// This enum allows for distinguishing different types of game objects as well as updating and drawing them in the order that is defined here.
     /// </summary>
-    public enum ObjectType { Level, Background, TileGrid, Enemy, Player, Boss };
+    public enum ObjectType { Level, Background, TileGrid, Enemy, Player, Boss, UI };
 
     /// <summary>
     /// Creates a game loop object.

@@ -9,6 +9,12 @@ public class Game : Microsoft.Xna.Framework.Game
     public static GraphicsDeviceManager graphics;
     SpriteBatch spriteBatch;
 
+    public const float SpriteScale = 5;
+
+    public const int ScreenWidth = 160;
+
+    public const int ScreenHeight = 144;
+
     /// <summary>
     /// The amount of lives of the player.
     /// </summary>
@@ -36,6 +42,8 @@ public class Game : Microsoft.Xna.Framework.Game
 
     private Level level;
 
+    private const string tileDirectory = "tiles/";
+
     public Game()
     {
         graphics = new GraphicsDeviceManager(this);
@@ -55,8 +63,8 @@ public class Game : Microsoft.Xna.Framework.Game
     protected override void Initialize()
     {
         base.Initialize();
-        graphics.PreferredBackBufferWidth = 500;
-        graphics.PreferredBackBufferHeight = 500;
+        graphics.PreferredBackBufferWidth = (int) (ScreenWidth * SpriteScale);
+        graphics.PreferredBackBufferHeight = (int) (ScreenHeight * SpriteScale);
         graphics.ApplyChanges();
     }
 
@@ -70,6 +78,17 @@ public class Game : Microsoft.Xna.Framework.Game
         spriteBatch = new SpriteBatch(GraphicsDevice);
 
         titleScreen = Content.Load<Texture2D>("titleScreen");
+
+        for (byte x = 0; x < Tile.Names.Length; x++)
+        {
+            if (char.IsUpper(Tile.Names[x]))
+            {
+                Tile.sprites[x] = Content.Load<Texture2D>(tileDirectory + char.ToString(Tile.Names[x]) + "-");
+                continue;
+            }
+            Tile.sprites[x] = Content.Load<Texture2D>(tileDirectory + char.ToString(Tile.Names[x]));
+        }
+
     }
 
     /// <summary>
@@ -126,12 +145,12 @@ public class Game : Microsoft.Xna.Framework.Game
     {
         GraphicsDevice.Clear(Color.Black);
 
-        spriteBatch.Begin();
+        spriteBatch.Begin(0, null, SamplerState.PointClamp);
 
         switch (GameState)
         {
             case GameStates.TitleScreen:
-                spriteBatch.Draw(titleScreen, Vector2.Zero, Color.White);
+                spriteBatch.Draw(titleScreen, Vector2.Zero, null, Color.White, 0, Vector2.Zero, SpriteScale, 0, 0);
                 break;
             case GameStates.Playing:
                 level.Draw(spriteBatch, gameTime);

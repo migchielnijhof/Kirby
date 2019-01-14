@@ -23,7 +23,7 @@ class Level : GameObjectList
     /// Higher values allow the player to be further off the center of the screen.
     /// Value should be more than 0.5f and less than 1.0f.
     /// </summary>
-    const float cameraFollowing = 0.7f;
+    const float cameraFollowing = 0.55f;
 
     /// <summary>
     /// Path to level files.
@@ -50,11 +50,11 @@ class Level : GameObjectList
         if (Find(ObjectType.Player) is Player p)
         {
             // Player too far to the right.
-            if ((p.Position.X - CameraPosition.X) > Game.graphics.PreferredBackBufferWidth * cameraFollowing)
-                CameraPosition.X = Game.graphics.PreferredBackBufferWidth * cameraFollowing - (p.Position.X - CameraPosition.X);
+            if ((p.Position.X - CameraPosition.X) > Game.ScreenWidth * Game.SpriteScale * cameraFollowing)
+                CameraPosition.X = p.Position.X - Game.ScreenWidth * Game.SpriteScale * cameraFollowing;
             // Player too far to the left.
-            else if ((p.Position.X - CameraPosition.X) < Game.graphics.PreferredBackBufferWidth * (1 - cameraFollowing))
-                CameraPosition.X = Game.graphics.PreferredBackBufferWidth * (1 - cameraFollowing) - (p.Position.X - CameraPosition.X);
+            else if ((p.Position.X - CameraPosition.X) < Game.ScreenWidth * Game.SpriteScale * (1 - cameraFollowing))
+                CameraPosition.X = p.Position.X - Game.ScreenWidth * Game.SpriteScale * (1 - cameraFollowing);
         }
         // Beginning of the level displaying somewhere else than the far left of the screen.
         if (CameraPosition.X < 0)
@@ -62,9 +62,10 @@ class Level : GameObjectList
         else
         {
             // End of the level displaying somewhere else than the far right of the screen.
-            if (Find(ObjectType.TileGrid) is TileGrid t && CameraPosition.X + Game.graphics.PreferredBackBufferWidth > t.width * Tile.spriteWidth)
-                CameraPosition.X = t.width * Tile.spriteWidth - Game.graphics.PreferredBackBufferWidth;
+            if (Find(ObjectType.TileGrid) is TileGrid t && CameraPosition.X + Game.ScreenWidth > t.width * Tile.SpriteWidth)
+                CameraPosition.X = t.width * Tile.SpriteWidth - Game.ScreenWidth;
         }
+
     }
 
     /// <summary>
@@ -84,23 +85,20 @@ class Level : GameObjectList
             nextLine = reader.ReadLine();
         }
 
-        Add(new TileGrid(this, (byte) instructions[0].Length, (byte) instructions.Count));
+        TileGrid grid = new TileGrid(this, (byte) instructions[0].Length, (byte) instructions.Count);
 
         for (byte y = 0; y < instructions.Count; y++)
             for (byte x = 0; x < instructions[y].Length; x++)
             {
-                switch (instructions[y][x])
-                {
-                    case 'P':
-                        Player p = new Player(this)
-                        {
-                            Position = new Vector2(x * Tile.spriteWidth, y * Tile.spriteHeight)
-                        };
-                        Add(p);
+                for (byte i = 0; i < Tile.Names.Length; i++)
+                    if (instructions[y][x] == Tile.Names[i])
+                    {
+                        grid.tiles[x, y] = new Tile(i);
                         break;
-                }
+                    }
             }
-
+        Add(grid);
+        Add(new Player(this));
     }
 
 }

@@ -7,32 +7,53 @@ class Tile
 {
 
     /// <summary>
-    /// The tile's sprite.
+    /// The tile's numeric ID.
     /// </summary>
-    protected Texture2D sprite;
+    protected byte ID;
 
     /// <summary>
-    /// Whether the tile can be jumped through or not.
+    /// Whether this tile is solid or not.
     /// </summary>
-    public bool JumpThrough;
+    public bool Solid;
 
     /// <summary>
     /// The width of a tile's sprite.
     /// </summary>
-    public const byte spriteWidth = 16;
+    public const int SpriteWidth = (int) (16 * Game.SpriteScale);
 
     /// <summary>
     /// The height of a tile's sprite.
     /// </summary>
-    public const byte spriteHeight = 16;
+    public const int SpriteHeight = (int) (16 * Game.SpriteScale);
+
+    /// <summary>
+    /// The names of tiles for level loading.
+    /// </summary>
+    public static char[] Names = new char[] { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S' };
+
+    /// <summary>
+    /// The tiles that are solid;
+    /// </summary>
+    protected static char[] SolidTiles = new char[] { 'r', 's', 'u', 'p', 'q', 'y', 'z', 'B', 'A' };
+
+    /// <summary>
+    /// The sprites of all tiles.
+    /// </summary>
+    public static Texture2D[] sprites = new Texture2D[Names.Length];
 
     /// <summary>
     /// Creates a new tile.
     /// </summary>
-    public Tile()
+    public Tile(byte tileID)
     {
-        JumpThrough = false;
-        sprite = null;
+        ID = tileID;
+        Solid = false;
+        for (int i = 0; i < SolidTiles.Length; i++)
+            if (Names[ID] == SolidTiles[i])
+            {
+                Solid = true;
+                break;
+            }
     }
 
     /// <summary>
@@ -40,8 +61,7 @@ class Tile
     /// </summary>
     public void Draw(SpriteBatch spriteBatch, Vector2 position)
     {
-        if (sprite != null)
-            spriteBatch.Draw(sprite, position, Color.White);
+        spriteBatch.Draw(sprites[ID], position, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, 0, 0);
     }
 
 }

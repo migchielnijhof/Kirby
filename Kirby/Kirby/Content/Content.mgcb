@@ -400,11 +400,6 @@
 /processorParam:TextureFormat=Color
 /build:Tiles/1.png
 
-#begin Tiles/1.txt
-/importer:
-/processor:
-/build:Tiles/1.txt
-
 #begin Tiles/2.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -765,11 +760,6 @@
 /processorParam:TextureFormat=Color
 /build:Tiles/K-.png
 
-#begin Tiles/KirbyTiles.zip
-/importer:
-/processor:
-/build:Tiles/KirbyTiles.zip
-
 #begin Tiles/l.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1118,11 +1108,6 @@
 /processorParam:TextureFormat=Color
 /build:UI/Numbers.png
 
-#begin UI/UI POS.txt
-/importer:
-/processor:
-/build:UI/UI POS.txt
-
 #begin UI/UI.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1158,4 +1143,16 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:UI/VB.png
+
+#begin Tiles/-.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Tiles/-.png
 

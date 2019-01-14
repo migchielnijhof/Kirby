@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Music/dance.mp3</SourceFile>
+  <SourceTime>2019-01-13T16:28:10+01:00</SourceTime>
+  <DestFile>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/bin/Windows/Sounds/Music/dance.xnb</DestFile>
+  <DestTime>2019-01-14T16:00:03.1713461+01:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2017-03-01T16:05:36+01:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/bin/Windows/Sounds/Music/dance.wma</string>
+  </BuildOutput>
+</PipelineBuildEvent>

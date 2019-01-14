@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using System;
 
 /// <summary>
 /// Class of the playable character.
@@ -23,6 +24,29 @@ class Player : AnimatedGameObject
     public Vector2 Velocity;
 
     /// <summary>
+    /// The bounding box of the player.
+    /// </summary>
+    public Rectangle BoundingBox
+    {
+        get
+        {
+            boundingBox.Location = new Point((int) Position.X, (int) Position.Y);
+            return boundingBox;
+        }
+    }
+    protected Rectangle boundingBox;
+
+    /// <summary>
+    /// The X size of the player's bounding box.
+    /// </summary>
+    const int BoundingBoxSizeX = (int) (16 * Game.SpriteScale);
+
+    /// <summary>
+    /// The Y size of the player's bounding box.
+    /// </summary>
+    const int BoundingBoxSizeY = (int) (16 * Game.SpriteScale);
+
+    /// <summary>
     /// Maximum health of the player.
     /// </summary>
     const byte maxHealth = 5;
@@ -30,7 +54,12 @@ class Player : AnimatedGameObject
     /// <summary>
     /// The movement speed of a player.
     /// </summary>
-    const float movementSpeed = 1.2f;
+    const float movementSpeed = 45 * Game.SpriteScale;
+
+    /// <summary>
+    /// The gravity of the player.
+    /// </summary>
+    const float gravity = 9 * Game.SpriteScale;
 
     /// <summary>
     /// The player's score.
@@ -68,6 +97,8 @@ class Player : AnimatedGameObject
         absorbedEnemy = null;
         invulnerabilityTime = 0.0d;
         Velocity = Vector2.Zero;
+        onGround = true;
+        boundingBox.Size = new Point(BoundingBoxSizeX, BoundingBoxSizeY);
     }
 
     public void TakeDamage()
@@ -90,23 +121,82 @@ class Player : AnimatedGameObject
 
     public override void HandleInput(Input input)
     {
-        if (onGround)
+        Velocity.X = 0;
+        if (input.Movement == 1)
+            Velocity.X = movementSpeed;
+        else if (input.Movement == 2)
+            Velocity.X = -movementSpeed;
+        if (input.Jump)
         {
-            if (input.Movement == 1)
-                Velocity.X = movementSpeed;
-            else if (input.Movement == 2)
-                Velocity.X = -movementSpeed;
+            Velocity.Y = -200 * Game.SpriteScale;
         }
     }
 
     public override void Update(GameTime gameTime)
     {
-        base.Update(gameTime);
+        if (!onGround)
+            Velocity.Y += gravity;
+        else if (Velocity.Y > 0)
+            Velocity.Y = 0;
+        Position += Velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
+        if (Position.X < 0)
+            Position.X = 0;
+        if (Position.Y < 0)
+            Position.Y = 0;
+        TileGrid grid = (parent as Level).Find(ObjectType.TileGrid) as TileGrid;
+        try
+        {
+            TileCollision(grid, 0, 0);
+            TileCollision(grid, 1, 0);
+            TileCollision(grid, 0, 1);
+            TileCollision(grid, 1, 1);
+            onGround = TestGround(grid);
+        }
+        catch
+        {
+            TakeDamage();
+        }
+    }
+
+    public bool TestGround(TileGrid grid)
+    {
+        byte x = grid.GetIndexX(Position.X);
+        byte y = grid.GetIndexY(Position.Y + BoundingBox.Size.Y);
+        return grid.tiles[x, y].Solid || grid.tiles[x + 1, y].Solid;
+    }
+
+    public void TileCollision(TileGrid grid, byte offsetX, byte offsetY)
+    {
+        byte x = (byte) (grid.GetIndexX(Position.X) + offsetX);
+        byte y = (byte) (grid.GetIndexY(Position.Y) + offsetY);
+        Rectangle tile = grid.GetBoundingBox(x, y);
+        if (grid.tiles[x, y].Solid && (BoundingBox.Intersects(tile) || BoundingBox.Contains(tile) || tile.Contains(BoundingBox)))
+        {
+            Console.WriteLine("i");
+            int a = BoundingBox.Center.X - tile.Center.X;
+            int b = BoundingBox.Center.Y - tile.Center.Y;
+            if (Math.Abs(a) > Math.Abs(b))
+            {
+                if (a > 0)
+                    Position.X = tile.X + tile.Size.X;
+                else
+                    Position.X = tile.X - BoundingBox.Size.X;
+                Velocity.X = 0;
+            }
+            else
+            {
+                if (b > 0)
+                    Position.Y = tile.Y + tile.Size.Y;
+                else
+                    Position.Y = tile.Y - BoundingBox.Size.Y;
+                Velocity.Y = 0;
+            }
+        }
     }
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
     {
-
+        spriteBatch.Draw(Tile.sprites[5], Position - (parent as Level).CameraPosition, null, Color.Red, 0, Vector2.Zero, Game.SpriteScale, 0, 0);
     }
 
 }
