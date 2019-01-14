@@ -4,111 +4,111 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/titleScreen.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/bossDefeated.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/enemyHit.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/enterRoom.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/explosion.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/grabFinishStar.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/healthUpPerBar.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/healWhenFull.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/jump.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/land.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/landFromHigh.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/miniBossDefeated.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/playerHit.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/puffOut.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/spit.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/succ.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/succIn.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/swallow.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Effects/warpStar.wav</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Music/bossTheme.mp3</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Music/dance.mp3</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Music/greenGreens.mp3</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sounds/Music/sparklingStars.mp3</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Effects.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/ElaborateEffects.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Kirby.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Enemies/apple.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Enemies/brontoBurt.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Enemies/cappy.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Enemies/cappyCap.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Enemies/grizzo.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Enemies/poppoBrosJr.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Enemies/puff.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Enemies/twizzy.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Enemies/waddleDee.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bomb.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/main.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/eyes.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/mouth.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/nose.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/tear.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/0.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/1.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/2.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/3.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/4.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/5.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/6.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/7.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/8.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/9.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/a.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/A-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/b.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/B-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/c.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/C-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/d.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/D-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/e.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/E-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/f.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/F-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/g.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/G-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/h.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/H-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/i.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/I-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/j.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/J-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/k.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/K-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/l.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/L-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/m.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/M-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/n.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/N-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/o.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/O-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/p.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/P-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/q.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/Q-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/r.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/R-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/s.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/S-.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/t.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/u.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/v.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/w.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/x.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/y.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/z.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/UI/bossHealth.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/UI/bossIcon.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/UI/bossUIVB.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/UI/lifeEmpty.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/UI/lifeFull.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/UI/Numbers.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/UI/UI.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/UI/UIVB.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/UI/VB.png</File>
-    <File>D:/Downloads/Kirby (1)/Kirby/Kirby/Content/Tiles/-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/titleScreen.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/bossDefeated.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/enemyHit.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/enterRoom.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/explosion.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/grabFinishStar.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/healthUpPerBar.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/healWhenFull.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/jump.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/land.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/landFromHigh.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/miniBossDefeated.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/playerHit.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/puffOut.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/spit.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/succ.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/succIn.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/swallow.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/warpStar.wav</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Music/bossTheme.mp3</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Music/dance.mp3</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Music/greenGreens.mp3</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Music/sparklingStars.mp3</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Effects.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/ElaborateEffects.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Kirby.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/apple.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/brontoBurt.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/cappy.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/cappyCap.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/grizzo.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/poppoBrosJr.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/puff.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/twizzy.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/waddleDee.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bomb.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/main.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/eyes.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/mouth.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/nose.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/tear.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/0.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/1.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/2.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/3.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/4.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/5.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/6.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/7.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/8.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/9.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/a.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/A-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/b.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/B-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/c.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/C-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/d.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/D-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/e.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/E-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/f.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/F-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/g.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/G-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/h.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/H-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/i.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/I-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/j.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/J-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/k.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/K-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/l.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/L-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/m.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/M-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/n.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/N-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/o.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/O-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/p.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/P-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/q.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/Q-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/r.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/R-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/s.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/S-.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/t.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/u.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/v.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/w.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/x.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/y.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/z.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/UI/bossHealth.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/UI/bossIcon.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/UI/bossUIVB.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/UI/lifeEmpty.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/UI/lifeFull.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/UI/Numbers.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/UI/UI.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/UI/UIVB.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/UI/VB.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/-.png</File>
   </SourceFiles>
 </SourceFileCollection>

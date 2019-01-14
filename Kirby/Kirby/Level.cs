@@ -75,11 +75,11 @@ class Level : GameObjectList
     public void Load(byte level)
     {
         Clear();
-        CurrentLevel = level;
+        CurrentLevel = level; //Sets the current level
         List<string> instructions = new List<string>();
-        StreamReader reader = new StreamReader(path + level + ".txt");
+        StreamReader reader = new StreamReader(path + level + ".txt"); //Loads the file that contains the level
         string nextLine = reader.ReadLine();
-        while (nextLine != null)
+        while (nextLine != null) //Reads the line until it ends
         {
             instructions.Add(nextLine);
             nextLine = reader.ReadLine();
@@ -93,7 +93,7 @@ class Level : GameObjectList
                 for (byte i = 0; i < Tile.Names.Length; i++)
                     if (instructions[y][x] == Tile.Names[i])
                     {
-                        grid.tiles[x, y] = new Tile(i);
+                        grid.tiles[x, y] = new Tile(i); //Sets a tile for each character in the level file
                         break;
                     }
             }

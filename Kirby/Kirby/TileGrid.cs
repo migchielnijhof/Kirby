@@ -70,7 +70,7 @@ class TileGrid : GameObject
     {
         for (int x = 0; x < width; x++)
             for (int y = 0; y < height; y++)
-                tiles[x, y].Draw(spriteBatch, new Vector2(Tile.SpriteWidth * x, Tile.SpriteHeight * y) - (parent as Level).CameraPosition);
+                tiles[x, y].Draw(spriteBatch, new Vector2(Tile.SpriteWidth * x, Tile.SpriteHeight * y) - (parent as Level).CameraPosition); //Draws the tiles.
     }
 
 }

@@ -92,26 +92,26 @@ class Player : AnimatedGameObject
     /// <param name="parent">The game object can communicate with other game objects through the parent.</param>
     public Player(GameObject parent) : base(parent, ObjectType.Player)
     {
-        Health = maxHealth;
-        score = 0;
-        absorbedEnemy = null;
-        invulnerabilityTime = 0.0d;
-        Velocity = Vector2.Zero;
-        onGround = true;
-        boundingBox.Size = new Point(BoundingBoxSizeX, BoundingBoxSizeY);
+        Health = maxHealth; //The player starts with maximum health
+        score = 0; //The player starts without a score
+        absorbedEnemy = null; //The player starts without an enemy absorbed
+        invulnerabilityTime = 0.0d; //The player starts without invulnerability
+        Velocity = Vector2.Zero; //The player starts without any velocity
+        onGround = true; //The player starts on the ground
+        boundingBox.Size = new Point(BoundingBoxSizeX, BoundingBoxSizeY); //Sets the bounding box size
     }
 
     public void TakeDamage()
     {
-        if (invulnerabilityTime > 0)
+        if (invulnerabilityTime > 0) //The player shouldn't receive damage if they're still invulnerable
             return;
-        Health--;
-        if (Health == 0)
+        Health--; //Gets hit
+        if (Health == 0) //If you don't have any health
         {
-            Die();
+            Die(); //You die
             return;
         }
-        invulnerabilityTime = invulnerability;
+        invulnerabilityTime = invulnerability; //gives the player invulnerability
     }
 
     protected void Die()
@@ -126,7 +126,7 @@ class Player : AnimatedGameObject
             Velocity.X = movementSpeed;
         else if (input.Movement == 2)
             Velocity.X = -movementSpeed;
-        if (input.Jump)
+        if (input.Jump) //Jumps when you press the jump key
         {
             Velocity.Y = -200 * Game.SpriteScale;
         }
@@ -134,17 +134,17 @@ class Player : AnimatedGameObject
 
     public override void Update(GameTime gameTime)
     {
-        if (!onGround)
+        if (!onGround) //Sends the player down if they're not on the ground
             Velocity.Y += gravity;
-        else if (Velocity.Y > 0)
+        else if (Velocity.Y > 0) //The player can't move on the Y axis when on the ground.
             Velocity.Y = 0;
         Position += Velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
-        if (Position.X < 0)
+        if (Position.X < 0) //The player can't move past the left edge of the screen
             Position.X = 0;
-        if (Position.Y < 0)
+        if (Position.Y < 0) //The player can't move past the top edge of the screen
             Position.Y = 0;
         TileGrid grid = (parent as Level).Find(ObjectType.TileGrid) as TileGrid;
-        try
+        try //Collision with the tilegrid
         {
             TileCollision(grid, 0, 0);
             TileCollision(grid, 1, 0);

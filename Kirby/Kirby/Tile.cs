@@ -46,10 +46,10 @@ class Tile
     /// </summary>
     public Tile(byte tileID)
     {
-        ID = tileID;
-        Solid = false;
+        ID = tileID; //Sets the ID for the tile
+        Solid = false; //Not solid, unless proven otherwise
         for (int i = 0; i < SolidTiles.Length; i++)
-            if (Names[ID] == SolidTiles[i])
+            if (Names[ID] == SolidTiles[i]) //Makes the tile solid if it should be solid
             {
                 Solid = true;
                 break;
