@@ -8,12 +8,7 @@ using System;
 class Player : AnimatedGameObject
 {
     /// <summary>
-    /// Current sprite of the player.
-    /// </summary>
-    protected static Texture2D currentSprite;
-
-    /// <summary>
-    /// Current sprite of the player.
+    /// Array of the player's sprites.
     /// </summary>
     public static Texture2D[] playerSprites = new Texture2D[10];
 
@@ -81,7 +76,7 @@ class Player : AnimatedGameObject
     public bool walking;
 
     /// <summary>
-    /// The player's state.
+    /// The player's state, used mostly for spritework. To see what number relates to what sprite, see Game.cs around line 100.
     /// </summary>
     public int playerState;
 
@@ -181,19 +176,19 @@ class Player : AnimatedGameObject
     {
         Velocity.X = 0;
 
-        if (input.Crouch && onGround && !walking)
+        if (input.Crouch && onGround) //Crouching
         {
             playerState = 1;
             return;
         }
 
-        if (input.Movement == 1)
+        if (input.Movement == 1) //Walking right
         {
             Velocity.X = movementSpeed;
             s = SpriteEffects.None;
             walking = true;
         }
-        else if (input.Movement == 2)
+        else if (input.Movement == 2) //Walking left
         {
             Velocity.X = -movementSpeed;
             s = SpriteEffects.FlipHorizontally;
@@ -203,27 +198,27 @@ class Player : AnimatedGameObject
 
         if (input.Jump) //Jumps when you press the jump key
         {
-            if ((highJumpTimer < highJumpFrames && !onGround) || (onGround && !previousFrameJump))
+            if ((highJumpTimer < highJumpFrames && !onGround) || (onGround && !previousFrameJump)) //The user can only rise into the air if the user is either on the ground, or has just started the jump
             {
-                if (!previousFrameJump && onGround)
+                if (!previousFrameJump && onGround) //If this is the first frame of the jump
                 {
-                    Velocity.Y = -105 * Game.SpriteScale;
+                    Velocity.Y = -105 * Game.SpriteScale; //The first frame of the jump has a lower velocity than the rest, to allow for short-hops
                 }
                 else 
                 {
-                    Velocity.Y = -150 * Game.SpriteScale;
+                    Velocity.Y = -150 * Game.SpriteScale; //The rest of the jump is faster to not make it feel sluggish
                 }
             }
-            previousFrameJump = true;
+            previousFrameJump = true; 
         }
         else previousFrameJump = false;
 
-        if (highJumpTimer < highJumpFrames)
+        if (highJumpTimer < highJumpFrames) //The timer increases until it reaches its max, which determines the max height of the jump
         {
             highJumpTimer++;
         }
 
-        if (landingTimer >= 1 && onGround)
+        if (landingTimer >= 1 && onGround) //The following code is to make sure Kirby crouches when landing, and resets some code relating to the jumop height timer
         {
             landingTimer -= 1;
             playerState = 1;
@@ -240,9 +235,7 @@ class Player : AnimatedGameObject
 
     public override void Update(GameTime gameTime)
     {
-
-        Console.WriteLine(landingTimer);
-        if (animationTimer < animationSpeed)
+        if (animationTimer < animationSpeed) //Manages the animation speed. Currently only used for Kirby's walk cycle.
         {
             animationTimer++;
         }
@@ -259,12 +252,17 @@ class Player : AnimatedGameObject
         }
         else if (Velocity.Y > 0) //The player can't move on the Y axis when on the ground.
             Velocity.Y = 0;
+
         Position += Velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
         if (Position.X < 0) //The player can't move past the left edge of the screen
             Position.X = 0;
+
         if (Position.Y < 0) //The player can't move past the top edge of the screen
             Position.Y = 0;
+
         TileGrid grid = (parent as Level).Find(ObjectType.TileGrid) as TileGrid;
+
         try //Collision with the tilegrid
         {
             TileCollision(grid, 0, 0);
@@ -284,26 +282,21 @@ class Player : AnimatedGameObject
             TakeDamage();
         }
         
-        if (walking == true && onGround)
+        if (walking == true && onGround && animationTimer == 0 && playerState != 1) //Plays the walking animation
         {
-            if (animationTimer == 0 && playerState != 1)
+            switch (playerState)
             {
-                switch (playerState)
-                {
-                    case 4:
-                    case 5:
-                    case 6:
-                        playerState++;
-                        break;
+                case 4:
+                case 5:
+                case 6:
+                    playerState++;
+                    break;
 
-                    default:
-                        playerState = 4;
-                        break;
-                }
+                default:
+                    playerState = 4;
+                    break;
             }
         }
-
-        currentSprite = playerSprites[playerState];
     }
 
     public bool TestGround(TileGrid grid)
@@ -344,7 +337,7 @@ class Player : AnimatedGameObject
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
     {
-        spriteBatch.Draw(currentSprite, Position - (parent as Level).CameraPosition, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, s, 0);
+        spriteBatch.Draw(playerSprites[playerState], Position - (parent as Level).CameraPosition, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, s, 0);
     }
 
 }
