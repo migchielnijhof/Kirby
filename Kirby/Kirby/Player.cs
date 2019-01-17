@@ -223,23 +223,25 @@ class Player : AnimatedGameObject
             highJumpTimer++;
         }
 
-        if (landingTimer >= 1 && !onGround)
+        if (landingTimer >= 1 && onGround)
         {
             landingTimer -= 1;
             playerState = 1;
         }
         else if (onGround)
         {
-            if (walking == false)
+            highJumpTimer = 0;
+            if (playerState < 4 || playerState > 7)
             {
                 playerState = 0;
             }
-            highJumpTimer = 0;
         }
     }
 
     public override void Update(GameTime gameTime)
     {
+
+        Console.WriteLine(landingTimer);
         if (animationTimer < animationSpeed)
         {
             animationTimer++;
@@ -253,6 +255,7 @@ class Player : AnimatedGameObject
         {
             Velocity.Y += gravity;
             playerState = 2;
+            landingTimer = landingLag;
         }
         else if (Velocity.Y > 0) //The player can't move on the Y axis when on the ground.
             Velocity.Y = 0;
@@ -270,8 +273,6 @@ class Player : AnimatedGameObject
             TileCollision(grid, 1, 1);
             if (TestGround(grid))
             {
-                if (!onGround)
-                    landingTimer = landingLag;
                 onGround = true;
             }
             else
@@ -285,7 +286,7 @@ class Player : AnimatedGameObject
         
         if (walking == true && onGround)
         {
-            if (animationTimer == 0)
+            if (animationTimer == 0 && playerState != 1)
             {
                 switch (playerState)
                 {
