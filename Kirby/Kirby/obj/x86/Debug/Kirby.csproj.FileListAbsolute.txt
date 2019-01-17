@@ -652,3 +652,6 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThow.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk3.xnb

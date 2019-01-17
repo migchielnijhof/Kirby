@@ -94,7 +94,10 @@ public class Game : Microsoft.Xna.Framework.Game
         Player.playerSprites[1] = Content.Load<Texture2D>(path + "crouch");
         Player.playerSprites[2] = Content.Load<Texture2D>(path + "fall");
         Player.playerSprites[3] = Content.Load<Texture2D>(path + "fallFromHigh");
-        Player.playerSprites[4] = Content.Load<Texture2D>(path + "idle");
+        Player.playerSprites[4] = Content.Load<Texture2D>(path + "walk1");
+        Player.playerSprites[5] = Content.Load<Texture2D>(path + "walk2");
+        Player.playerSprites[6] = Content.Load<Texture2D>(path + "walk3");
+        Player.playerSprites[7] = Content.Load<Texture2D>(path + "walk2");
     }
 
     /// <summary>

@@ -76,6 +76,11 @@ class Player : AnimatedGameObject
     public int score;
 
     /// <summary>
+    /// The player's score.
+    /// </summary>
+    public bool walking;
+
+    /// <summary>
     /// The player's state.
     /// </summary>
     public int playerState;
@@ -109,6 +114,16 @@ class Player : AnimatedGameObject
     /// The amount of time the player will crouch when landing.
     /// </summary>
     const int landingLag = 7;
+
+    /// <summary>
+    /// The speed of animations
+    /// </summary>
+    const int animationSpeed = 8;
+
+    /// <summary>
+    /// The timer used in animation.
+    /// </summary>
+    protected int animationTimer;
 
     /// <summary>
     /// The amount of time the player will remain invulnerable.
@@ -165,21 +180,27 @@ class Player : AnimatedGameObject
     public override void HandleInput(Input input)
     {
         Velocity.X = 0;
-        if (input.Crouch && onGround)
+
+        if (input.Crouch && onGround && !walking)
         {
             playerState = 1;
             return;
         }
+
         if (input.Movement == 1)
         {
             Velocity.X = movementSpeed;
             s = SpriteEffects.None;
+            walking = true;
         }
         else if (input.Movement == 2)
         {
             Velocity.X = -movementSpeed;
             s = SpriteEffects.FlipHorizontally;
+            walking = true;
         }
+        else walking = false;
+
         if (input.Jump) //Jumps when you press the jump key
         {
             if ((highJumpTimer < highJumpFrames && !onGround) || (onGround && !previousFrameJump))
@@ -209,13 +230,25 @@ class Player : AnimatedGameObject
         }
         else if (onGround)
         {
-            playerState = 0;
+            if (walking == false)
+            {
+                playerState = 0;
+            }
             highJumpTimer = 0;
         }
     }
 
     public override void Update(GameTime gameTime)
     {
+        if (animationTimer < animationSpeed)
+        {
+            animationTimer++;
+        }
+        else
+        {
+            animationTimer = 0;
+        }
+
         if (!onGround) //Sends the player down if they're not on the ground
         {
             Velocity.Y += gravity;
@@ -249,6 +282,26 @@ class Player : AnimatedGameObject
         {
             TakeDamage();
         }
+        
+        if (walking == true && onGround)
+        {
+            if (animationTimer == 0)
+            {
+                switch (playerState)
+                {
+                    case 4:
+                    case 5:
+                    case 6:
+                        playerState++;
+                        break;
+
+                    default:
+                        playerState = 4;
+                        break;
+                }
+            }
+        }
+
         currentSprite = playerSprites[playerState];
     }
 
