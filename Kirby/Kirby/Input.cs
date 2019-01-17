@@ -8,6 +8,7 @@ class Input
     public byte Movement;
     public bool Start;
     public bool Jump;
+    public bool Crouch;
 
     // Updates the input.
     public void Update()
@@ -15,6 +16,7 @@ class Input
         Movement = 0;
         Start = false;
         Jump = false;
+        Crouch = false;
         if (Keyboard.GetState().IsKeyDown(Keys.Space))
             Start = true;
         if (Keyboard.GetState().IsKeyDown(Keys.A))
@@ -23,6 +25,8 @@ class Input
             Movement = 1;
         if (Keyboard.GetState().IsKeyDown(Keys.W))
             Jump = true;
+        if (Keyboard.GetState().IsKeyDown(Keys.S))
+            Crouch = true;
     }
 
 }

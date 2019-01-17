@@ -7,6 +7,15 @@ using System;
 /// </summary>
 class Player : AnimatedGameObject
 {
+    /// <summary>
+    /// Current sprite of the player.
+    /// </summary>
+    protected static Texture2D currentSprite;
+
+    /// <summary>
+    /// Current sprite of the player.
+    /// </summary>
+    public static Texture2D[] playerSprites = new Texture2D[10];
 
     /// <summary>
     /// Current health of the player.
@@ -67,14 +76,29 @@ class Player : AnimatedGameObject
     public int score;
 
     /// <summary>
+    /// The player's state.
+    /// </summary>
+    public int playerState;
+
+    /// <summary>
     /// Whether the player is on the ground or not.
     /// </summary>
     protected bool onGround;
 
     /// <summary>
+    /// The timer that counts down to when the player can move again after landing.
+    /// </summary>
+    protected int landingTimer;
+
+    /// <summary>
     /// The enemy the player has sucked up.
     /// </summary>
     protected GameObject absorbedEnemy;
+
+    /// <summary>
+    /// The amount of time the player will crouch when landing.
+    /// </summary>
+    const int landingLag = 7;
 
     /// <summary>
     /// The amount of time the player will remain invulnerable.
@@ -85,6 +109,11 @@ class Player : AnimatedGameObject
     /// The amount of invulnerabiliyTime the player will get after taking damage.
     /// </summary>
     const double invulnerability = 1.0d;
+
+    /// <summary>
+    /// The spriteeffects, used for mirroring.
+    /// </summary>
+    SpriteEffects s = SpriteEffects.None;
 
     /// <summary>
     /// Create a new player.
@@ -99,6 +128,7 @@ class Player : AnimatedGameObject
         Velocity = Vector2.Zero; //The player starts without any velocity
         onGround = true; //The player starts on the ground
         boundingBox.Size = new Point(BoundingBoxSizeX, BoundingBoxSizeY); //Sets the bounding box size
+        playerState = 0;
     }
 
     public void TakeDamage()
@@ -118,26 +148,45 @@ class Player : AnimatedGameObject
     {
 
     }
-    
-    //test
 
     public override void HandleInput(Input input)
     {
         Velocity.X = 0;
+        if (input.Crouch && onGround)
+        {
+            playerState = 1;
+            return;
+        }
         if (input.Movement == 1)
+        {
             Velocity.X = movementSpeed;
+            s = SpriteEffects.None;
+        }
         else if (input.Movement == 2)
+        {
             Velocity.X = -movementSpeed;
+            s = SpriteEffects.FlipHorizontally;
+        }
         if (input.Jump) //Jumps when you press the jump key
         {
             Velocity.Y = -200 * Game.SpriteScale;
         }
+        if (landingTimer >= 1)
+        {
+            landingTimer -= 1;
+            playerState = 1;
+        }
+        else
+        playerState = 0;
     }
 
     public override void Update(GameTime gameTime)
     {
         if (!onGround) //Sends the player down if they're not on the ground
+        {
             Velocity.Y += gravity;
+            playerState = 2;
+        }
         else if (Velocity.Y > 0) //The player can't move on the Y axis when on the ground.
             Velocity.Y = 0;
         Position += Velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -152,12 +201,21 @@ class Player : AnimatedGameObject
             TileCollision(grid, 1, 0);
             TileCollision(grid, 0, 1);
             TileCollision(grid, 1, 1);
-            onGround = TestGround(grid);
+            if (TestGround(grid))
+            {
+                if (!onGround)
+                    landingTimer = landingLag;
+                onGround = true;
+            }
+            else
+                onGround = false;
         }
         catch
+
         {
             TakeDamage();
         }
+        currentSprite = playerSprites[playerState];
     }
 
     public bool TestGround(TileGrid grid)
@@ -198,7 +256,7 @@ class Player : AnimatedGameObject
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
     {
-        spriteBatch.Draw(Tile.sprites[5], Position - (parent as Level).CameraPosition, null, Color.Red, 0, Vector2.Zero, Game.SpriteScale, 0, 0);
+        spriteBatch.Draw(currentSprite, Position - (parent as Level).CameraPosition, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, s, 0);
     }
 
 }

@@ -19,7 +19,7 @@ public class Game : Microsoft.Xna.Framework.Game
     /// The amount of lives of the player.
     /// </summary>
     public static byte PlayerLives;
-
+    
     /// <summary>
     /// The amount of lives the player starts with.
     /// </summary>
@@ -89,6 +89,12 @@ public class Game : Microsoft.Xna.Framework.Game
             Tile.sprites[x] = Content.Load<Texture2D>(tileDirectory + char.ToString(Tile.Names[x]));
         }
 
+        string path = "Sprites/Kirby/";
+        Player.playerSprites[0] = Content.Load<Texture2D>(path + "idle");
+        Player.playerSprites[1] = Content.Load<Texture2D>(path + "crouch");
+        Player.playerSprites[2] = Content.Load<Texture2D>(path + "fall");
+        Player.playerSprites[3] = Content.Load<Texture2D>(path + "fallFromHigh");
+        Player.playerSprites[4] = Content.Load<Texture2D>(path + "idle");
     }
 
     /// <summary>
