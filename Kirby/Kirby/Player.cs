@@ -96,6 +96,16 @@ class Player : AnimatedGameObject
     protected GameObject absorbedEnemy;
 
     /// <summary>
+    /// The amount of time the player has left where holding the jump button will result in a higher jump.
+    /// </summary>
+    protected int highJumpTimer;
+
+    /// <summary>
+    /// The amount of time the player will have where holding the jump button will result in a higher jump.
+    /// </summary>
+    const int highJumpFrames = 8;
+
+    /// <summary>
     /// The amount of time the player will crouch when landing.
     /// </summary>
     const int landingLag = 7;
@@ -115,6 +125,8 @@ class Player : AnimatedGameObject
     /// </summary>
     SpriteEffects s = SpriteEffects.None;
 
+    public bool previousFrameJump;
+
     /// <summary>
     /// Create a new player.
     /// </summary>
@@ -129,6 +141,7 @@ class Player : AnimatedGameObject
         onGround = true; //The player starts on the ground
         boundingBox.Size = new Point(BoundingBoxSizeX, BoundingBoxSizeY); //Sets the bounding box size
         playerState = 0;
+        highJumpTimer = highJumpFrames;
     }
 
     public void TakeDamage()
@@ -169,15 +182,36 @@ class Player : AnimatedGameObject
         }
         if (input.Jump) //Jumps when you press the jump key
         {
-            Velocity.Y = -200 * Game.SpriteScale;
+            if ((highJumpTimer < highJumpFrames && !onGround) || (onGround && !previousFrameJump))
+            {
+                if (!previousFrameJump && onGround)
+                {
+                    Velocity.Y = -105 * Game.SpriteScale;
+                }
+                else 
+                {
+                    Velocity.Y = -150 * Game.SpriteScale;
+                }
+            }
+            previousFrameJump = true;
         }
-        if (landingTimer >= 1)
+        else previousFrameJump = false;
+
+        if (highJumpTimer < highJumpFrames)
+        {
+            highJumpTimer++;
+        }
+
+        if (landingTimer >= 1 && !onGround)
         {
             landingTimer -= 1;
             playerState = 1;
         }
-        else
-        playerState = 0;
+        else if (onGround)
+        {
+            playerState = 0;
+            highJumpTimer = 0;
+        }
     }
 
     public override void Update(GameTime gameTime)
