@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>E:/UU/Kirby/Kirby/Kirby/Content/Tiles/i.png</SourceFile>
+  <SourceFile>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/i.png</SourceFile>
   <SourceTime>2019-01-13T16:28:10+01:00</SourceTime>
-  <DestFile>E:/UU/Kirby/Kirby/Kirby/Content/bin/Windows/Tiles/i.xnb</DestFile>
-  <DestTime>2019-01-18T09:50:42+01:00</DestTime>
+  <DestFile>H:/UU/Kirby/Kirby/Kirby/Content/bin/Windows/Tiles/i.xnb</DestFile>
+  <DestTime>2019-01-18T21:12:40+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

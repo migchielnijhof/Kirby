@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>E:/UU/Kirby/Kirby/Kirby/Content/Sprites/ElaborateEffects/starBundle2.png</SourceFile>
+  <SourceFile>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/ElaborateEffects/starBundle2.png</SourceFile>
   <SourceTime>2019-01-14T21:18:50+01:00</SourceTime>
-  <DestFile>E:/UU/Kirby/Kirby/Kirby/Content/bin/Windows/Sprites/ElaborateEffects/starBundle2.xnb</DestFile>
-  <DestTime>2019-01-18T09:50:44+01:00</DestTime>
+  <DestFile>H:/UU/Kirby/Kirby/Kirby/Content/bin/Windows/Sprites/ElaborateEffects/starBundle2.xnb</DestFile>
+  <DestTime>2019-01-18T21:12:42+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
