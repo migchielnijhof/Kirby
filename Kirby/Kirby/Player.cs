@@ -81,6 +81,11 @@ class Player : AnimatedGameObject
     public bool crouching;
 
     /// <summary>
+    /// If the player is airborne because of a jump.
+    /// </summary>
+    public bool jumping;
+
+    /// <summary>
     /// The player's state, used mostly for spritework. To see what number relates to what sprite, see Game.cs around line 100.
     /// </summary>
     public int playerState;
@@ -210,8 +215,9 @@ class Player : AnimatedGameObject
                 if (!previousFrameJump && onGround) //If this is the first frame of the jump
                 {
                     Velocity.Y = -105 * Game.SpriteScale; //The first frame of the jump has a lower velocity than the rest, to allow for short-hops
+                    jumping = true;
                 }
-                else 
+                else if (jumping)
                 {
                     Velocity.Y = -150 * Game.SpriteScale; //The rest of the jump is faster to not make it feel sluggish
                 }
@@ -229,6 +235,7 @@ class Player : AnimatedGameObject
         {
             landingTimer--;
             playerState = 1;
+            jumping = false;
         }
         else if (onGround)
         {
