@@ -655,3 +655,6 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk1.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk2.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk3.xnb
+E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk1.xnb
+E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk2.xnb
+E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk3.xnb

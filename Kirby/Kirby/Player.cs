@@ -71,9 +71,14 @@ class Player : AnimatedGameObject
     public int score;
 
     /// <summary>
-    /// The player's score.
+    /// If the player is walking.
     /// </summary>
     public bool walking;
+
+    /// <summary>
+    /// If the player is crouching.
+    /// </summary>
+    public bool crouching;
 
     /// <summary>
     /// The player's state, used mostly for spritework. To see what number relates to what sprite, see Game.cs around line 100.
@@ -179,8 +184,10 @@ class Player : AnimatedGameObject
         if (input.Crouch && onGround) //Crouching
         {
             playerState = 1;
+            crouching = true;
             return;
         }
+        else crouching = false;
 
         if (input.Movement == 1) //Walking right
         {
@@ -220,13 +227,13 @@ class Player : AnimatedGameObject
 
         if (landingTimer >= 1 && onGround) //The following code is to make sure Kirby crouches when landing, and resets some code relating to the jumop height timer
         {
-            landingTimer -= 1;
+            landingTimer--;
             playerState = 1;
         }
         else if (onGround)
         {
             highJumpTimer = 0;
-            if (playerState < 4 || playerState > 7)
+            if (!walking && landingTimer == 0)
             {
                 playerState = 0;
             }
@@ -282,7 +289,7 @@ class Player : AnimatedGameObject
             TakeDamage();
         }
         
-        if (walking == true && onGround && animationTimer == 0 && playerState != 1) //Plays the walking animation
+        if (walking && onGround && animationTimer == 0 && landingTimer == 0 && !crouching) //Plays the walking animation
         {
             switch (playerState)
             {
