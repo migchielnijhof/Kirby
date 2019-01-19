@@ -53,7 +53,7 @@ class Player : AnimatedGameObject
     /// <summary>
     /// Maximum health of the player.
     /// </summary>
-    const byte maxHealth = 5;
+    public const byte maxHealth = 6;
 
     /// <summary>
     /// The movement speed of a player.

@@ -9,6 +9,8 @@ public class Game : Microsoft.Xna.Framework.Game
     public static GraphicsDeviceManager graphics;
     SpriteBatch spriteBatch;
 
+    UI UI;
+
     public const float SpriteScale = 5;
 
     public const int ScreenWidth = 160;
@@ -89,15 +91,30 @@ public class Game : Microsoft.Xna.Framework.Game
             Tile.sprites[x] = Content.Load<Texture2D>(tileDirectory + char.ToString(Tile.Names[x]));
         }
 
-        string path = "Sprites/Kirby/";
-        Player.playerSprites[0] = Content.Load<Texture2D>(path + "idle");
-        Player.playerSprites[1] = Content.Load<Texture2D>(path + "crouch");
-        Player.playerSprites[2] = Content.Load<Texture2D>(path + "fall");
-        Player.playerSprites[3] = Content.Load<Texture2D>(path + "fallFromHigh");
-        Player.playerSprites[4] = Content.Load<Texture2D>(path + "walk1");
-        Player.playerSprites[5] = Content.Load<Texture2D>(path + "walk2");
-        Player.playerSprites[6] = Content.Load<Texture2D>(path + "walk3");
+        string kirbySpritePath = "Sprites/Kirby/";
+
+        Player.playerSprites[0] = Content.Load<Texture2D>(kirbySpritePath + "idle");
+        Player.playerSprites[1] = Content.Load<Texture2D>(kirbySpritePath + "crouch");
+        Player.playerSprites[2] = Content.Load<Texture2D>(kirbySpritePath + "fall");
+        Player.playerSprites[3] = Content.Load<Texture2D>(kirbySpritePath + "fallFromHigh");
+        Player.playerSprites[4] = Content.Load<Texture2D>(kirbySpritePath + "walk1");
+        Player.playerSprites[5] = Content.Load<Texture2D>(kirbySpritePath + "walk2");
+        Player.playerSprites[6] = Content.Load<Texture2D>(kirbySpritePath + "walk3");
         Player.playerSprites[7] = Player.playerSprites[5];
+
+        UI.numbers[0] = Content.Load<Texture2D>("UI/Numbers/0");
+        UI.numbers[1] = Content.Load<Texture2D>("UI/Numbers/1");
+        UI.numbers[2] = Content.Load<Texture2D>("UI/Numbers/2");
+        UI.numbers[3] = Content.Load<Texture2D>("UI/Numbers/3");
+        UI.numbers[4] = Content.Load<Texture2D>("UI/Numbers/4");
+        UI.numbers[5] = Content.Load<Texture2D>("UI/Numbers/5");
+        UI.numbers[6] = Content.Load<Texture2D>("UI/Numbers/6");
+        UI.numbers[7] = Content.Load<Texture2D>("UI/Numbers/7");
+        UI.numbers[8] = Content.Load<Texture2D>("UI/Numbers/8");
+        UI.numbers[9] = Content.Load<Texture2D>("UI/Numbers/9");
+        UI.baseSprite = Content.Load<Texture2D>("UI/UI");
+        UI.lifeEmpty = Content.Load<Texture2D>("UI/lifeEmpty");
+        UI.lifeFull = Content.Load<Texture2D>("UI/lifeFull");
     }
 
     /// <summary>

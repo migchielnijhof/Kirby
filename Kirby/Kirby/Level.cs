@@ -18,6 +18,8 @@ class Level : GameObjectList
     /// </summary>
     public Vector2 CameraPosition;
 
+    private Player player;
+
     /// <summary>
     /// The camera will move when the position of the player on the screen becomes higher than cameraFollowing * screen size or lower than (1 - cameraFollowing) * screen size.
     /// Higher values allow the player to be further off the center of the screen.
@@ -65,7 +67,6 @@ class Level : GameObjectList
             if (Find(ObjectType.TileGrid) is TileGrid t && CameraPosition.X + Game.ScreenWidth > t.width * Tile.SpriteWidth)
                 CameraPosition.X = t.width * Tile.SpriteWidth - Game.ScreenWidth;
         }
-
     }
 
     /// <summary>
@@ -101,7 +102,9 @@ class Level : GameObjectList
                 }
             }
         Add(grid);
-        Add(new Player(this));
+        player = new Player(this);
+        Add(player);
+        Add(new UI(player));
     }
 
 }

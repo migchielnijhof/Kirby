@@ -704,3 +704,13 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\á.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¯.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\©.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ƒ.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\0.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\5.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\6.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\7.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\8.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\9.xnb

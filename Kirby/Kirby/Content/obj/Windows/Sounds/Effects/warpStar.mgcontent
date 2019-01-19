@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Effects/warpStar.wav</SourceFile>
-  <SourceTime>2019-01-13T16:28:10+01:00</SourceTime>
+  <SourceTime>2019-01-19T18:23:32+01:00</SourceTime>
   <DestFile>H:/UU/Kirby/Kirby/Kirby/Content/bin/Windows/Sounds/Effects/warpStar.xnb</DestFile>
-  <DestTime>2019-01-18T21:12:36+01:00</DestTime>
+  <DestTime>2019-01-19T18:43:44+01:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>
