@@ -63,7 +63,7 @@ class Player : AnimatedGameObject
     /// <summary>
     /// The gravity of the player.
     /// </summary>
-    const float gravity = 9 * Game.SpriteScale;
+    const float gravity = 6 * Game.SpriteScale;
 
     /// <summary>
     /// The player's score.
@@ -212,19 +212,28 @@ class Player : AnimatedGameObject
         {
             if ((highJumpTimer < highJumpFrames && !onGround) || (onGround && !previousFrameJump)) //The user can only rise into the air if the user is either on the ground, or has just started the jump
             {
-                if (!previousFrameJump && onGround) //If this is the first frame of the jump
+                double jumpMultiplier = (Math.Sqrt((1-(highJumpTimer / highJumpFrames))*10) - 1) * 100;
+                if ((!previousFrameJump && onGround && landingTimer < (landingLag / 2)) || jumping) //If this is the first frame of the jump
                 {
-                    Velocity.Y = -105 * Game.SpriteScale; //The first frame of the jump has a lower velocity than the rest, to allow for short-hops
-                    jumping = true;
-                }
-                else if (jumping)
-                {
-                    Velocity.Y = -150 * Game.SpriteScale; //The rest of the jump is faster to not make it feel sluggish
+                    if (!jumping)
+                    {
+                        highJumpTimer = 1;
+                        jumpMultiplier = 100;
+                        jumping = true;
+                    }
+                    Velocity.Y = (-64 * Game.SpriteScale * (int)jumpMultiplier) / 100; //The rest of the jump is faster to not make it feel sluggish
                 }
             }
-            previousFrameJump = true; 
+            previousFrameJump = true;
         }
-        else previousFrameJump = false;
+        else
+        {
+            previousFrameJump = false;
+            if (Velocity.Y < 0)
+            {
+                Velocity.Y = 0;
+            }
+        }
 
         if (highJumpTimer < highJumpFrames) //The timer increases until it reaches its max, which determines the max height of the jump
         {
@@ -233,14 +242,14 @@ class Player : AnimatedGameObject
 
         if (landingTimer >= 1 && onGround) //The following code is to make sure Kirby crouches when landing, and resets some code relating to the jumop height timer
         {
+            highJumpTimer = 1;
             landingTimer--;
             playerState = 1;
             jumping = false;
         }
         else if (onGround)
         {
-            highJumpTimer = 0;
-            if (!walking && landingTimer == 0)
+            if (((playerState < 4 || playerState > 7) || Velocity.X == 0) && landingTimer == 0)
             {
                 playerState = 0;
             }

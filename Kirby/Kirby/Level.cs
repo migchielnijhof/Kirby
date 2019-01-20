@@ -93,7 +93,6 @@ class Level : GameObjectList
             {
                 for (byte i = 0; i < Tile.Names.Length; i++)
                 {
-                    System.Console.WriteLine(instructions[y][x]);
                     if (instructions[y][x] == Tile.Names[i])
                     {
                         grid.tiles[x, y] = new Tile(i); //Sets a tile for each character in the level file
