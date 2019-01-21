@@ -197,39 +197,25 @@ class Player : AnimatedGameObject
         if (input.Movement == 1) //Walking right
         {
             Velocity.X = movementSpeed;
-            s = SpriteEffects.None;
+            s = SpriteEffects.None; //Makes the player face right
             walking = true;
         }
         else if (input.Movement == 2) //Walking left
         {
             Velocity.X = -movementSpeed;
-            s = SpriteEffects.FlipHorizontally;
+            s = SpriteEffects.FlipHorizontally; //Makes the player face left
             walking = true;
         }
         else walking = false;
 
         if (input.Jump) //Jumps when you press the jump key
         {
-            if ((highJumpTimer < highJumpFrames && !onGround) || (onGround && !previousFrameJump)) //The user can only rise into the air if the user is either on the ground, or has just started the jump
-            {
-                double jumpMultiplier = (Math.Sqrt((1-(highJumpTimer / highJumpFrames))*10) - 1) * 100;
-                if ((!previousFrameJump && onGround && landingTimer < (landingLag / 2)) || jumping) //If this is the first frame of the jump
-                {
-                    if (!jumping)
-                    {
-                        highJumpTimer = 1;
-                        jumpMultiplier = 100;
-                        jumping = true;
-                    }
-                    Velocity.Y = (-64 * Game.SpriteScale * (int)jumpMultiplier) / 100; //The rest of the jump is faster to not make it feel sluggish
-                }
-            }
-            previousFrameJump = true;
+            Jump();
         }
         else
         {
             previousFrameJump = false;
-            if (Velocity.Y < 0)
+            if (Velocity.Y < 0) //If the player isn't holding the jump key anymore, they will stop going up immediately.
             {
                 Velocity.Y = 0;
             }
@@ -247,13 +233,29 @@ class Player : AnimatedGameObject
             playerState = 1;
             jumping = false;
         }
-        else if (onGround)
+        else if (((playerState < 4 || playerState > 7) || Velocity.X == 0) && landingTimer == 0 && onGround) //If the player isn't walking while on the ground, crouching, or landing, they will simply stand still.
         {
-            if (((playerState < 4 || playerState > 7) || Velocity.X == 0) && landingTimer == 0)
-            {
                 playerState = 0;
+        }
+    }
+
+    public void Jump()
+    {
+        if ((highJumpTimer < highJumpFrames && !onGround) || (onGround && !previousFrameJump)) //The user can only rise into the air if the user is either on the ground, or has just started the jump
+        {
+            double jumpMultiplier = (Math.Sqrt((1 - (highJumpTimer / highJumpFrames)) * 10) - 1) * 100; //A multiplyer which determines how fast the player rises in the air. It's rather copmplicated, sorry.
+            if ((!previousFrameJump && onGround && landingTimer < (landingLag / 2)) || jumping) //If this is the first frame of the jump
+            {
+                if (!jumping) //The first frame of the jump
+                {
+                    highJumpTimer = 1;
+                    jumpMultiplier = 100;
+                    jumping = true;
+                }
+                Velocity.Y = (-64 * Game.SpriteScale * (int)jumpMultiplier) / 100; //The rest of the jump is faster to not make it feel sluggish
             }
         }
+        previousFrameJump = true;
     }
 
     public override void Update(GameTime gameTime)
@@ -299,8 +301,8 @@ class Player : AnimatedGameObject
             else
                 onGround = false;
         }
-        catch
 
+        catch
         {
             TakeDamage();
         }
