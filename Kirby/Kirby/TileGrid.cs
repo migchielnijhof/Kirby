@@ -49,18 +49,7 @@ class TileGrid : GameObject
     /// <param name="x">The y position.</param>
     public byte GetIndexY(float y)
     {
-        return (byte) ((y - 0.5) / Tile.SpriteHeight);
-    }
-
-    /// <summary>
-    /// Retrieves the bounding box of a tile at (x, y).
-    /// </summary>
-    /// <param name="x">x index of the tile.</param>
-    /// <param name="y">y index of the tile.</param>
-    /// <returns></returns>
-    public Rectangle GetBoundingBox(int x, int y)
-    {
-        return new Rectangle(new Point(x * Tile.SpriteWidth, y * Tile.SpriteHeight), new Point(Tile.SpriteWidth, Tile.SpriteHeight));
+        return (byte)((y - 0.5) / Tile.SpriteHeight);
     }
 
     /// <summary>

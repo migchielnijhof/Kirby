@@ -104,6 +104,9 @@ class Level : GameObjectList
         player = new Player(this);
         Add(player);
         Add(new UI(player));
+        Enemy enemy = new Enemy(this);
+        enemy.Position = new Vector2(900, 0);
+        Add(enemy);
     }
 
 }

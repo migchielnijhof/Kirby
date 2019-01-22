@@ -42,10 +42,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AnimatedGameObject.cs" />
+    <Compile Include="Enemy.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="Input.cs" />
     <Compile Include="Level.cs" />
+    <Compile Include="PhysicsObject.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="TileGrid.cs" />
     <Compile Include="Player.cs" />
