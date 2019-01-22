@@ -101,6 +101,7 @@ public class Game : Microsoft.Xna.Framework.Game
         Player.playerSprites[5] = Content.Load<Texture2D>(kirbySpritePath + "walk2");
         Player.playerSprites[6] = Content.Load<Texture2D>(kirbySpritePath + "walk3");
         Player.playerSprites[7] = Player.playerSprites[5];
+        Player.playerSprites[8] = Content.Load<Texture2D>(kirbySpritePath + "succIn2");
 
         for (int i = 0; i < 9; i++)
             UI.numbers[i] = Content.Load<Texture2D>($"UI/Numbers/{i}");

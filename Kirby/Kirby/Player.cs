@@ -28,6 +28,11 @@ class Player : AnimatedGameObject
     public Vector2 Velocity;
 
     /// <summary>
+    /// Used for correctly drawing the player's sprite when its size increases.
+    /// </summary>
+    private Vector2 spriteSizeOffset;
+
+    /// <summary>
     /// The bounding box of the player.
     /// </summary>
     public Rectangle BoundingBox
@@ -273,6 +278,7 @@ class Player : AnimatedGameObject
 
         if (!onGround)
         {
+            Velocity.Y += gravity;
             playerState = 2;
             landingTimer = landingLag;
         }
@@ -284,8 +290,6 @@ class Player : AnimatedGameObject
             Position.Y = 0;
 
         TileGrid grid = (parent as Level).Find(ObjectType.TileGrid) as TileGrid;
-
-        Velocity.Y += gravity;
 
         Vector2 distance = Velocity / Game.SpriteScale;
 
@@ -300,7 +304,7 @@ class Player : AnimatedGameObject
                         float d = distance.X;
                         distance.X = 0;
                         Position.X += d * Game.SpriteScale;
-                        if (MapCollisions(grid, new Vector2(d * Game.SpriteScale, 0)))
+                        if (DoCollisions(grid, new Vector2(d * Game.SpriteScale, 0)))
                         {
                             distance.X = 0;
                             Velocity.X = 0;
@@ -310,7 +314,7 @@ class Player : AnimatedGameObject
                     {
                         distance.X--;
                         Position.X += Game.SpriteScale;
-                        if (MapCollisions(grid, new Vector2(1 * Game.SpriteScale, 0)))
+                        if (DoCollisions(grid, new Vector2(1 * Game.SpriteScale, 0)))
                         {
                             distance.X = 0;
                             Velocity.X = 0;
@@ -324,7 +328,7 @@ class Player : AnimatedGameObject
                         float d = distance.X;
                         distance.X = 0;
                         Position.X += d * Game.SpriteScale;
-                        if (MapCollisions(grid, new Vector2(d * Game.SpriteScale, 0)))
+                        if (DoCollisions(grid, new Vector2(d * Game.SpriteScale, 0)))
                         {
                             distance.X = 0;
                             Velocity.X = 0;
@@ -334,7 +338,7 @@ class Player : AnimatedGameObject
                     {
                         distance.X++;
                         Position.X -= Game.SpriteScale;
-                        if (MapCollisions(grid, new Vector2(-1 * Game.SpriteScale, 0)))
+                        if (DoCollisions(grid, new Vector2(-1 * Game.SpriteScale, 0)))
                         {
                             distance.X = 0;
                             Velocity.X = 0;
@@ -351,7 +355,7 @@ class Player : AnimatedGameObject
                         float d = distance.Y;
                         distance.Y = 0;
                         Position.Y += d * Game.SpriteScale;
-                        if (MapCollisions(grid, new Vector2(0, d * Game.SpriteScale)))
+                        if (DoCollisions(grid, new Vector2(0, d * Game.SpriteScale)))
                         {
                             distance.Y = 0;
                             Velocity.Y = 0;
@@ -361,7 +365,7 @@ class Player : AnimatedGameObject
                     {
                         distance.Y--;
                         Position.Y += Game.SpriteScale;
-                        if (MapCollisions(grid, new Vector2(0, 1 * Game.SpriteScale)))
+                        if (DoCollisions(grid, new Vector2(0, 1 * Game.SpriteScale)))
                         {
                             distance.Y = 0;
                             Velocity.Y = 0;
@@ -375,7 +379,7 @@ class Player : AnimatedGameObject
                         float d = distance.Y;
                         distance.Y = 0;
                         Position.Y += d * Game.SpriteScale;
-                        if (MapCollisions(grid, new Vector2(0, d * Game.SpriteScale)))
+                        if (DoCollisions(grid, new Vector2(0, d * Game.SpriteScale)))
                         {
                             distance.Y = 0;
                             Velocity.Y = 0;
@@ -385,7 +389,7 @@ class Player : AnimatedGameObject
                     {
                         distance.Y++;
                         Position.Y -= Game.SpriteScale;
-                        if (MapCollisions(grid, new Vector2(0, -1 * Game.SpriteScale)))
+                        if (DoCollisions(grid, new Vector2(0, -1 * Game.SpriteScale)))
                         {
                             distance.Y = 0;
                             Velocity.Y = 0;
@@ -394,7 +398,9 @@ class Player : AnimatedGameObject
                 }
             }
         }
-        
+
+        onGround = TestGround(grid);
+
         if (walking && onGround && animationTimer == 0 && landingTimer == 0 && !crouching) //Plays the walking animation
         {
             switch (playerState)
@@ -410,6 +416,9 @@ class Player : AnimatedGameObject
                     break;
             }
         }
+
+        spriteSizeOffset.X = (playerSprites[0].Width - playerSprites[playerState].Width) / 2;
+        spriteSizeOffset.Y = playerSprites[0].Height - playerSprites[playerState].Height;
     }
 
     public bool TestGround(TileGrid grid)
@@ -419,7 +428,7 @@ class Player : AnimatedGameObject
         return grid.tiles[x, y].Solid || grid.tiles[x + 1, y].Solid;
     }
 
-    public bool MapCollisions(TileGrid grid, Vector2 playerMovement)
+    public bool DoCollisions(TileGrid grid, Vector2 playerMovement)
     {
         try
         {
@@ -428,10 +437,6 @@ class Player : AnimatedGameObject
                 Position -= playerMovement;
                 return true;
             }
-            if (TestGround(grid))
-                onGround = true;
-            else
-                onGround = false;
         }
         catch (IndexOutOfRangeException)
         {
@@ -453,7 +458,7 @@ class Player : AnimatedGameObject
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
     {
-        spriteBatch.Draw(playerSprites[playerState], Position - (parent as Level).CameraPosition, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, s, 0);
+        spriteBatch.Draw(playerSprites[playerState], Position - (parent as Level).CameraPosition + spriteSizeOffset * Game.SpriteScale, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, s, 0);
     }
 
 }
