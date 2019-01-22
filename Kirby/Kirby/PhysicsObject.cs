@@ -4,7 +4,7 @@ using System;
 abstract class PhysicsObject : GameObject
 {
 
-    public const float Gravity = 0.1f * Game.SpriteScale;
+    public const float Gravity = 0.05f * Game.SpriteScale;
 
     public Vector2 Position;
 

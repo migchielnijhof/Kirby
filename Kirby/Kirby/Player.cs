@@ -260,6 +260,10 @@ class Player : PhysicsObject
 
     public void Fly()
     {
+        if (!flying)
+        {
+
+        }
         flying = true;
         flyingUp = true;
         Velocity.Y = (-3 * Game.SpriteScale)/2;
@@ -289,9 +293,9 @@ class Player : PhysicsObject
                 playerState = 2;
                 landingTimer = landingLag;
             }
-            else if (!flyingUp && Velocity.Y <= 0)
+            else if (!flyingUp && Velocity.Y >= (Gravity * Game.SpriteScale) * 3)
             {
-                Velocity.Y = Gravity * Game.SpriteScale;
+                Velocity.Y = (Gravity * Game.SpriteScale) * 3;
             }
         }
 
