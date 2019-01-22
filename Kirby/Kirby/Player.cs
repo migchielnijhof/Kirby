@@ -209,22 +209,16 @@ class Player : AnimatedGameObject
         else walking = false;
 
         if (input.Jump) //Jumps when you press the jump key
-        {
             Jump();
-        }
         else
         {
             previousFrameJump = false;
             if (Velocity.Y < 0) //If the player isn't holding the jump key anymore, they will stop going up immediately.
-            {
                 Velocity.Y = 0;
-            }
         }
 
         if (highJumpTimer < highJumpFrames) //The timer increases until it reaches its max, which determines the max height of the jump
-        {
             highJumpTimer++;
-        }
 
         if (landingTimer >= 1 && onGround) //The following code is to make sure Kirby crouches when landing, and resets some code relating to the jumop height timer
         {
@@ -234,9 +228,7 @@ class Player : AnimatedGameObject
             jumping = false;
         }
         else if (((playerState < 4 || playerState > 7) || Velocity.X == 0) && landingTimer == 0 && onGround) //If the player isn't walking while on the ground, crouching, or landing, they will simply stand still.
-        {
                 playerState = 0;
-        }
     }
 
     public void Jump()
@@ -261,13 +253,9 @@ class Player : AnimatedGameObject
     public override void Update(GameTime gameTime)
     {
         if (animationTimer < animationSpeed) //Manages the animation speed. Currently only used for Kirby's walk cycle.
-        {
             animationTimer++;
-        }
         else
-        {
             animationTimer = 0;
-        }
 
         if (!onGround) //Sends the player down if they're not on the ground
         {
@@ -295,9 +283,7 @@ class Player : AnimatedGameObject
             TileCollision(grid, 0, 1);
             TileCollision(grid, 1, 1);
             if (TestGround(grid))
-            {
                 onGround = true;
-            }
             else
                 onGround = false;
         }

@@ -102,16 +102,8 @@ public class Game : Microsoft.Xna.Framework.Game
         Player.playerSprites[6] = Content.Load<Texture2D>(kirbySpritePath + "walk3");
         Player.playerSprites[7] = Player.playerSprites[5];
 
-        UI.numbers[0] = Content.Load<Texture2D>("UI/Numbers/0");
-        UI.numbers[1] = Content.Load<Texture2D>("UI/Numbers/1");
-        UI.numbers[2] = Content.Load<Texture2D>("UI/Numbers/2");
-        UI.numbers[3] = Content.Load<Texture2D>("UI/Numbers/3");
-        UI.numbers[4] = Content.Load<Texture2D>("UI/Numbers/4");
-        UI.numbers[5] = Content.Load<Texture2D>("UI/Numbers/5");
-        UI.numbers[6] = Content.Load<Texture2D>("UI/Numbers/6");
-        UI.numbers[7] = Content.Load<Texture2D>("UI/Numbers/7");
-        UI.numbers[8] = Content.Load<Texture2D>("UI/Numbers/8");
-        UI.numbers[9] = Content.Load<Texture2D>("UI/Numbers/9");
+        for (int i = 0; i < 9; i++)
+            UI.numbers[i] = Content.Load<Texture2D>($"UI/Numbers/{i}");
         UI.baseSprite = Content.Load<Texture2D>("UI/UI");
         UI.lifeEmpty = Content.Load<Texture2D>("UI/lifeEmpty");
         UI.lifeFull = Content.Load<Texture2D>("UI/lifeFull");

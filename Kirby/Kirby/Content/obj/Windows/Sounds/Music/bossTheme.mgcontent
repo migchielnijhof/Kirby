@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Music/bossTheme.mp3</SourceFile>
-  <SourceTime>2019-01-19T18:23:32+01:00</SourceTime>
-  <DestFile>H:/UU/Kirby/Kirby/Kirby/Content/bin/Windows/Sounds/Music/bossTheme.xnb</DestFile>
-  <DestTime>2019-01-19T18:43:46+01:00</DestTime>
+  <SourceFile>C:/Users/Zone Q11/Documents/GitHub/Kirby/Kirby/Kirby/Content/Sounds/Music/bossTheme.mp3</SourceFile>
+  <SourceTime>2019-01-15T10:53:07.6887532+01:00</SourceTime>
+  <DestFile>C:/Users/Zone Q11/Documents/GitHub/Kirby/Kirby/Kirby/Content/bin/Windows/Sounds/Music/bossTheme.xnb</DestFile>
+  <DestTime>2019-01-22T11:07:24.6530927+01:00</DestTime>
   <Importer>Mp3Importer</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>SongProcessor</Processor>
@@ -15,6 +15,6 @@
   <Dependencies />
   <BuildAsset />
   <BuildOutput>
-    <string>H:/UU/Kirby/Kirby/Kirby/Content/bin/Windows/Sounds/Music/bossTheme.wma</string>
+    <string>C:/Users/Zone Q11/Documents/GitHub/Kirby/Kirby/Kirby/Content/bin/Windows/Sounds/Music/bossTheme.wma</string>
   </BuildOutput>
 </PipelineBuildEvent>

@@ -37,20 +37,14 @@ class UI : GameObject
                 healthCounter--;
             }
             else
-            {
                 spriteBatch.Draw(lifeEmpty, new Vector2(((47 + x * (1 + lifeFull.Width) + UIoffset.X) * Game.SpriteScale), ((9 + UIoffset.Y) * Game.SpriteScale)), null, Color.White, 0, Vector2.Zero, Game.SpriteScale, 0, 0);
-            }
         }
 
         for (int x = 0; x < 2; x++) //Player lives
-        {
             spriteBatch.Draw(numbers[livesDigit[x]], new Vector2(((129 + x * (1 + numbers[0].Width) + UIoffset.X) * Game.SpriteScale), ((9 + UIoffset.Y) * Game.SpriteScale)), null, Color.White, 0, Vector2.Zero, Game.SpriteScale, 0, 0);
-        }
 
         for (int x = 0; x < player.score.ToString().Length; x++) //Player score
-        {
             spriteBatch.Draw(numbers[scoreDigit[x]], new Vector2(((89 - x * (1 + numbers[0].Width) + UIoffset.X) * Game.SpriteScale), ((1 + UIoffset.Y) * Game.SpriteScale)), null, Color.White, 0, Vector2.Zero, Game.SpriteScale, 0, 0);
-        }
     }
 
     public override void Update(GameTime gameTime)

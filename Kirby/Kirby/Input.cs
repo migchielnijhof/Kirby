@@ -6,9 +6,7 @@ class Input
 {
 
     public byte Movement;
-    public bool Start;
-    public bool Jump;
-    public bool Crouch;
+    public bool Start, Jump, Crouch;
 
     // Updates the input.
     public void Update()
