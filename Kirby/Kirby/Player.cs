@@ -34,7 +34,7 @@ class Player : AnimatedGameObject
     {
         get
         {
-            boundingBox.Location = new Point((int) Position.X, (int) Position.Y);
+            boundingBox.Location = new Point((int)Position.X, (int)Position.Y);
             return boundingBox;
         }
     }
@@ -43,12 +43,12 @@ class Player : AnimatedGameObject
     /// <summary>
     /// The X size of the player's bounding box.
     /// </summary>
-    const int BoundingBoxSizeX = (int) (16 * Game.SpriteScale);
+    const int BoundingBoxSizeX = (int)(16 * Game.SpriteScale);
 
     /// <summary>
     /// The Y size of the player's bounding box.
     /// </summary>
-    const int BoundingBoxSizeY = (int) (16 * Game.SpriteScale);
+    const int BoundingBoxSizeY = (int)(16 * Game.SpriteScale);
 
     /// <summary>
     /// Maximum health of the player.
@@ -56,14 +56,14 @@ class Player : AnimatedGameObject
     public const byte maxHealth = 6;
 
     /// <summary>
-    /// The movement speed of a player.
+    /// The movement speed of the player.
     /// </summary>
-    const float movementSpeed = 45 * Game.SpriteScale;
+    const float movementSpeed = 0.75f * Game.SpriteScale;
 
     /// <summary>
     /// The gravity of the player.
     /// </summary>
-    const float gravity = 6 * Game.SpriteScale;
+    const float gravity = 0.1f * Game.SpriteScale;
 
     /// <summary>
     /// The player's score.
@@ -147,6 +147,8 @@ class Player : AnimatedGameObject
 
     public bool previousFrameJump;
 
+    bool t;
+
     /// <summary>
     /// Create a new player.
     /// </summary>
@@ -209,16 +211,22 @@ class Player : AnimatedGameObject
         else walking = false;
 
         if (input.Jump) //Jumps when you press the jump key
+        {
             Jump();
+        }
         else
         {
             previousFrameJump = false;
             if (Velocity.Y < 0) //If the player isn't holding the jump key anymore, they will stop going up immediately.
+            {
                 Velocity.Y = 0;
+            }
         }
 
         if (highJumpTimer < highJumpFrames) //The timer increases until it reaches its max, which determines the max height of the jump
+        {
             highJumpTimer++;
+        }
 
         if (landingTimer >= 1 && onGround) //The following code is to make sure Kirby crouches when landing, and resets some code relating to the jumop height timer
         {
@@ -228,7 +236,9 @@ class Player : AnimatedGameObject
             jumping = false;
         }
         else if (((playerState < 4 || playerState > 7) || Velocity.X == 0) && landingTimer == 0 && onGround) //If the player isn't walking while on the ground, crouching, or landing, they will simply stand still.
-                playerState = 0;
+        {
+            playerState = 0;
+        }
     }
 
     public void Jump()
@@ -244,7 +254,7 @@ class Player : AnimatedGameObject
                     jumpMultiplier = 100;
                     jumping = true;
                 }
-                Velocity.Y = (-64 * Game.SpriteScale * (int)jumpMultiplier) / 100; //The rest of the jump is faster to not make it feel sluggish
+                Velocity.Y = (-64 * Game.SpriteScale * (int)jumpMultiplier) / 6000; //The rest of the jump is faster to not make it feel sluggish
             }
         }
         previousFrameJump = true;
@@ -253,20 +263,19 @@ class Player : AnimatedGameObject
     public override void Update(GameTime gameTime)
     {
         if (animationTimer < animationSpeed) //Manages the animation speed. Currently only used for Kirby's walk cycle.
-            animationTimer++;
-        else
-            animationTimer = 0;
-
-        if (!onGround) //Sends the player down if they're not on the ground
         {
-            Velocity.Y += gravity;
+            animationTimer++;
+        }
+        else
+        {
+            animationTimer = 0;
+        }
+
+        if (!onGround)
+        {
             playerState = 2;
             landingTimer = landingLag;
         }
-        else if (Velocity.Y > 0) //The player can't move on the Y axis when on the ground.
-            Velocity.Y = 0;
-
-        Position += Velocity * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
         if (Position.X < 0) //The player can't move past the left edge of the screen
             Position.X = 0;
@@ -276,21 +285,114 @@ class Player : AnimatedGameObject
 
         TileGrid grid = (parent as Level).Find(ObjectType.TileGrid) as TileGrid;
 
-        try //Collision with the tilegrid
-        {
-            TileCollision(grid, 0, 0);
-            TileCollision(grid, 1, 0);
-            TileCollision(grid, 0, 1);
-            TileCollision(grid, 1, 1);
-            if (TestGround(grid))
-                onGround = true;
-            else
-                onGround = false;
-        }
+        Velocity.Y += gravity;
 
-        catch
+        Vector2 distance = Velocity / Game.SpriteScale;
+
+        while (distance.X != 0 || distance.Y != 0)
         {
-            TakeDamage();
+            if (distance.X != 0 && Math.Abs(distance.X / distance.Y) >= Math.Abs(Velocity.X / Velocity.Y))
+            {
+                if (distance.X > 0)
+                {
+                    if (distance.X < 1)
+                    {
+                        float d = distance.X;
+                        distance.X = 0;
+                        Position.X += d * Game.SpriteScale;
+                        if (MapCollisions(grid, new Vector2(d * Game.SpriteScale, 0)))
+                        {
+                            distance.X = 0;
+                            Velocity.X = 0;
+                        }
+                    }
+                    else
+                    {
+                        distance.X--;
+                        Position.X += Game.SpriteScale;
+                        if (MapCollisions(grid, new Vector2(1 * Game.SpriteScale, 0)))
+                        {
+                            distance.X = 0;
+                            Velocity.X = 0;
+                        }
+                    }
+                }
+                else
+                {
+                    if (distance.X > -1)
+                    {
+                        float d = distance.X;
+                        distance.X = 0;
+                        Position.X += d * Game.SpriteScale;
+                        if (MapCollisions(grid, new Vector2(d * Game.SpriteScale, 0)))
+                        {
+                            distance.X = 0;
+                            Velocity.X = 0;
+                        }
+                    }
+                    else
+                    {
+                        distance.X++;
+                        Position.X -= Game.SpriteScale;
+                        if (MapCollisions(grid, new Vector2(-1 * Game.SpriteScale, 0)))
+                        {
+                            distance.X = 0;
+                            Velocity.X = 0;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                if (distance.Y > 0)
+                {
+                    if (distance.Y < 1)
+                    {
+                        float d = distance.Y;
+                        distance.Y = 0;
+                        Position.Y += d * Game.SpriteScale;
+                        if (MapCollisions(grid, new Vector2(0, d * Game.SpriteScale)))
+                        {
+                            distance.Y = 0;
+                            Velocity.Y = 0;
+                        }
+                    }
+                    else
+                    {
+                        distance.Y--;
+                        Position.Y += Game.SpriteScale;
+                        if (MapCollisions(grid, new Vector2(0, 1 * Game.SpriteScale)))
+                        {
+                            distance.Y = 0;
+                            Velocity.Y = 0;
+                        }
+                    }
+                }
+                else
+                {
+                    if (distance.Y > -1)
+                    {
+                        float d = distance.Y;
+                        distance.Y = 0;
+                        Position.Y += d * Game.SpriteScale;
+                        if (MapCollisions(grid, new Vector2(0, d * Game.SpriteScale)))
+                        {
+                            distance.Y = 0;
+                            Velocity.Y = 0;
+                        }
+                    }
+                    else
+                    {
+                        distance.Y++;
+                        Position.Y -= Game.SpriteScale;
+                        if (MapCollisions(grid, new Vector2(0, -1 * Game.SpriteScale)))
+                        {
+                            distance.Y = 0;
+                            Velocity.Y = 0;
+                        }
+                    }
+                }
+            }
         }
         
         if (walking && onGround && animationTimer == 0 && landingTimer == 0 && !crouching) //Plays the walking animation
@@ -317,33 +419,36 @@ class Player : AnimatedGameObject
         return grid.tiles[x, y].Solid || grid.tiles[x + 1, y].Solid;
     }
 
-    public void TileCollision(TileGrid grid, byte offsetX, byte offsetY)
+    public bool MapCollisions(TileGrid grid, Vector2 playerMovement)
+    {
+        try
+        {
+            if (TileCollision(grid, 0, 0, playerMovement) | TileCollision(grid, 1, 0, playerMovement) | TileCollision(grid, 0, 1, playerMovement) | TileCollision(grid, 1, 1, playerMovement))
+            {
+                Position -= playerMovement;
+                return true;
+            }
+            if (TestGround(grid))
+                onGround = true;
+            else
+                onGround = false;
+        }
+        catch (IndexOutOfRangeException)
+        {
+            Position -= playerMovement;
+            return true;
+        }
+        return false;
+    }
+
+    protected bool TileCollision(TileGrid grid, byte offsetX, byte offsetY, Vector2 playerMovement)
     {
         byte x = (byte) (grid.GetIndexX(Position.X) + offsetX);
         byte y = (byte) (grid.GetIndexY(Position.Y) + offsetY);
         Rectangle tile = grid.GetBoundingBox(x, y);
         if (grid.tiles[x, y].Solid && (BoundingBox.Intersects(tile) || BoundingBox.Contains(tile) || tile.Contains(BoundingBox)))
-        {
-            Console.WriteLine("i");
-            int a = BoundingBox.Center.X - tile.Center.X;
-            int b = BoundingBox.Center.Y - tile.Center.Y;
-            if (Math.Abs(a) > Math.Abs(b))
-            {
-                if (a > 0)
-                    Position.X = tile.X + tile.Size.X;
-                else
-                    Position.X = tile.X - BoundingBox.Size.X;
-                Velocity.X = 0;
-            }
-            else
-            {
-                if (b > 0)
-                    Position.Y = tile.Y + tile.Size.Y;
-                else
-                    Position.Y = tile.Y - BoundingBox.Size.Y;
-                Velocity.Y = 0;
-            }
-        }
+            return true;
+        return false;
     }
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)

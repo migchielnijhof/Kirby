@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Zone Q11/Documents/GitHub/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/nose.png</SourceFile>
-  <SourceTime>2019-01-15T10:53:07.715957+01:00</SourceTime>
-  <DestFile>C:/Users/Zone Q11/Documents/GitHub/Kirby/Kirby/Kirby/Content/bin/Windows/Sprites/Bosses/whispyWoods/nose.xnb</DestFile>
-  <DestTime>2019-01-22T11:07:26.593871+01:00</DestTime>
+  <SourceFile>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/nose.png</SourceFile>
+  <SourceTime>2019-01-22T16:16:18+01:00</SourceTime>
+  <DestFile>H:/UU/Kirby/Kirby/Kirby/Content/bin/Windows/Sprites/Bosses/whispyWoods/nose.xnb</DestFile>
+  <DestTime>2019-01-22T16:17:06+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
