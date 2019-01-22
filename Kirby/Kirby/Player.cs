@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
+using System.Collections.Generic;
 
 /// <summary>
 /// Class of the playable character.
@@ -76,11 +77,11 @@ class Player : PhysicsObject
     /// If the player is flying up.
     /// </summary>
     protected bool flyingUp;
-
+    
     /// <summary>
     /// The enemy the player has sucked up.
     /// </summary>
-    protected GameObject absorbedEnemy;
+    public GameObject absorbedEnemy;
 
     /// <summary>
     /// The amount of time the player has left where holding the jump button will result in a higher jump.
@@ -103,15 +104,33 @@ class Player : PhysicsObject
     const int animationSpeed = 8;
 
     /// <summary>
-    /// The timer used in animation.
+    /// The timer used in the walking animation.
     /// </summary>
-    protected int animationTimer;
+    protected int walkAnimationTimer;
+
+    /// <summary>
+    /// The timer used in the flying animation.
+    /// </summary>
+    protected byte flyAnimationTimer;
+
+    /// <summary>
+    /// The timer used in the flying animation.
+    /// </summary>
+    protected byte framesToNextFlyStage;
+
+    /// <summary>
+    /// Keeps track of the current stage of Kirby's flight.
+    /// </summary>
+    protected byte flyStage;
 
     /// <summary>
     /// The amount of time the player will remain invulnerable.
     /// </summary>
     protected double invulnerabilityTime;
 
+    /// <summary>
+    /// Offset used when Kirby grows in size so that he remains in the same position.
+    /// </summary>
     protected Vector2 spriteSizeOffset;
 
     /// <summary>
@@ -122,9 +141,14 @@ class Player : PhysicsObject
     /// <summary>
     /// The spriteeffects, used for mirroring.
     /// </summary>
-    SpriteEffects s = SpriteEffects.None;
+    SpriteEffects s;
 
     public bool previousFrameJump;
+
+    public const float SuckAcceleration = 0.3f * Game.SpriteScale;
+
+    public const int SuckX = (int)(32 * Game.SpriteScale);
+    public const int SuckY = (int)(32 * Game.SpriteScale);
 
     /// <summary>
     /// Create a new player.
@@ -140,7 +164,9 @@ class Player : PhysicsObject
         onGround = true; //The player starts on the ground
         boundingBox.Size = new Point(BoundingBoxSizeX, BoundingBoxSizeY); //Sets the bounding box size
         playerState = 0;
+        s = SpriteEffects.None;
         flying = false;
+        flyStage = 0;
         highJumpTimer = highJumpFrames;
     }
 
@@ -185,9 +211,26 @@ class Player : PhysicsObject
         if (input.Succ)
         {
             if (flying)
-            {
                 flying = false;
-            }
+            Rectangle succBox;
+            bool mirrored = (s == SpriteEffects.FlipHorizontally);
+            if (!mirrored)
+                succBox = new Rectangle(new Point(BoundingBox.Right, BoundingBox.Top), new Point(SuckX, SuckY));
+            else
+                succBox = new Rectangle(new Point(BoundingBox.Left - SuckX, BoundingBox.Top), new Point(SuckX, SuckY));
+
+            List<GameObject> enemies = (parent as Level).FindAll(ObjectType.Enemy) as List<GameObject>;
+            foreach (Enemy e in enemies)
+                if (e.BoundingBox.Intersects(succBox) || succBox.Contains(e.BoundingBox))
+                {
+                    e.beingSucked = true;
+                    if (!mirrored)
+                    {
+                        e.Velocity.X -= SuckAcceleration;
+                        continue;
+                    }
+                    e.Velocity.X += SuckAcceleration;
+                }
         }
 
         if (input.Movement == 1) //Walking right
@@ -261,9 +304,7 @@ class Player : PhysicsObject
     public void Fly()
     {
         if (!flying)
-        {
-
-        }
+            flyStage = 1;
         flying = true;
         flyingUp = true;
         Velocity.Y = (-3 * Game.SpriteScale)/2;
@@ -276,13 +317,13 @@ class Player : PhysicsObject
 
         DoPhysics();
 
-        if (animationTimer < animationSpeed) //Manages the animation speed. Currently only used for Kirby's walk cycle.
+        if (walkAnimationTimer < animationSpeed) //Manages the animation speed. Currently only used for Kirby's walk cycle.
         {
-            animationTimer++;
+            walkAnimationTimer++;
         }
         else
         {
-            animationTimer = 0;
+            walkAnimationTimer = 0;
         }
 
         if (!onGround)
@@ -299,7 +340,7 @@ class Player : PhysicsObject
             }
         }
 
-        if (walking && onGround && animationTimer == 0 && landingTimer == 0 && !crouching) //Plays the walking animation
+        if (walking && onGround && walkAnimationTimer == 0 && landingTimer == 0 && !crouching) //Plays the walking animation
         {
             switch (playerState)
             {
@@ -317,7 +358,43 @@ class Player : PhysicsObject
 
         if (flying)
         {
-            playerState = 12;
+            switch (flyStage)
+            {
+                case 1:
+                    playerState = 8;
+                    framesToNextFlyStage = 10;
+                    break;
+                case 2:
+                    playerState = 9;
+                    break;
+                case 3:
+                    playerState = 10;
+                    break;
+                case 4:
+                    playerState = 11;
+                    framesToNextFlyStage = 1;
+                    break;
+                case 5:
+                    playerState = 12;
+                    framesToNextFlyStage = 15;
+                    break;
+                case 6:
+                    playerState = 13;
+                    break;
+            }
+
+            if (flyAnimationTimer >= framesToNextFlyStage)
+            {
+                flyAnimationTimer = 0;
+                if (flyStage == 6)
+                {
+                    flyStage--;
+                }
+                else
+                    flyStage++;
+            }
+
+            flyAnimationTimer++;
         }
 
         spriteSizeOffset.X = (playerSprites[0].Width - playerSprites[playerState].Width) / 2;
