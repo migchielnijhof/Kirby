@@ -1,5 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Audio;
 
 /// <summary>
 /// This is the main type for your game.
@@ -101,18 +103,53 @@ public class Game : Microsoft.Xna.Framework.Game
         Player.playerSprites[5] = Content.Load<Texture2D>(kirbySpritePath + "walk2");
         Player.playerSprites[6] = Content.Load<Texture2D>(kirbySpritePath + "walk3");
         Player.playerSprites[7] = Player.playerSprites[5];
-        Player.playerSprites[8] = Content.Load<Texture2D>(kirbySpritePath + "succStartup"); //1
-        Player.playerSprites[9] = Content.Load<Texture2D>(kirbySpritePath + "succ"); //2
-        Player.playerSprites[10] = Content.Load<Texture2D>(kirbySpritePath + "flyOpen1"); //3
-        Player.playerSprites[11] = Content.Load<Texture2D>(kirbySpritePath + "flyOpen2"); //4
-        Player.playerSprites[12] = Content.Load<Texture2D>(kirbySpritePath + "fly1"); //5
-        Player.playerSprites[13] = Content.Load<Texture2D>(kirbySpritePath + "fly2"); //6
+        Player.playerSprites[8] = Content.Load<Texture2D>(kirbySpritePath + "succStartup");
+        Player.playerSprites[9] = Content.Load<Texture2D>(kirbySpritePath + "succ");
+        Player.playerSprites[10] = Content.Load<Texture2D>(kirbySpritePath + "flyOpen1");
+        Player.playerSprites[11] = Content.Load<Texture2D>(kirbySpritePath + "flyOpen2");
+        Player.playerSprites[12] = Content.Load<Texture2D>(kirbySpritePath + "fly1");
+        Player.playerSprites[13] = Content.Load<Texture2D>(kirbySpritePath + "fly2");
+        Player.playerSprites[14] = Content.Load<Texture2D>(kirbySpritePath + "succIn1");
+        Player.playerSprites[15] = Content.Load<Texture2D>(kirbySpritePath + "succIn2");
+        Player.playerSprites[16] = Content.Load<Texture2D>(kirbySpritePath + "succJump");
+        Player.playerSprites[17] = Content.Load<Texture2D>(kirbySpritePath + "succWalk1");
+        Player.playerSprites[18] = Content.Load<Texture2D>(kirbySpritePath + "succWalk2");
+        Player.playerSprites[19] = Content.Load<Texture2D>(kirbySpritePath + "spit1");
+
+        Enemy.waddleDeeSprite1 = Content.Load<Texture2D>("Sprites/Enemies/waddleDee1");
+        Enemy.waddleDeeSprite2 = Content.Load<Texture2D>("Sprites/Enemies/waddleDee2");
 
         for (int i = 0; i < 9; i++)
             UI.numbers[i] = Content.Load<Texture2D>($"UI/Numbers/{i}");
         UI.baseSprite = Content.Load<Texture2D>("UI/UI");
         UI.lifeEmpty = Content.Load<Texture2D>("UI/lifeEmpty");
         UI.lifeFull = Content.Load<Texture2D>("UI/lifeFull");
+
+        Star.sprites[0] = Content.Load<Texture2D>("Sprites/Effects/star1");
+        Star.sprites[1] = Content.Load<Texture2D>("Sprites/Effects/star2");
+        Star.sprites[2] = Content.Load<Texture2D>("Sprites/Effects/star3");
+        Star.sprites[3] = Content.Load<Texture2D>("Sprites/Effects/star4");
+
+        Player.soundEffect[0] = Content.Load<SoundEffect>("Sounds/Effects/bossDefeated");
+        Player.soundEffect[1] = Content.Load<SoundEffect>("Sounds/Effects/enemyHit");
+        Player.soundEffect[2] = Content.Load<SoundEffect>("Sounds/Effects/enterRoom");
+        Player.soundEffect[3] = Content.Load<SoundEffect>("Sounds/Effects/explosion");
+        Player.soundEffect[4] = Content.Load<SoundEffect>("Sounds/Effects/grabFinishStar");
+        Player.soundEffect[5] = Content.Load<SoundEffect>("Sounds/Effects/healthUpPerBar");
+        Player.soundEffect[6] = Content.Load<SoundEffect>("Sounds/Effects/healWhenFull");
+        Player.soundEffect[7] = Content.Load<SoundEffect>("Sounds/Effects/jump");
+        Player.soundEffect[8] = Content.Load<SoundEffect>("Sounds/Effects/land");
+        Player.soundEffect[9] = Content.Load<SoundEffect>("Sounds/Effects/landFromHigh");
+        Player.soundEffect[10] = Content.Load<SoundEffect>("Sounds/Effects/miniBossDefeated");
+        Player.soundEffect[11] = Content.Load<SoundEffect>("Sounds/Effects/playerHit");
+        Player.soundEffect[12] = Content.Load<SoundEffect>("Sounds/Effects/puffOut");
+        Player.soundEffect[13] = Content.Load<SoundEffect>("Sounds/Effects/spit");
+        Player.soundEffect[14] = Content.Load<SoundEffect>("Sounds/Effects/succ");
+        Player.soundEffect[15] = Content.Load<SoundEffect>("Sounds/Effects/succIn");
+        Player.soundEffect[16] = Content.Load<SoundEffect>("Sounds/Effects/swallow");
+        Player.soundEffect[17] = Content.Load<SoundEffect>("Sounds/Effects/warpStar");
+
+        level.greenGreens = Content.Load<Song>("Sounds/Music/greenGreens");
     }
 
     /// <summary>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 
 class Enemy : PhysicsObject
 {
@@ -13,25 +14,55 @@ class Enemy : PhysicsObject
 
     public bool alive;
 
+    public static Texture2D waddleDeeSprite1;
+
+    public static Texture2D waddleDeeSprite2;
+
+    protected Texture2D currentSprite;
+
+    protected byte animationTimer;
+
     public Enemy(GameObject parent) : base(parent, ObjectType.Enemy)
     {
         boundingBox.Size = new Point(BoundingBoxSizeX, BoundingBoxSizeY);
+        Gravity = 0.1f * Game.SpriteScale;
         beingSucked = false;
         alive = true;
+        currentSprite = waddleDeeSprite1;
     }
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
     {
         if (!alive)
             return;
-        spriteBatch.Draw(Player.playerSprites[0], Position - (parent as Level).CameraPosition, null, Color.DarkRed, 0, Vector2.Zero, Game.SpriteScale, SpriteEffects.None, 0);
+        spriteBatch.Draw(currentSprite, Position - (parent as Level).CameraPosition, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, SpriteEffects.FlipHorizontally, 0);
     }
     public override void Update(GameTime gameTime)
     {
+        if (animationTimer < 16)
+            animationTimer++;
+        else
+        {
+            animationTimer = 0;
+        }
+
         if (!alive)
             return;
         if (!beingSucked)
+        {
             Velocity.X = -movementSpeed;
+            if (animationTimer == 0)
+            {
+                if (currentSprite == waddleDeeSprite2)
+                    currentSprite = waddleDeeSprite1;
+                else
+                    currentSprite = waddleDeeSprite2;
+            }
+        }
+        else
+        {
+            currentSprite = waddleDeeSprite2;
+        }
         DoPhysics();
         beingSucked = false;
     }

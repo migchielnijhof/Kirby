@@ -964,3 +964,11 @@ C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.
 C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CopyComplete
 C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.exe
 C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.pdb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succWalk1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succWalk2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star4.xnb

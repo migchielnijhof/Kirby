@@ -4,7 +4,7 @@ using System;
 abstract class PhysicsObject : GameObject
 {
 
-    public const float Gravity = 0.05f * Game.SpriteScale;
+    protected float Gravity = 0.05f * Game.SpriteScale;
 
     public Vector2 Position;
 
@@ -143,8 +143,6 @@ abstract class PhysicsObject : GameObject
                 }
             }
         }
-        if (Position.X < 0)
-            Position.X = 0;
         onGround = TestGround(grid);
     }
 
@@ -162,6 +160,11 @@ abstract class PhysicsObject : GameObject
 
     protected virtual bool MapCollisions(TileGrid grid, Vector2 objectMovement)
     {
+        if (Position.X < 0)
+        {
+            Position -= objectMovement;
+            return true;
+        }
         try
         {
             if (grid.tiles[grid.GetIndexX(BoundingBox.Left), grid.GetIndexY(BoundingBox.Top)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Right), grid.GetIndexY(BoundingBox.Top)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Left), grid.GetIndexY(BoundingBox.Bottom)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Right), grid.GetIndexY(BoundingBox.Bottom)].Solid)

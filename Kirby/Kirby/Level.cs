@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using System.IO;
+using Microsoft.Xna.Framework.Media;
 
 /// <summary>
 /// A class for representing game levels.
@@ -19,6 +20,8 @@ class Level : GameObjectList
     public Vector2 CameraPosition;
 
     private Player player;
+
+    public Song greenGreens;
 
     /// <summary>
     /// The camera will move when the position of the player on the screen becomes higher than cameraFollowing * screen size or lower than (1 - cameraFollowing) * screen size.
@@ -107,6 +110,7 @@ class Level : GameObjectList
         Enemy enemy = new Enemy(this);
         enemy.Position = new Vector2(900, 0);
         Add(enemy);
+        MediaPlayer.Play(greenGreens);
     }
 
 }

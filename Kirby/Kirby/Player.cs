@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 using System;
 using System.Collections.Generic;
 
@@ -43,6 +44,8 @@ class Player : PhysicsObject
     /// </summary>
     public int score;
 
+    public static SoundEffect[] soundEffect = new SoundEffect[18];
+
     /// <summary>
     /// If the player is walking.
     /// </summary>
@@ -77,7 +80,12 @@ class Player : PhysicsObject
     /// If the player is flying up.
     /// </summary>
     protected bool flyingUp;
-    
+
+    /// <summary>
+    /// If the player has an enemy absorbed.
+    /// </summary>
+    protected bool fat;
+
     /// <summary>
     /// The enemy the player has sucked up.
     /// </summary>
@@ -107,6 +115,16 @@ class Player : PhysicsObject
     /// The timer used in the walking animation.
     /// </summary>
     protected int walkAnimationTimer;
+
+    /// <summary>
+    /// The timer used in the sucking animation.
+    /// </summary>
+    protected byte succAnimationTimer;
+
+    /// <summary>
+    /// The timer used in the spitting animation.
+    /// </summary>
+    protected byte spitAnimationTimer;
 
     /// <summary>
     /// The timer used in the flying animation.
@@ -145,10 +163,14 @@ class Player : PhysicsObject
 
     public bool previousFrameJump;
 
-    public const float SuckAcceleration = 0.3f * Game.SpriteScale;
+    protected const float SuckAcceleration = 0.3f * Game.SpriteScale;
 
-    public const int SuckX = (int)(32 * Game.SpriteScale);
-    public const int SuckY = (int)(32 * Game.SpriteScale);
+    protected const int SuckX = (int)(32 * Game.SpriteScale);
+    protected const int SuckY = (int)(32 * Game.SpriteScale);
+
+    protected bool previousSuck;
+
+    protected bool secondEnemySpawned;
 
     /// <summary>
     /// Create a new player.
@@ -168,6 +190,7 @@ class Player : PhysicsObject
         flying = false;
         flyStage = 0;
         highJumpTimer = highJumpFrames;
+        secondEnemySpawned = false;
     }
 
     public void TakeDamage()
@@ -175,6 +198,7 @@ class Player : PhysicsObject
         if (invulnerabilityTime > 0 | Health == 0) //The player shouldn't receive damage if they're invulnerable or don't have any health
             return;
         Health--; //Gets hit
+        soundEffect[11].Play();
         if (Health == 0) //If you don't have any health
         {
             Die(); //You die
@@ -197,10 +221,17 @@ class Player : PhysicsObject
 
         if (input.Fly)
         {
-            Fly();
+            if (fat)
+            {
+                Jump();
+            }
+            else
+            {
+                Fly();
+            }
         }
 
-        if (input.Crouch && onGround && !flying) //Crouching
+        if (input.Crouch && onGround && !flying && !fat) //Crouching
         {
             playerState = 1;
             crouching = true;
@@ -208,29 +239,124 @@ class Player : PhysicsObject
         }
         else crouching = false;
 
-        if (input.Succ)
+        if (spitAnimationTimer == 0)
         {
-            if (flying)
-                flying = false;
-            Rectangle succBox;
-            bool mirrored = (s == SpriteEffects.FlipHorizontally);
-            if (!mirrored)
-                succBox = new Rectangle(new Point(BoundingBox.Right, BoundingBox.Top), new Point(SuckX, SuckY));
-            else
-                succBox = new Rectangle(new Point(BoundingBox.Left - SuckX, BoundingBox.Top), new Point(SuckX, SuckY));
-
-            List<GameObject> enemies = (parent as Level).FindAll(ObjectType.Enemy) as List<GameObject>;
-            foreach (Enemy e in enemies)
-                if (e.BoundingBox.Intersects(succBox) || succBox.Contains(e.BoundingBox))
+            if (input.Succ)
+            {
+                bool mirrored = (s == SpriteEffects.FlipHorizontally);
+                if (!previousSuck && absorbedEnemy != null)
                 {
-                    e.beingSucked = true;
+                    soundEffect[13].Play();
+                    Star s = new Star(parent);
                     if (!mirrored)
                     {
-                        e.Velocity.X -= SuckAcceleration;
-                        continue;
+                        s.Position = new Vector2(BoundingBox.Right, BoundingBox.Center.Y - Star.BoundingBoxY / 2);
+                        s.Velocity.X = Star.Speed;
                     }
-                    e.Velocity.X += SuckAcceleration;
+                    else
+                    {
+                        s.Position = new Vector2(boundingBox.Left - Star.BoundingBoxX, BoundingBox.Center.Y - Star.BoundingBoxY / 2);
+                        s.Velocity.X = -Star.Speed;
+                    }
+                    (parent as Level).Add(s);
+                    absorbedEnemy = null;
+                    spitAnimationTimer = 1;
+                    return;
                 }
+                if (flying && flyStage < 7)
+                {
+                    flyStage = 7;
+                    soundEffect[12].Play();
+                    return;
+                }
+                Rectangle succBox;
+                if (!mirrored)
+                    succBox = new Rectangle(new Point(BoundingBox.Right, BoundingBox.Top), new Point(SuckX, SuckY));
+                else
+                    succBox = new Rectangle(new Point(BoundingBox.Left - SuckX, BoundingBox.Top), new Point(SuckX, SuckY));
+
+                List<GameObject> enemies = (parent as Level).FindAll(ObjectType.Enemy) as List<GameObject>;
+                foreach (Enemy e in enemies)
+                    if (e.BoundingBox.Intersects(succBox) || succBox.Contains(e.BoundingBox))
+                    {
+                        e.beingSucked = true;
+                        if (!mirrored)
+                        {
+                            e.Velocity.X -= SuckAcceleration;
+                            continue;
+                        }
+                        e.Velocity.X += SuckAcceleration;
+                    }
+                previousSuck = true;
+
+                //if (succAnimationTimer == 1)
+                {
+                //    soundEffect[14].Play();
+                }
+
+                if (succAnimationTimer < 4)
+                {
+                    playerState = 8;
+                    succAnimationTimer++;
+                }
+                else
+                {
+                    playerState = 9;
+                }
+            }
+            else
+            {
+                previousSuck = false;
+                succAnimationTimer = 1;
+            }
+        }
+        else
+        {
+            switch (spitAnimationTimer)
+            {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                    playerState = 19;
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                case 9:
+                case 10:
+                    playerState = 9;
+                    break;
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                case 16:
+                case 17:
+                    playerState = 8;
+                    break;
+                case 18:
+                    spitAnimationTimer = 0;
+                    break;
+            }
+            if (spitAnimationTimer != 0)
+                spitAnimationTimer++;
+            return;
+        }
+        
+        if (absorbedEnemy != null)
+        {
+            if (fat == false)
+            {
+                soundEffect[15].Play();
+            }
+            fat = true;
+        }
+        else
+        {
+            fat = false;
         }
 
         if (input.Movement == 1) //Walking right
@@ -249,10 +375,10 @@ class Player : PhysicsObject
 
         if (input.Jump) //Jumps when you press the jump key
         {
-            if (!flying)
-                Jump();
-            else
+            if (flying)
                 Fly();
+            else
+                Jump();
         }
         else if (!input.Fly)
         {
@@ -268,17 +394,28 @@ class Player : PhysicsObject
         {
             highJumpTimer++;
         }
-
+        
+        
         if (landingTimer >= 1 && onGround) //The following code is to make sure Kirby crouches when landing, and resets some code relating to the jumop height timer
         {
             highJumpTimer = 1;
             landingTimer--;
-            playerState = 1;
+            if (!fat)
+            {
+                playerState = 1;
+            }
             jumping = false;
+            if (landingTimer == landingLag - 1)
+            {
+                soundEffect[8].Play();
+            }
         }
-        else if (((playerState < 4 || playerState > 7) || Velocity.X == 0) && landingTimer == 0 && onGround) //If the player isn't walking while on the ground, crouching, or landing, they will simply stand still.
+        else if ((((playerState < 4 || playerState > 7) && playerState != 17 && playerState != 18) || Velocity.X == 0) && landingTimer == 0 && onGround && !input.Succ) //If the player isn't walking while on the ground, crouching, or landing, they will simply stand still.
         {
-            playerState = 0;
+            if (!fat)
+                playerState = 0;
+            else
+                playerState = 15;
         }
     }
 
@@ -294,8 +431,9 @@ class Player : PhysicsObject
                     highJumpTimer = 1;
                     jumpMultiplier = 100;
                     jumping = true;
+                    soundEffect[7].Play();
                 }
-                Velocity.Y = (-64 * Game.SpriteScale * (int)jumpMultiplier) / 6000; //The rest of the jump is faster to not make it feel sluggish
+                Velocity.Y = (-64 * Game.SpriteScale * (int)jumpMultiplier) / 6000;
             }
         }
         previousFrameJump = true;
@@ -312,6 +450,14 @@ class Player : PhysicsObject
 
     public override void Update(GameTime gameTime)
     {
+        if (crouching && !secondEnemySpawned)
+        {
+            //Enemy enemy2 = new Enemy(parent as Level);
+            //parent.Add(enemy2);
+            //secondEnemySpawned = true;
+            Console.WriteLine("Ngyes!");
+        }
+
         if (invulnerabilityTime > 0)
                 invulnerabilityTime -= gameTime.ElapsedGameTime.TotalSeconds;
 
@@ -331,7 +477,12 @@ class Player : PhysicsObject
             if (!flying)
             {
                 Velocity.Y += Gravity;
-                playerState = 2;
+                if (fat)
+                {
+                    playerState = 16;
+                }
+                else
+                    playerState = 2;
                 landingTimer = landingLag;
             }
             else if (!flyingUp && Velocity.Y >= (Gravity * Game.SpriteScale) * 3)
@@ -342,17 +493,27 @@ class Player : PhysicsObject
 
         if (walking && onGround && walkAnimationTimer == 0 && landingTimer == 0 && !crouching) //Plays the walking animation
         {
-            switch (playerState)
+            if (fat)
             {
-                case 4:
-                case 5:
-                case 6:
-                    playerState++;
-                    break;
+                if (playerState == 17)
+                    playerState = 18;
+                else
+                    playerState = 17;
+            }
+            else
+            {
+                switch (playerState)
+                {
+                    case 4:
+                    case 5:
+                    case 6:
+                        playerState++;
+                        break;
 
-                default:
-                    playerState = 4;
-                    break;
+                    default:
+                        playerState = 4;
+                        break;
+                }
             }
         }
 
@@ -381,6 +542,16 @@ class Player : PhysicsObject
                 case 6:
                     playerState = 13;
                     break;
+                case 7:
+                    playerState = 10;
+                    framesToNextFlyStage = 10;
+                    break;
+                case 8:
+                    playerState = 11;
+                    break;
+                case 9:
+                    playerState = 8;
+                    break;
             }
 
             if (flyAnimationTimer >= framesToNextFlyStage)
@@ -395,6 +566,11 @@ class Player : PhysicsObject
             }
 
             flyAnimationTimer++;
+        }
+
+        if (flyStage == 10)
+        {
+            flying = false;
         }
 
         spriteSizeOffset.X = (playerSprites[0].Width - playerSprites[playerState].Width) / 2;
