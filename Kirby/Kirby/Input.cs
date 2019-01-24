@@ -19,17 +19,17 @@ class Input
         Succ = false;
         if (Keyboard.GetState().IsKeyDown(Keys.Space))
             Start = true;
-        if (Keyboard.GetState().IsKeyDown(Keys.A))
+        if (Keyboard.GetState().IsKeyDown(Keys.Left))
             Movement = 2;
-        if (Keyboard.GetState().IsKeyDown(Keys.D))
+        if (Keyboard.GetState().IsKeyDown(Keys.Right))
             Movement = 1;
-        if (Keyboard.GetState().IsKeyDown(Keys.W))
+        if (Keyboard.GetState().IsKeyDown(Keys.Up))
             Fly = true;
         if (Keyboard.GetState().IsKeyDown(Keys.Z))
             Jump = true;
         if (Keyboard.GetState().IsKeyDown(Keys.X))
             Succ = true;
-        if (Keyboard.GetState().IsKeyDown(Keys.S))
+        if (Keyboard.GetState().IsKeyDown(Keys.Down))
             Crouch = true;
     }
 

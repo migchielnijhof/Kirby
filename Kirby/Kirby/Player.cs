@@ -351,6 +351,7 @@ class Player : PhysicsObject
             if (fat == false)
             {
                 soundEffect[15].Play();
+                score += 200;
             }
             fat = true;
         }
@@ -450,14 +451,6 @@ class Player : PhysicsObject
 
     public override void Update(GameTime gameTime)
     {
-        if (crouching && !secondEnemySpawned)
-        {
-            //Enemy enemy2 = new Enemy(parent as Level);
-            //parent.Add(enemy2);
-            //secondEnemySpawned = true;
-            Console.WriteLine("Ngyes!");
-        }
-
         if (invulnerabilityTime > 0)
                 invulnerabilityTime -= gameTime.ElapsedGameTime.TotalSeconds;
 
