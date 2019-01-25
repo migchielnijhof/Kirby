@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Media;
 
 /// <summary>
 /// This is the main type for your game.
@@ -40,13 +40,13 @@ public class Game : Microsoft.Xna.Framework.Game
     /// <summary>
     /// All possible game states.
     /// </summary>
-    public enum GameStates { TitleScreen, Playing, GameOver };
+    public enum GameStates : byte { TitleScreen, Playing, GameOver };
     
     private Input input;
 
     private Level level;
 
-    private const string tileDirectory = "tiles/";
+    private const string tileDirectory = "Tiles/";
 
     public Game()
     {
@@ -83,15 +83,8 @@ public class Game : Microsoft.Xna.Framework.Game
 
         titleScreen = Content.Load<Texture2D>("titleScreen");
 
-        for (byte x = 0; x < Tile.Names.Length; x++)
-        {
-            if (char.IsUpper(Tile.Names[x]))
-            {
-                Tile.sprites[x] = Content.Load<Texture2D>(tileDirectory + char.ToString(Tile.Names[x]) + "-");
-                continue;
-            }
-            Tile.sprites[x] = Content.Load<Texture2D>(tileDirectory + char.ToString(Tile.Names[x]));
-        }
+        for (byte x = 0; x <= Tile.MaxID; x++)
+            Tile.sprites[x] = Content.Load<Texture2D>(tileDirectory + x);
 
         string kirbySpritePath = "Sprites/Kirby/";
 

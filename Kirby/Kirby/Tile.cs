@@ -27,19 +27,19 @@ class Tile
     public const int SpriteHeight = (int) (16 * Game.SpriteScale);
 
     /// <summary>
-    /// The names of tiles for level loading.
+    /// The highest tile ID;
     /// </summary>
-    public static char[] Names = new char[] { '-', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '!', '@', '$', '%', '€', '^', '&', '(', ')', '_', '+', '=', '[', ']', '{', '}', 'ø', '¯', ',', 'þ', 'ü', 'í', 'ó', 'ö', '«', '»', 'ƒ', '©', '´', '×', '¿', 'ç', '¤', '¡', '¥', '®', 'á' };
+    public const byte MaxID = 112;
 
     /// <summary>
     /// The tiles that are solid;
     /// </summary>
-    protected static char[] SolidTiles = new char[] { 'r', 's', 'u', 'p', 'q', 'y', 'z', 'B', 'A' };
+    protected static byte[] SolidTiles = new byte[] { 25, 26, 27, 28, 30, 34, 35, 36, 37, 41, 101, 103, 104, 105, 106, 107, 108};
 
     /// <summary>
     /// The sprites of all tiles.
     /// </summary>
-    public static Texture2D[] sprites = new Texture2D[Names.Length];
+    public static Texture2D[] sprites = new Texture2D[MaxID + 1];
 
     /// <summary>
     /// Creates a new tile.
@@ -49,7 +49,7 @@ class Tile
         ID = tileID; //Sets the ID for the tile
         Solid = false; //Not solid, unless proven otherwise
         for (int i = 0; i < SolidTiles.Length; i++)
-            if (Names[ID] == SolidTiles[i]) //Makes the tile solid if it should be solid
+            if (ID == SolidTiles[i]) //Makes the tile solid if it should be solid
             {
                 Solid = true;
                 break;

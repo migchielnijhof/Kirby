@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>E:/UU/Kirby/Kirby/Kirby/Content/Sprites/Effects/explosionPuff2.png</SourceFile>
+  <SourceFile>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Effects/explosionPuff2.png</SourceFile>
   <SourceTime>2019-01-22T16:16:18+01:00</SourceTime>
-  <DestFile>E:/UU/Kirby/Kirby/Kirby/Content/bin/Windows/Sprites/Effects/explosionPuff2.xnb</DestFile>
-  <DestTime>2019-01-23T09:06:54+01:00</DestTime>
+  <DestFile>H:/UU/Kirby/Kirby/Kirby/Content/bin/Windows/Sprites/Effects/explosionPuff2.xnb</DestFile>
+  <DestTime>2019-01-25T20:56:28+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
