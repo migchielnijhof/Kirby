@@ -41,8 +41,13 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AnimatedGameObject.cs" />
+    <Compile Include="AirPuff.cs" />
     <Compile Include="Enemy.cs" />
+    <Compile Include="Enemy1.cs" />
+    <Compile Include="Enemy2.cs" />
+    <Compile Include="Enemy3.cs" />
+    <Compile Include="Enemy4.cs" />
+    <Compile Include="Enemy5.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="Input.cs" />

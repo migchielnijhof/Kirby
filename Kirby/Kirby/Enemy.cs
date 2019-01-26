@@ -1,70 +1,53 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Audio;
 
-class Enemy : PhysicsObject
+abstract class Enemy : PhysicsObject
 {
-
-    protected const float movementSpeed = 0.6f * Game.SpriteScale;
 
     const int BoundingBoxSizeX = (int) (16 * Game.SpriteScale);
     const int BoundingBoxSizeY = (int) (16 * Game.SpriteScale);
+
+    protected readonly ushort SuckScore;
+    protected readonly ushort StarKill;
+    protected readonly ushort PuffKill;
+    protected readonly ushort PushKill;
 
     public bool beingSucked;
 
     public bool alive;
 
-    public static Texture2D waddleDeeSprite1;
-
-    public static Texture2D waddleDeeSprite2;
-
     protected Texture2D currentSprite;
 
-    protected byte animationTimer;
+    protected SpriteEffects spriteEffect;
 
-    public Enemy(GameObject parent) : base(parent, ObjectType.Enemy)
+    public Enemy(GameObject parent, ushort suckScore, ushort starKill, ushort puffKill, ushort pushKill) : base(parent, ObjectType.Enemy)
     {
+        SuckScore = suckScore;
+        StarKill = starKill;
+        PuffKill = puffKill;
+        PushKill = pushKill;
+        spriteEffect = SpriteEffects.None;
         boundingBox.Size = new Point(BoundingBoxSizeX, BoundingBoxSizeY);
         Gravity = 0.1f * Game.SpriteScale;
         beingSucked = false;
         alive = true;
-        currentSprite = waddleDeeSprite1;
     }
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
     {
         if (!alive)
             return;
-        spriteBatch.Draw(currentSprite, Position - (parent as Level).CameraPosition, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, SpriteEffects.FlipHorizontally, 0);
+        spriteBatch.Draw(currentSprite, Position - (parent as Level).CameraPosition, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, spriteEffect, 0);
     }
-    public override void Update(GameTime gameTime)
-    {
-        if (animationTimer < 16)
-            animationTimer++;
-        else
-        {
-            animationTimer = 0;
-        }
 
-        if (!alive)
-            return;
-        if (!beingSucked)
-        {
-            Velocity.X = -movementSpeed;
-            if (animationTimer == 0)
-            {
-                if (currentSprite == waddleDeeSprite2)
-                    currentSprite = waddleDeeSprite1;
-                else
-                    currentSprite = waddleDeeSprite2;
-            }
-        }
+    public virtual void TakeHit(bool airPuff)
+    {
+        alive = false;
+        Player p = (parent as Level).Find(ObjectType.Player) as Player;
+        if (airPuff)
+            p.score += PuffKill;
         else
-        {
-            currentSprite = waddleDeeSprite2;
-        }
-        DoPhysics();
-        beingSucked = false;
+            p.score += StarKill;
     }
 
     protected override bool MapCollisions(TileGrid grid, Vector2 objectMovement)
@@ -76,11 +59,17 @@ class Enemy : PhysicsObject
             if (beingSucked && p.absorbedEnemy == null)
             {
                 p.absorbedEnemy = this;
+                p.score += SuckScore;
                 alive = false;
                 return false;
             }
             else
+            {
                 p.TakeDamage();
+                alive = false;
+                p.score += PushKill;
+                return false;
+            }
         return base.MapCollisions(grid, objectMovement);
     }
 

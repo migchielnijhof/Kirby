@@ -1145,3 +1145,8 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\3-.txt
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\4.txt
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\4-.txt
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\112.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt2.xnb

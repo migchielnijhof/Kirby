@@ -2,48 +2,42 @@
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 
-class Star : PhysicsObject
+class AirPuff : PhysicsObject
 {
 
-    public const float Speed = 3 * Game.SpriteScale;
+    public const float Speed = 4 * Game.SpriteScale;
 
-    public const int BoundingBoxX = (int) (16 * Game.SpriteScale);
-    public const int BoundingBoxY = (int) (16 * Game.SpriteScale);
+    public const int BoundingBoxX = (int)(16 * Game.SpriteScale);
+    public const int BoundingBoxY = (int)(16 * Game.SpriteScale);
 
-    public static Texture2D[] sprites = new Texture2D[4];
-
-    protected byte spriteID;
+    public static Texture2D sprite;
 
     protected bool collided;
 
-    protected byte animationTimer;
+    protected byte lifeTime;
+    protected float velocityMultiplier = 0.9f;
 
     protected SpriteEffects s;
 
-    public Star(GameObject parent) : base (parent, ObjectType.PlayerProjectile)
+    public AirPuff(GameObject parent) : base (parent, ObjectType.PlayerProjectile)
     {
         collided = false;
+        lifeTime = 30;
         Gravity = 0;
         boundingBox.Size = new Point(BoundingBoxX, BoundingBoxY);
-        spriteID = 0;
-        animationTimer = 0;
         s = SpriteEffects.None;
     }
 
     public override void Update(GameTime gameTime)
     {
-        DoPhysics();
-        if (animationTimer == 3)
-            animationTimer = 0;
-        else
-            animationTimer++;
-        if (animationTimer == 0)
+        lifeTime--;
+        Velocity.X *= velocityMultiplier;
+        if (lifeTime == 0)
         {
-            if (spriteID == 3)
-                spriteID = 0;
-            else
-                spriteID++;
+            (parent as Level).Remove(this);
+            collided = true;
         }
+        DoPhysics();
         if (Velocity.X < 0)
         {
             s = SpriteEffects.FlipHorizontally;
@@ -58,11 +52,11 @@ class Star : PhysicsObject
         Rectangle Box = new Rectangle((int)Position.X, (int)Position.Y, BoundingBoxX, BoundingBoxY);
         foreach (Enemy e in enemies)
         {
-            if (e.alive && Box.Intersects(e.BoundingBox))
+            if (Box.Intersects(e.BoundingBox) && e.alive)
             {
-               (parent as Level).Remove(this);
+                (parent as Level).Remove(this);
                 collided = true;
-                e.TakeHit(false);
+                e.TakeHit(true);
                 return false;
             }
         }
@@ -76,7 +70,7 @@ class Star : PhysicsObject
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
     {
-        spriteBatch.Draw(sprites[spriteID], Position - (parent as Level).CameraPosition, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, SpriteEffects.None, 0);
+        spriteBatch.Draw(sprite, Position - (parent as Level).CameraPosition, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, s, 0);
     }
 
 }

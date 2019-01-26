@@ -131,17 +131,19 @@ class Level : GameObjectList
             switch (nextLine[0])
             {
                 case 'W':
-                    e = //new Enemy(this);
-                        null;
+                    e = new Enemy1(this);
                     break;
                 case 'F':
-                    e = null;
+                    e = new Enemy2(this);
                     break;
                 case 'B':
-                    e = null;
+                    e = new Enemy3(this);
                     break;
                 case 'J':
-                    e = null;
+                    e = new Enemy4(this);
+                    break;
+                case 'U':
+                    e = new Enemy5(this);
                     break;
                 case 'M':
                     e = null;

@@ -170,8 +170,6 @@ class Player : PhysicsObject
 
     protected bool previousSuck;
 
-    protected bool secondEnemySpawned;
-
     /// <summary>
     /// Create a new player.
     /// </summary>
@@ -190,7 +188,6 @@ class Player : PhysicsObject
         flying = false;
         flyStage = 0;
         highJumpTimer = highJumpFrames;
-        secondEnemySpawned = false;
     }
 
     public void TakeDamage()
@@ -255,7 +252,7 @@ class Player : PhysicsObject
                     }
                     else
                     {
-                        s.Position = new Vector2(boundingBox.Left - Star.BoundingBoxX, BoundingBox.Center.Y - Star.BoundingBoxY / 2);
+                        s.Position = new Vector2(BoundingBox.Left - Star.BoundingBoxX, BoundingBox.Center.Y - Star.BoundingBoxY / 2);
                         s.Velocity.X = -Star.Speed;
                     }
                     (parent as Level).Add(s);
@@ -265,6 +262,18 @@ class Player : PhysicsObject
                 }
                 if (flying && flyStage < 7)
                 {
+                    AirPuff p = new AirPuff(parent);
+                    if (!mirrored)
+                    {
+                        p.Position = new Vector2(BoundingBox.Right, BoundingBox.Center.Y - AirPuff.BoundingBoxY / 2);
+                        p.Velocity.X = AirPuff.Speed;
+                    }
+                    else
+                    {
+                        p.Position = new Vector2(BoundingBox.Left - AirPuff.BoundingBoxX, BoundingBox.Center.Y - AirPuff.BoundingBoxY / 2);
+                        p.Velocity.X = -AirPuff.Speed;
+                    }
+                    (parent as Level).Add(p);
                     flyStage = 7;
                     soundEffect[12].Play();
                     return;
@@ -351,7 +360,6 @@ class Player : PhysicsObject
             if (fat == false)
             {
                 soundEffect[15].Play();
-                score += 200;
             }
             fat = true;
         }

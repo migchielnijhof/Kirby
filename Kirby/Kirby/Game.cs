@@ -11,8 +11,6 @@ public class Game : Microsoft.Xna.Framework.Game
     public static GraphicsDeviceManager graphics;
     SpriteBatch spriteBatch;
 
-    UI UI;
-
     public const float SpriteScale = 5;
 
     public const int ScreenWidth = 160;
@@ -109,8 +107,17 @@ public class Game : Microsoft.Xna.Framework.Game
         Player.playerSprites[18] = Content.Load<Texture2D>(kirbySpritePath + "succWalk2");
         Player.playerSprites[19] = Content.Load<Texture2D>(kirbySpritePath + "spit1");
 
-        Enemy.waddleDeeSprite1 = Content.Load<Texture2D>("Sprites/Enemies/waddleDee1");
-        Enemy.waddleDeeSprite2 = Content.Load<Texture2D>("Sprites/Enemies/waddleDee2");
+        Enemy1.waddleDeeSprite1 = Content.Load<Texture2D>("Sprites/Enemies/waddleDee1");
+        Enemy1.waddleDeeSprite2 = Content.Load<Texture2D>("Sprites/Enemies/waddleDee2");
+        Enemy2.sprite1 = Enemy1.waddleDeeSprite1;
+        Enemy2.sprite2 = Enemy1.waddleDeeSprite2;
+        Enemy3.sprite1 = Content.Load<Texture2D>("Sprites/Enemies/twizzy2");
+        Enemy3.sprite2 = Content.Load<Texture2D>("Sprites/Enemies/twizzy3");
+        Enemy4.sprite1 = Content.Load<Texture2D>("Sprites/Enemies/twizzy1");
+        Enemy4.sprite2 = Enemy3.sprite1;
+        Enemy4.sprite3 = Enemy3.sprite2;
+        Enemy5.sprite1 = Content.Load<Texture2D>("Sprites/Enemies/brontoBurt1");
+        Enemy5.sprite2 = Content.Load<Texture2D>("Sprites/Enemies/brontoBurt2");
 
         for (int i = 0; i < 9; i++)
             UI.numbers[i] = Content.Load<Texture2D>($"UI/Numbers/{i}");
@@ -122,6 +129,8 @@ public class Game : Microsoft.Xna.Framework.Game
         Star.sprites[1] = Content.Load<Texture2D>("Sprites/Effects/star2");
         Star.sprites[2] = Content.Load<Texture2D>("Sprites/Effects/star3");
         Star.sprites[3] = Content.Load<Texture2D>("Sprites/Effects/star4");
+
+        AirPuff.sprite = Content.Load<Texture2D>("Sprites/Effects/puff");
 
         Player.soundEffect[0] = Content.Load<SoundEffect>("Sounds/Effects/bossDefeated");
         Player.soundEffect[1] = Content.Load<SoundEffect>("Sounds/Effects/enemyHit");

@@ -38,7 +38,7 @@ abstract class PhysicsObject : GameObject
 
         Vector2 distance = Velocity / Game.SpriteScale;
 
-        while (distance.X != 0 || distance.Y != 0)
+        do
         {
             if (distance.X != 0 && Math.Abs(distance.X / distance.Y) >= Math.Abs(Velocity.X / Velocity.Y))
             {
@@ -142,7 +142,7 @@ abstract class PhysicsObject : GameObject
                     }
                 }
             }
-        }
+        } while (distance.X != 0 || distance.Y != 0);
         onGround = TestGround(grid);
     }
 
