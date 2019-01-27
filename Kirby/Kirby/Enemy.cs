@@ -16,6 +16,8 @@ abstract class Enemy : PhysicsObject
 
     public bool alive;
 
+    public bool loaded;
+
     protected Texture2D currentSprite;
 
     protected SpriteEffects spriteEffect;
@@ -31,6 +33,16 @@ abstract class Enemy : PhysicsObject
         Gravity = 0.1f * Game.SpriteScale;
         beingSucked = false;
         alive = true;
+        loaded = false;
+    }
+
+    public void CheckForLoad()
+    {
+        Player p = (parent as Level).Find(ObjectType.Player) as Player;
+        if (p.Position.X > Position.X - (1800 / Game.SpriteScale))
+        {
+            loaded = true;
+        }
     }
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
@@ -42,8 +54,8 @@ abstract class Enemy : PhysicsObject
 
     public virtual void TakeHit(bool airPuff)
     {
-        alive = false;
         Player p = (parent as Level).Find(ObjectType.Player) as Player;
+        alive = false;
         if (airPuff)
             p.score += PuffKill;
         else

@@ -22,47 +22,50 @@ class Enemy4 : Enemy
 
     public override void Update(GameTime gameTime)
     {
-        if (!alive)
-            return;
-        if (onGround && jumpTimer < 100)
-            jumpTimer++;
-        if (!beingSucked)
+        if (alive && loaded)
         {
-            if (onGround)
+            if (onGround && jumpTimer < 100)
+                jumpTimer++;
+            if (!beingSucked)
             {
-                currentSprite = sprite1;
-                airTimer = 0;
-            }
-            else
-            {
-                airTimer++;
-                switch (airTimer)
+                if (onGround)
                 {
-                    case 1:
-                        currentSprite = sprite3;
-                        break;
-                    case 7:
-                        currentSprite = sprite2;
-                        break;
-                    case 13:
-                        currentSprite = sprite3;
-                        break;
-                    case 19:
-                        currentSprite = sprite2;
-                        break;
+                    currentSprite = sprite1;
+                    airTimer = 0;
+                }
+                else
+                {
+                    airTimer++;
+                    switch (airTimer)
+                    {
+                        case 1:
+                            currentSprite = sprite3;
+                            break;
+                        case 7:
+                            currentSprite = sprite2;
+                            break;
+                        case 13:
+                            currentSprite = sprite3;
+                            break;
+                        case 19:
+                            currentSprite = sprite2;
+                            break;
+                    }
+                }
+                Velocity.X = 0;
+                if (jumpTimer == 100)
+                {
+                    Velocity.Y = -jumpStrength;
+                    jumpTimer = 1;
                 }
             }
-            Velocity.X = 0;
-            if (jumpTimer == 100)
-            {
-                Velocity.Y = -jumpStrength;
-                jumpTimer = 1;
-            }
+            else
+                currentSprite = sprite3;
+            DoPhysics();
+            beingSucked = false;
         }
         else
-            currentSprite = sprite3;
-        DoPhysics();
-        beingSucked = false;
+            CheckForLoad();
     }
 
 }

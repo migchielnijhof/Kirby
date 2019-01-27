@@ -19,30 +19,33 @@ class Enemy3 : Enemy
 
     public override void Update(GameTime gameTime)
     {
-        if (!alive)
-            return;
-        if (!beingSucked)
+        if (alive && loaded)
         {
-            Velocity.X = -movementSpeed;
-            Velocity.Y = (Velocity.Y / 5 * 4);
-            movementTimer++;
-            if (movementTimer > 20)
+            if (!beingSucked)
             {
-                movementTimer = 0;
-                if (currentSprite == sprite1)
+                Velocity.X = -movementSpeed;
+                Velocity.Y = (Velocity.Y / 5 * 4);
+                movementTimer++;
+                if (movementTimer > 20)
                 {
-                    Velocity.Y = 10;
-                    currentSprite = sprite2;
-                }
-                else
-                {
-                    Velocity.Y = -10;
-                    currentSprite = sprite1;
+                    movementTimer = 0;
+                    if (currentSprite == sprite1)
+                    {
+                        Velocity.Y = 10;
+                        currentSprite = sprite2;
+                    }
+                    else
+                    {
+                        Velocity.Y = -10;
+                        currentSprite = sprite1;
+                    }
                 }
             }
+            DoPhysics();
+            beingSucked = false;
         }
-        DoPhysics();
-        beingSucked = false;
+        else
+            CheckForLoad();
     }
 
 }

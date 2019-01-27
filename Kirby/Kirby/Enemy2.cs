@@ -22,40 +22,44 @@ class Enemy2 : Enemy
 
     public override void Update(GameTime gameTime)
     {
-        if (!alive)
-            return;
-        if (animationTimer < 16)
-            animationTimer++;
-        else
+        if (alive && loaded)
         {
-            animationTimer = 0;
-        }
-        if (!beingSucked) {
-            if (WalkTimer < 53)
-            {
-                Velocity.X = -movementSpeed;
-                spriteEffect = SpriteEffects.FlipHorizontally;
-            }
+            if (animationTimer < 16)
+                animationTimer++;
             else
             {
-                Velocity.X = movementSpeed;
-                spriteEffect = SpriteEffects.None;
+                animationTimer = 0;
             }
-            WalkTimer++;
-            if (WalkTimer == 105)
-                WalkTimer = 0;
-            if (animationTimer == 0)
+            if (!beingSucked)
             {
-                if (currentSprite == sprite2)
-                    currentSprite = sprite1;
+                if (WalkTimer < 53)
+                {
+                    Velocity.X = -movementSpeed;
+                    spriteEffect = SpriteEffects.FlipHorizontally;
+                }
                 else
-                    currentSprite = sprite2;
+                {
+                    Velocity.X = movementSpeed;
+                    spriteEffect = SpriteEffects.None;
+                }
+                WalkTimer++;
+                if (WalkTimer == 105)
+                    WalkTimer = 0;
+                if (animationTimer == 0)
+                {
+                    if (currentSprite == sprite2)
+                        currentSprite = sprite1;
+                    else
+                        currentSprite = sprite2;
+                }
             }
+            else
+                currentSprite = sprite2;
+            DoPhysics();
+            beingSucked = false;
         }
         else
-            currentSprite = sprite2;
-        DoPhysics();
-        beingSucked = false;
+            CheckForLoad();
     }
 
 }

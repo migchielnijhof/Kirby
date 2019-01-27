@@ -23,43 +23,46 @@ class Enemy9 : Enemy
 
     public override void Update(GameTime gameTime)
     {
-        if (!alive)
-            return;
-        if (!beingSucked)
+        if (alive && loaded)
         {
-            if (animationTimer < 8)
-                animationTimer++;
-            else
+            if (!beingSucked)
             {
-                animationTimer = 0;
-            }
-            if (WalkTimer < 50)
-            {
-                Velocity.X = -movementSpeed;
-                spriteEffect = SpriteEffects.FlipHorizontally;
-            }
-            else
-            {
-                Velocity.X = movementSpeed;
-                spriteEffect = SpriteEffects.None;
-            }
-            WalkTimer++;
-            if (WalkTimer == 100)
-                WalkTimer = 0;
-            if (onGround)
-                Velocity.Y = -2;
-            if (animationTimer == 0)
-            {
-                if (currentSprite == sprite2)
-                    currentSprite = sprite1;
+                if (animationTimer < 8)
+                    animationTimer++;
                 else
-                    currentSprite = sprite2;
+                {
+                    animationTimer = 0;
+                }
+                if (WalkTimer < 50)
+                {
+                    Velocity.X = -movementSpeed;
+                    spriteEffect = SpriteEffects.FlipHorizontally;
+                }
+                else
+                {
+                    Velocity.X = movementSpeed;
+                    spriteEffect = SpriteEffects.None;
+                }
+                WalkTimer++;
+                if (WalkTimer == 100)
+                    WalkTimer = 0;
+                if (onGround)
+                    Velocity.Y = -2;
+                if (animationTimer == 0)
+                {
+                    if (currentSprite == sprite2)
+                        currentSprite = sprite1;
+                    else
+                        currentSprite = sprite2;
+                }
             }
+            else
+                currentSprite = sprite2;
+            DoPhysics();
+            beingSucked = false;
         }
         else
-            currentSprite = sprite2;
-        DoPhysics();
-        beingSucked = false;
+            CheckForLoad();
     }
 
 }

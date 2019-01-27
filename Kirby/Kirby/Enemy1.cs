@@ -20,29 +20,32 @@ class Enemy1 : Enemy
 
     public override void Update(GameTime gameTime)
     {
-        if (!alive)
-            return;
-        if (animationTimer < 16)
-            animationTimer++;
-        else
+        if (alive && loaded)
         {
-            animationTimer = 0;
-        }
-        if (!beingSucked)
-        {
-            Velocity.X = -movementSpeed;
-            if (animationTimer == 0)
+            if (animationTimer < 16)
+                animationTimer++;
+            else
             {
-                if (currentSprite == waddleDeeSprite2)
-                    currentSprite = waddleDeeSprite1;
-                else
-                    currentSprite = waddleDeeSprite2;
+                animationTimer = 0;
             }
+            if (!beingSucked)
+            {
+                Velocity.X = -movementSpeed;
+                if (animationTimer == 0)
+                {
+                    if (currentSprite == waddleDeeSprite2)
+                        currentSprite = waddleDeeSprite1;
+                    else
+                        currentSprite = waddleDeeSprite2;
+                }
+            }
+            else
+                currentSprite = waddleDeeSprite2;
+            DoPhysics();
+            beingSucked = false;
         }
         else
-            currentSprite = waddleDeeSprite2;
-        DoPhysics();
-        beingSucked = false;
+            CheckForLoad();
     }
 
 }

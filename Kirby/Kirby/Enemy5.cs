@@ -23,52 +23,55 @@ class Enemy5 : Enemy
 
     public override void Update(GameTime gameTime)
     {
-        if (!alive)
-            return;
-        if (!beingSucked)
+        if (alive && loaded)
         {
-            Velocity.X = 0;
-            flyTimer++;
-            animationTimer++;
-            switch (flyTimer)
+            if (!beingSucked)
             {
-                case 1:
-                    Velocity.Y = flySpeed / 4;
-                    break;
-                case 17:
-                    Velocity.Y = flySpeed / 2;
-                    break;
-                case 97:
-                    Velocity.Y = flySpeed / 4;
-                    break;
-                case 113:
-                    Velocity.Y = -flySpeed / 4;
-                    break;
-                case 129:
-                    Velocity.Y = -flySpeed / 2;
-                    break;
-                case 207:
-                    Velocity.Y = -flySpeed / 4;
-                    break;
+                Velocity.X = 0;
+                flyTimer++;
+                animationTimer++;
+                switch (flyTimer)
+                {
+                    case 1:
+                        Velocity.Y = flySpeed / 4;
+                        break;
+                    case 17:
+                        Velocity.Y = flySpeed / 2;
+                        break;
+                    case 97:
+                        Velocity.Y = flySpeed / 4;
+                        break;
+                    case 113:
+                        Velocity.Y = -flySpeed / 4;
+                        break;
+                    case 129:
+                        Velocity.Y = -flySpeed / 2;
+                        break;
+                    case 207:
+                        Velocity.Y = -flySpeed / 4;
+                        break;
+                }
+                if (flyTimer == 223)
+                {
+                    flyTimer = 0;
+                }
+                if (animationTimer == 10)
+                {
+                    currentSprite = sprite2;
+                }
+                else if (animationTimer == 20)
+                {
+                    animationTimer = 0;
+                    currentSprite = sprite1;
+                }
             }
-            if (flyTimer == 223)
-            {
-                flyTimer = 0;
-            }
-            if (animationTimer == 10)
-            {
-                currentSprite = sprite2;
-            }
-            else if (animationTimer == 20)
-            {
-                animationTimer = 0;
+            else
                 currentSprite = sprite1;
-            }
+            DoPhysics();
+            beingSucked = false;
         }
         else
-            currentSprite = sprite1;
-        DoPhysics();
-        beingSucked = false;
+            CheckForLoad();
     }
 
 }
