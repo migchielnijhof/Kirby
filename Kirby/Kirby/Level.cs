@@ -146,7 +146,7 @@ class Level : GameObjectList
                     e = new Enemy5(this);
                     break;
                 case 'M':
-                    e = null;
+                    e = new Enemy6(this);
                     break;
                 case 'X':
                     e = new Enemy7(this);
@@ -158,6 +158,43 @@ class Level : GameObjectList
                     e = new Enemy9(this);
                     break;
                 case 'S':
+                    e = null;
+                    break;
+                case 'H':
+                    e = null;
+                    break;
+                case 'I':
+                    e = null;
+                    break;
+                case 'A':
+                    e = null;
+                    break;
+                case 'E':
+                    e = new Enemy12(this);
+                    break;
+                case 'D':
+                    e = null;
+                    break;
+                case 'O':
+                    e = //new Block(this);
+                        null;
+                    break;
+                case 'R':
+                    e = null;
+                    break;
+                case 'C':
+                    e = null;
+                    break;
+                case 'T':
+                    e = null;
+                    break;
+                case 'K':
+                    e = null;
+                    break;
+                case 'P':
+                    e = null;
+                    break;
+                case 'Y':
                     e = null;
                     break;
                 default:

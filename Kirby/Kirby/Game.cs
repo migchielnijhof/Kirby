@@ -107,6 +107,7 @@ public class Game : Microsoft.Xna.Framework.Game
         Player.playerSprites[18] = Content.Load<Texture2D>(kirbySpritePath + "succWalk2");
         Player.playerSprites[19] = Content.Load<Texture2D>(kirbySpritePath + "spit1");
 
+        Block.sprite = Content.Load<Texture2D>("Sprites/Effects/block");
         Enemy1.waddleDeeSprite1 = Content.Load<Texture2D>("Sprites/Enemies/waddleDee1");
         Enemy1.waddleDeeSprite2 = Content.Load<Texture2D>("Sprites/Enemies/waddleDee2");
         Enemy2.sprite1 = Enemy1.waddleDeeSprite1;
@@ -118,12 +119,18 @@ public class Game : Microsoft.Xna.Framework.Game
         Enemy4.sprite3 = Enemy3.sprite2;
         Enemy5.sprite1 = Content.Load<Texture2D>("Sprites/Enemies/brontoBurt1");
         Enemy5.sprite2 = Content.Load<Texture2D>("Sprites/Enemies/brontoBurt2");
+        Enemy6.sprite1 = Content.Load<Texture2D>("Sprites/Enemies/cappyHidden");
+        Enemy6.sprite2 = Content.Load<Texture2D>("Sprites/Enemies/cappyPanic1");
+        Enemy6.sprite3 = Content.Load<Texture2D>("Sprites/Enemies/cappyPanic2");
+        Enemy6Cap.sprite = Content.Load<Texture2D>("Sprites/Enemies/cappyCap");
         Enemy7.sprite1 = Enemy5.sprite1;
         Enemy7.sprite2 = Enemy5.sprite2;
         Enemy8.sprite1 = Enemy1.waddleDeeSprite1;
         Enemy8.sprite2 = Enemy1.waddleDeeSprite2;
         Enemy9.sprite1 = Content.Load<Texture2D>("Sprites/Enemies/poppoBrosJr1");
         Enemy9.sprite2 = Content.Load<Texture2D>("Sprites/Enemies/poppoBrosJr2");
+        Enemy12.sprite1 = Content.Load<Texture2D>("Sprites/Enemies/grizzo1");
+        Enemy12.sprite2 = Content.Load<Texture2D>("Sprites/Enemies/grizzo2");
 
         for (int i = 0; i < 9; i++)
             UI.numbers[i] = Content.Load<Texture2D>($"UI/Numbers/{i}");
@@ -197,7 +204,7 @@ public class Game : Microsoft.Xna.Framework.Game
                 if (input.Start)
                 {
                     GameState = GameStates.Playing;
-                    level.Load(1);
+                    level.Load(2);
                 }
                 break;
             case GameStates.Playing:

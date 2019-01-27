@@ -18,7 +18,11 @@ abstract class Enemy : PhysicsObject
 
     public bool loaded;
 
+    public bool succResistance;
+
     protected Texture2D currentSprite;
+
+    protected Vector2 spriteSizeOffset = new Vector2 (0,0);
 
     protected SpriteEffects spriteEffect;
 
@@ -34,6 +38,7 @@ abstract class Enemy : PhysicsObject
         beingSucked = false;
         alive = true;
         loaded = false;
+        succResistance = false;
     }
 
     public void CheckForLoad()
@@ -49,7 +54,7 @@ abstract class Enemy : PhysicsObject
     {
         if (!alive)
             return;
-        spriteBatch.Draw(currentSprite, Position - (parent as Level).CameraPosition, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, spriteEffect, 0);
+        spriteBatch.Draw(currentSprite, Position - (parent as Level).CameraPosition + spriteSizeOffset * Game.SpriteScale, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, spriteEffect, 0);
     }
 
     public virtual void TakeHit(bool airPuff)
@@ -77,10 +82,13 @@ abstract class Enemy : PhysicsObject
             }
             else
             {
-                p.TakeDamage();
-                alive = false;
-                p.score += PushKill;
-                return false;
+                if (!beingSucked)
+                {
+                    p.TakeDamage();
+                    alive = false;
+                    p.score += PushKill;
+                    return false;
+                }
             }
         return base.MapCollisions(grid, objectMovement);
     }

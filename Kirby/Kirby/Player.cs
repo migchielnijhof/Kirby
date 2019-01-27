@@ -290,12 +290,15 @@ class Player : PhysicsObject
                     if (e.BoundingBox.Intersects(succBox) || succBox.Contains(e.BoundingBox))
                     {
                         e.beingSucked = true;
-                        if (!mirrored)
+                        if (e.succResistance == false)
                         {
-                            e.Velocity.X -= SuckAcceleration;
-                            continue;
+                            if (!mirrored)
+                            {
+                                e.Velocity.X -= SuckAcceleration;
+                                continue;
+                            }
+                            e.Velocity.X += SuckAcceleration;
                         }
-                        e.Velocity.X += SuckAcceleration;
                     }
                 previousSuck = true;
 
