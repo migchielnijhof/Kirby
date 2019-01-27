@@ -56,7 +56,7 @@ class Enemy4 : Enemy
             if (jumpTimer == 100)
             {
                 Velocity.Y = -jumpStrength;
-                jumpTimer = 0;
+                jumpTimer = 1;
             }
         }
         else

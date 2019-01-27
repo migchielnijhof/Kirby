@@ -240,6 +240,7 @@ class Player : PhysicsObject
         {
             if (input.Succ)
             {
+                walking = false;
                 bool mirrored = (s == SpriteEffects.FlipHorizontally);
                 if (!previousSuck && absorbedEnemy != null)
                 {
@@ -309,9 +310,12 @@ class Player : PhysicsObject
                     succAnimationTimer++;
                 }
                 else
-                {
                     playerState = 9;
-                }
+
+                if (playerState == 9 && absorbedEnemy != null)
+                    playerState = 15;
+
+                return;
             }
             else
             {
@@ -358,9 +362,7 @@ class Player : PhysicsObject
         if (absorbedEnemy != null)
         {
             if (fat == false)
-            {
                 soundEffect[15].Play();
-            }
             fat = true;
         }
         else
@@ -475,7 +477,7 @@ class Player : PhysicsObject
 
         if (!onGround)
         {
-            if (!flying)
+            if (!flying && succAnimationTimer == 1)
             {
                 Velocity.Y += Gravity;
                 if (fat)

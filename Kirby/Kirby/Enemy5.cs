@@ -38,20 +38,20 @@ class Enemy5 : Enemy
                 case 17:
                     Velocity.Y = flySpeed / 2;
                     break;
-                case 113:
+                case 97:
                     Velocity.Y = flySpeed / 4;
                     break;
-                case 129:
+                case 113:
                     Velocity.Y = -flySpeed / 4;
                     break;
-                case 145:
+                case 129:
                     Velocity.Y = -flySpeed / 2;
                     break;
-                case 239:
+                case 207:
                     Velocity.Y = -flySpeed / 4;
                     break;
             }
-            if (flyTimer == 255)
+            if (flyTimer == 223)
             {
                 flyTimer = 0;
             }
