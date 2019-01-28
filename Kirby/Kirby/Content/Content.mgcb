@@ -3013,3 +3013,15 @@
 /processorParam:TextureFormat=Color
 /build:Sprites/Bosses/popoBrosSr/bombThrow5.png
 
+#begin Sprites/Effects/succParticle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Sprites/Effects/succParticle.png
+

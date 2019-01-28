@@ -164,6 +164,8 @@ public class Game : Microsoft.Xna.Framework.Game
         Star.sprites[2] = Content.Load<Texture2D>("Sprites/Effects/star3");
         Star.sprites[3] = Content.Load<Texture2D>("Sprites/Effects/star4");
 
+        SuccParticle.sprite = Content.Load<Texture2D>("Sprites/Effects/succParticle");
+
         AirPuff.sprite = Content.Load<Texture2D>("Sprites/Effects/puff");
 
         Player.soundEffect[0] = Content.Load<SoundEffect>("Sounds/Effects/bossDefeated");

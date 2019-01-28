@@ -84,7 +84,7 @@ abstract class Enemy : PhysicsObject
             {
                 if (!beingSucked)
                 {
-                    p.TakeDamage();
+                    p.TakeDamage(Position.X);
                     if (!(this is Boss))
                     {
                         alive = false;

@@ -42,22 +42,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AirPuff.cs" />
-    <Compile Include="Block.cs" />
+    <Compile Include="SuccParticle.cs" />
+    <Compile Include="Enemies\Block.cs" />
     <Compile Include="Boss.cs" />
-    <Compile Include="Bomb.cs" />
-    <Compile Include="PopoBrosSr.cs" />
-    <Compile Include="Enemy12.cs" />
-    <Compile Include="Enemy6Cap.cs" />
-    <Compile Include="Enemy6.cs" />
-    <Compile Include="Enemy9.cs" />
-    <Compile Include="Enemy8.cs" />
-    <Compile Include="Enemy7.cs" />
+    <Compile Include="Enemies\Bomb.cs" />
+    <Compile Include="Enemies\Enemy15.cs" />
+    <Compile Include="Enemies\PopoBrosSr.cs" />
+    <Compile Include="Enemies\Enemy12.cs" />
+    <Compile Include="Enemies\Enemy6Cap.cs" />
+    <Compile Include="Enemies\Enemy6.cs" />
+    <Compile Include="Enemies\Enemy9.cs" />
+    <Compile Include="Enemies\Enemy8.cs" />
+    <Compile Include="Enemies\Enemy7.cs" />
     <Compile Include="Enemy.cs" />
-    <Compile Include="Enemy1.cs" />
-    <Compile Include="Enemy2.cs" />
-    <Compile Include="Enemy3.cs" />
-    <Compile Include="Enemy4.cs" />
-    <Compile Include="Enemy5.cs" />
+    <Compile Include="Enemies\Enemy1.cs" />
+    <Compile Include="Enemies\Enemy2.cs" />
+    <Compile Include="Enemies\Enemy3.cs" />
+    <Compile Include="Enemies\Enemy4.cs" />
+    <Compile Include="Enemies\Enemy5.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameObject.cs" />
     <Compile Include="Input.cs" />
@@ -85,6 +87,9 @@
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
     <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Particles\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

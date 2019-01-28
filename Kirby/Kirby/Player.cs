@@ -92,6 +92,11 @@ class Player : PhysicsObject
     public GameObject absorbedEnemy;
 
     /// <summary>
+    /// A timer used for SuccParticles.
+    /// </summary>
+    protected int particleTimer;
+
+    /// <summary>
     /// The amount of time the player has left where holding the jump button will result in a higher jump.
     /// </summary>
     protected int highJumpTimer;
@@ -120,6 +125,16 @@ class Player : PhysicsObject
     /// The timer used in the sucking animation.
     /// </summary>
     protected byte succAnimationTimer;
+
+    /// <summary>
+    /// A flickering bool, which changes between true and false every frame.
+    /// </summary>
+    protected bool flickerBool;
+
+    /// <summary>
+    /// A flickering bool, which changes between true and false every 2 frames.
+    /// </summary>
+    protected bool slowFlickerBool;
 
     /// <summary>
     /// The timer used in the spitting animation.
@@ -156,7 +171,7 @@ class Player : PhysicsObject
     /// <summary>
     /// The amount of invulnerabiliyTime the player will get after taking damage.
     /// </summary>
-    const double invulnerability = 0.5d;
+    const double invulnerability = 1.0d;
 
     /// <summary>
     /// The spriteeffects, used for mirroring.
@@ -189,11 +204,12 @@ class Player : PhysicsObject
         s = SpriteEffects.None;
         flying = false;
         flyStage = 0;
+        particleTimer = 0;
         highJumpTimer = highJumpFrames;
         level = parent as Level;
     }
 
-    public void TakeDamage()
+    public void TakeDamage(float a)
     {
         if (invulnerabilityTime > 0 | Health == 0) //The player shouldn't receive damage if they're invulnerable or don't have any health
             return;
@@ -204,6 +220,10 @@ class Player : PhysicsObject
             Die(); //You die
             return;
         }
+        if (Position.X < a)
+            Velocity.X = -10 * Game.SpriteScale;
+        else
+            Velocity.X = 10 * Game.SpriteScale;
         invulnerabilityTime = invulnerability; //gives the player invulnerability
     }
 
@@ -287,7 +307,7 @@ class Player : PhysicsObject
                     succBox = new Rectangle(new Point(BoundingBox.Right, BoundingBox.Top), new Point(SuckX, SuckY));
                 else
                     succBox = new Rectangle(new Point(BoundingBox.Left - SuckX, BoundingBox.Top), new Point(SuckX, SuckY));
-
+                
                 List<GameObject> enemies = level.FindAll(ObjectType.Enemy) as List<GameObject>;
                 foreach (Enemy e in enemies)
                     if (e.BoundingBox.Intersects(succBox) || succBox.Contains(e.BoundingBox))
@@ -318,8 +338,27 @@ class Player : PhysicsObject
                 else
                     playerState = 9;
 
-                if (playerState == 9 && absorbedEnemy != null)
-                    playerState = 15;
+                if (playerState == 9)
+                {
+                    if (absorbedEnemy != null)
+                        playerState = 15;
+                    else
+                    {
+                        particleTimer++;
+                        if (particleTimer == 2)
+                        {
+                            SuccParticle c = new SuccParticle(level);
+                            level.Add(c);
+                            c.Position.X = Position.X + 30 * Game.SpriteScale;
+                            Random random = new Random();
+                            int r = random.Next(-5, 15);
+                            c.Position.Y = Position.Y + r * Game.SpriteScale;
+                            c.Velocity.X = -8;
+                            c.Velocity.Y = ((r - 5) * -1) / 3;
+                            particleTimer = 0;
+                        }
+                    }
+                }
 
                 return;
             }
@@ -467,6 +506,9 @@ class Player : PhysicsObject
 
     public override void Update(GameTime gameTime)
     {
+        flickerBool = !flickerBool;
+        if (flickerBool)
+            slowFlickerBool = !slowFlickerBool;
         if (invulnerabilityTime > 0)
                 invulnerabilityTime -= gameTime.ElapsedGameTime.TotalSeconds;
 
@@ -591,8 +633,8 @@ class Player : PhysicsObject
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
     {
-        if (invulnerabilityTime > 0)
-            spriteBatch.Draw(playerSprites[playerState], Position - level.CameraPosition + spriteSizeOffset * Game.SpriteScale, null, new Color(255, 170, 170), 0, Vector2.Zero, Game.SpriteScale, s, 0);
+        if (invulnerabilityTime > 0 && slowFlickerBool)
+            return;
         else
             spriteBatch.Draw(playerSprites[playerState], Position - level.CameraPosition + spriteSizeOffset * Game.SpriteScale, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, s, 0);
     }

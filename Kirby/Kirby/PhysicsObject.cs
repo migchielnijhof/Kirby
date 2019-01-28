@@ -160,23 +160,26 @@ abstract class PhysicsObject : GameObject
 
     protected virtual bool MapCollisions(TileGrid grid, Vector2 objectMovement)
     {
-        if (Position.X < 0)
+        if (this.Type != ObjectType.Particle)
         {
-            Position -= objectMovement;
-            return true;
-        }
-        try
-        {
-            if (grid.tiles[grid.GetIndexX(BoundingBox.Left), grid.GetIndexY(BoundingBox.Top)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Right), grid.GetIndexY(BoundingBox.Top)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Left), grid.GetIndexY(BoundingBox.Bottom)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Right), grid.GetIndexY(BoundingBox.Bottom)].Solid)
+            if (Position.X < 0)
             {
                 Position -= objectMovement;
                 return true;
             }
-        }
-        catch (IndexOutOfRangeException)
-        {
-            Position -= objectMovement;
-            return true;
+            try
+            {
+                if (grid.tiles[grid.GetIndexX(BoundingBox.Left), grid.GetIndexY(BoundingBox.Top)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Right), grid.GetIndexY(BoundingBox.Top)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Left), grid.GetIndexY(BoundingBox.Bottom)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Right), grid.GetIndexY(BoundingBox.Bottom)].Solid)
+                {
+                    Position -= objectMovement;
+                    return true;
+                }
+            }
+            catch (IndexOutOfRangeException)
+            {
+                Position -= objectMovement;
+                return true;
+            }
         }
         return false;
     }
