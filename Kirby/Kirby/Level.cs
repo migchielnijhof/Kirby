@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using System.IO;
+using System;
 using Microsoft.Xna.Framework.Media;
 
 /// <summary>
@@ -15,9 +16,19 @@ class Level : GameObjectList
     public byte CurrentLevel;
 
     /// <summary>
+    /// Health of the boss that might be on screen.
+    /// </summary>
+    public byte bossHealth;
+
+    /// <summary>
     /// Position of the level's camera.
     /// </summary>
     public Vector2 CameraPosition;
+
+    /// <summary>
+    /// If the camera can be moved.
+    /// </summary>
+    public bool cameraLocked = false;
 
     /// <summary>
     /// The camera will move when the position of the player on the screen becomes higher than cameraFollowing * screen size or lower than (1 - cameraFollowing) * screen size.
@@ -48,9 +59,8 @@ class Level : GameObjectList
     public override void Update(GameTime gameTime)
     {
         base.Update(gameTime);
-
         // Update camera position based on the position of the player.
-        if (Find(ObjectType.Player) is Player p)
+        if (Find(ObjectType.Player) is Player p && !p.level.cameraLocked)
         {
             // Player too far to the right.
             if ((p.Position.X - CameraPosition.X) > Game.ScreenWidth * Game.SpriteScale * cameraFollowing)
@@ -65,7 +75,7 @@ class Level : GameObjectList
         else
         {
             // End of the level displaying somewhere else than the far right of the screen.
-            if (Find(ObjectType.TileGrid) is TileGrid t && CameraPosition.X + Game.ScreenWidth > t.width * Tile.SpriteWidth)
+            if (Find(ObjectType.TileGrid) is TileGrid t && CameraPosition.X + Game.ScreenWidth > t.width * Tile.SpriteWidth && !cameraLocked)
                 CameraPosition.X = t.width * Tile.SpriteWidth - Game.ScreenWidth;
         }
     }
@@ -123,6 +133,9 @@ class Level : GameObjectList
         }
         Add(grid);
 
+        Player p = new Player(this);
+        Add(p);
+
         reader = new StreamReader(path + level + "-.txt");
         nextLine = reader.ReadLine();
         Enemy e = null;
@@ -164,7 +177,7 @@ class Level : GameObjectList
                     e = null;
                     break;
                 case 'I':
-                    e = null;
+                    e = new PopoBrosSr(this);
                     break;
                 case 'A':
                     e = null;
@@ -210,8 +223,6 @@ class Level : GameObjectList
         }
         reader.Close();
 
-        Player p = new Player(this);
-        Add(p);
         Add(new UI(p));
         MediaPlayer.Play(greenGreens);
     }

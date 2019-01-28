@@ -100,7 +100,6 @@
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/mouth3.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/mouthDefeated.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/mouthPuff.png</File>
-    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombThow.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombWindUp.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/idleJump.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Kirby/walk1.png</File>
@@ -249,5 +248,20 @@
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/cappyPanic2.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/grizzo1.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/grizzo2.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/UI/bossUI.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/idleJump1.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/idleJump2.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/idleJump3.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/idleJump4.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombWindUp1.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombWindUp2.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombWindUp3.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombWindUp4.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombWindUp5.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombThrow1.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombThrow2.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombThrow3.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombThrow4.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombThrow5.png</File>
   </SourceFiles>
 </SourceFileCollection>

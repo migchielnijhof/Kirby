@@ -85,8 +85,11 @@ abstract class Enemy : PhysicsObject
                 if (!beingSucked)
                 {
                     p.TakeDamage();
-                    alive = false;
-                    p.score += PushKill;
+                    if (!(this is Boss))
+                    {
+                        alive = false;
+                        p.score += PushKill;
+                    }
                     return false;
                 }
             }

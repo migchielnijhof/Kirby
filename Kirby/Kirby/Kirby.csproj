@@ -43,6 +43,9 @@
   <ItemGroup>
     <Compile Include="AirPuff.cs" />
     <Compile Include="Block.cs" />
+    <Compile Include="Boss.cs" />
+    <Compile Include="Bomb.cs" />
+    <Compile Include="PopoBrosSr.cs" />
     <Compile Include="Enemy12.cs" />
     <Compile Include="Enemy6Cap.cs" />
     <Compile Include="Enemy6.cs" />

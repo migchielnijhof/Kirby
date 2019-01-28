@@ -648,7 +648,6 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth3.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouthDefeated.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouthPuff.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThow.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk1.xnb
@@ -1157,3 +1156,18 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyPanic
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyPanic2.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo1.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossUI.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp5.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow5.xnb

@@ -151,6 +151,8 @@ class Player : PhysicsObject
     /// </summary>
     protected Vector2 spriteSizeOffset;
 
+    public Level level;
+
     /// <summary>
     /// The amount of invulnerabiliyTime the player will get after taking damage.
     /// </summary>
@@ -188,6 +190,7 @@ class Player : PhysicsObject
         flying = false;
         flyStage = 0;
         highJumpTimer = highJumpFrames;
+        level = parent as Level;
     }
 
     public void TakeDamage()
@@ -256,7 +259,7 @@ class Player : PhysicsObject
                         s.Position = new Vector2(BoundingBox.Left - Star.BoundingBoxX, BoundingBox.Center.Y - Star.BoundingBoxY / 2);
                         s.Velocity.X = -Star.Speed;
                     }
-                    (parent as Level).Add(s);
+                    level.Add(s);
                     absorbedEnemy = null;
                     spitAnimationTimer = 1;
                     return;
@@ -274,7 +277,7 @@ class Player : PhysicsObject
                         p.Position = new Vector2(BoundingBox.Left - AirPuff.BoundingBoxX, BoundingBox.Center.Y - AirPuff.BoundingBoxY / 2);
                         p.Velocity.X = -AirPuff.Speed;
                     }
-                    (parent as Level).Add(p);
+                    level.Add(p);
                     flyStage = 7;
                     soundEffect[12].Play();
                     return;
@@ -285,7 +288,7 @@ class Player : PhysicsObject
                 else
                     succBox = new Rectangle(new Point(BoundingBox.Left - SuckX, BoundingBox.Top), new Point(SuckX, SuckY));
 
-                List<GameObject> enemies = (parent as Level).FindAll(ObjectType.Enemy) as List<GameObject>;
+                List<GameObject> enemies = level.FindAll(ObjectType.Enemy) as List<GameObject>;
                 foreach (Enemy e in enemies)
                     if (e.BoundingBox.Intersects(succBox) || succBox.Contains(e.BoundingBox))
                     {
@@ -480,15 +483,18 @@ class Player : PhysicsObject
 
         if (!onGround)
         {
-            if (!flying && succAnimationTimer == 1)
+            if (!flying)
             {
                 Velocity.Y += Gravity;
-                if (fat)
+                if (succAnimationTimer == 1)
                 {
-                    playerState = 16;
+                    if (fat)
+                    {
+                        playerState = 16;
+                    }
+                    else
+                        playerState = 2;
                 }
-                else
-                    playerState = 2;
                 landingTimer = landingLag;
             }
             else if (!flyingUp && Velocity.Y >= (Gravity * Game.SpriteScale) * 3)
@@ -586,9 +592,9 @@ class Player : PhysicsObject
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
     {
         if (invulnerabilityTime > 0)
-            spriteBatch.Draw(playerSprites[playerState], Position - (parent as Level).CameraPosition + spriteSizeOffset * Game.SpriteScale, null, new Color(255, 170, 170), 0, Vector2.Zero, Game.SpriteScale, s, 0);
+            spriteBatch.Draw(playerSprites[playerState], Position - level.CameraPosition + spriteSizeOffset * Game.SpriteScale, null, new Color(255, 170, 170), 0, Vector2.Zero, Game.SpriteScale, s, 0);
         else
-            spriteBatch.Draw(playerSprites[playerState], Position - (parent as Level).CameraPosition + spriteSizeOffset * Game.SpriteScale, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, s, 0);
+            spriteBatch.Draw(playerSprites[playerState], Position - level.CameraPosition + spriteSizeOffset * Game.SpriteScale, null, Color.White, 0, Vector2.Zero, Game.SpriteScale, s, 0);
     }
 
 }

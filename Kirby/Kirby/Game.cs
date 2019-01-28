@@ -108,6 +108,7 @@ public class Game : Microsoft.Xna.Framework.Game
         Player.playerSprites[19] = Content.Load<Texture2D>(kirbySpritePath + "spit1");
 
         Block.sprite = Content.Load<Texture2D>("Sprites/Effects/block");
+
         Enemy1.waddleDeeSprite1 = Content.Load<Texture2D>("Sprites/Enemies/waddleDee1");
         Enemy1.waddleDeeSprite2 = Content.Load<Texture2D>("Sprites/Enemies/waddleDee2");
         Enemy2.sprite1 = Enemy1.waddleDeeSprite1;
@@ -132,11 +133,31 @@ public class Game : Microsoft.Xna.Framework.Game
         Enemy12.sprite1 = Content.Load<Texture2D>("Sprites/Enemies/grizzo1");
         Enemy12.sprite2 = Content.Load<Texture2D>("Sprites/Enemies/grizzo2");
 
-        for (int i = 0; i < 9; i++)
+        PopoBrosSr.sprite1 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/IdleJump1");
+        PopoBrosSr.sprite2 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/IdleJump2");
+        PopoBrosSr.sprite3 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/IdleJump3");
+        PopoBrosSr.sprite4 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/IdleJump4");
+        PopoBrosSr.throwSprite1 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombThrow1");
+        PopoBrosSr.throwSprite2 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombThrow2");
+        PopoBrosSr.throwSprite3 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombThrow3");
+        PopoBrosSr.throwSprite4 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombThrow4");
+        PopoBrosSr.throwSprite5 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombThrow5");
+        PopoBrosSr.windUpSprite1 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombThrow5");
+        PopoBrosSr.windUpSprite2 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombWindUp1");
+        PopoBrosSr.windUpSprite3 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombWindUp2");
+        PopoBrosSr.windUpSprite4 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombWindUp3");
+        PopoBrosSr.windUpSprite5 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombWindUp4");
+        PopoBrosSr.windUpSprite6 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombWindUp5");
+
+        Bomb.sprite = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bomb");
+
+        for (int i = 0; i <= 9; i++)
             UI.numbers[i] = Content.Load<Texture2D>($"UI/Numbers/{i}");
         UI.baseSprite = Content.Load<Texture2D>("UI/UI");
+        UI.bossSprite = Content.Load<Texture2D>("UI/bossUI");
         UI.lifeEmpty = Content.Load<Texture2D>("UI/lifeEmpty");
         UI.lifeFull = Content.Load<Texture2D>("UI/lifeFull");
+        UI.bossHealth = Content.Load<Texture2D>("UI/bossHealth");
 
         Star.sprites[0] = Content.Load<Texture2D>("Sprites/Effects/star1");
         Star.sprites[1] = Content.Load<Texture2D>("Sprites/Effects/star2");
