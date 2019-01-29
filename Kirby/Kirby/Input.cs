@@ -16,7 +16,11 @@ class Input
 
     public Input()
     {
-        sensor = KinectSensor.KinectSensors.Where(s => s.Status == KinectStatus.Connected).FirstOrDefault();
+        try
+        {
+            sensor = KinectSensor.KinectSensors.Where(s => s.Status == KinectStatus.Connected).FirstOrDefault();
+        }
+        catch { }
         if (sensor == null)
         {
             Console.WriteLine("No Kinect sensor found!");
