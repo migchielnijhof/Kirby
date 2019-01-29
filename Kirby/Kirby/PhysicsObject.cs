@@ -150,7 +150,7 @@ abstract class PhysicsObject : GameObject
     {
         try
         {
-            return grid.tiles[grid.GetIndexX(BoundingBox.Left), grid.GetIndexY(BoundingBox.Bottom + 1)].Solid || grid.tiles[grid.GetIndexX(BoundingBox.Right), grid.GetIndexY(BoundingBox.Bottom + 1)].Solid;
+            return grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].Solid || grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].Solid || grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].JumpThrough || grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].JumpThrough;
         }
         catch (IndexOutOfRangeException)
         {
@@ -160,7 +160,7 @@ abstract class PhysicsObject : GameObject
 
     protected virtual bool MapCollisions(TileGrid grid, Vector2 objectMovement)
     {
-        if (this.Type != ObjectType.Particle)
+        if (Type != ObjectType.Particle)
         {
             if (Position.X < 0)
             {
@@ -169,7 +169,12 @@ abstract class PhysicsObject : GameObject
             }
             try
             {
-                if (grid.tiles[grid.GetIndexX(BoundingBox.Left), grid.GetIndexY(BoundingBox.Top)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Right), grid.GetIndexY(BoundingBox.Top)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Left), grid.GetIndexY(BoundingBox.Bottom)].Solid | grid.tiles[grid.GetIndexX(BoundingBox.Right), grid.GetIndexY(BoundingBox.Bottom)].Solid)
+                if (grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Top)].Solid | grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Top)].Solid | grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Bottom)].Solid | grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Bottom)].Solid)
+                {
+                    Position -= objectMovement;
+                    return true;
+                }
+                else if (objectMovement.Y >= 0 && (grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Top)].JumpThrough | grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Top)].JumpThrough | grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Bottom)].JumpThrough | grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Bottom)].JumpThrough))
                 {
                     Position -= objectMovement;
                     return true;
@@ -177,8 +182,11 @@ abstract class PhysicsObject : GameObject
             }
             catch (IndexOutOfRangeException)
             {
-                Position -= objectMovement;
-                return true;
+                if (objectMovement.Y <= 0)
+                {
+                    Position -= objectMovement;
+                    return true;
+                }
             }
         }
         return false;

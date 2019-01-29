@@ -42,8 +42,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AirPuff.cs" />
+    <Compile Include="Door.cs" />
+    <Compile Include="Enemies\BossHitBox.cs" />
+    <Compile Include="Enemies\BossPuff.cs" />
+    <Compile Include="Enemies\Apple.cs" />
+    <Compile Include="Enemies\WhispyWoods.cs" />
     <Compile Include="Enemies\Enemy14.cs" />
     <Compile Include="Enemies\Enemy11.cs" />
+    <Compile Include="Kinect.cs" />
     <Compile Include="SuccParticle.cs" />
     <Compile Include="Enemies\Block.cs" />
     <Compile Include="Boss.cs" />

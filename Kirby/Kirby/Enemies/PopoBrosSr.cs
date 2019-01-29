@@ -51,6 +51,8 @@ class PopoBrosSr : Boss
         attackState = 1;
         attackTimer = 0;
         p.level.bossHealth = 3;
+
+        p.level.cameraLocked = true;
     }
 
     public override void Update(GameTime gameTime)

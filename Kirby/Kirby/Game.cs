@@ -25,7 +25,7 @@ public class Game : Microsoft.Xna.Framework.Game
     /// <summary>
     /// The amount of lives the player starts with.
     /// </summary>
-    const byte basePlayerLives = 4;
+    public const byte basePlayerLives = 4;
 
     // Textures.
     protected static Texture2D titleScreen;
@@ -161,6 +161,17 @@ public class Game : Microsoft.Xna.Framework.Game
         PopoBrosSr.windUpSprite5 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombWindUp4");
         PopoBrosSr.windUpSprite6 = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bombWindUp5");
 
+        WhispyWoods.sprite1 = Content.Load<Texture2D>("Sprites/Bosses/WhispyWoods/sprite1");
+        WhispyWoods.sprite2 = Content.Load<Texture2D>("Sprites/Bosses/WhispyWoods/sprite2");
+        WhispyWoods.sprite3 = Content.Load<Texture2D>("Sprites/Bosses/WhispyWoods/sprite3");
+        WhispyWoods.sprite4 = Content.Load<Texture2D>("Sprites/Bosses/WhispyWoods/sprite4");
+
+        BossPuff.sprite1 = Content.Load<Texture2D>("Sprites/Effects/puff");
+
+        Apple.sprite = Enemy11.asprite1;
+
+        BossHitBox.sprite = Content.Load<Texture2D>("Sprites/Bosses/WhispyWoods/hitbox");
+
         Bomb.sprite = Content.Load<Texture2D>("Sprites/Bosses/popoBrosSr/bomb");
 
         for (int i = 0; i <= 9; i++)
@@ -178,7 +189,7 @@ public class Game : Microsoft.Xna.Framework.Game
 
         SuccParticle.sprite = Content.Load<Texture2D>("Sprites/Effects/succParticle");
 
-        AirPuff.sprite = Content.Load<Texture2D>("Sprites/Effects/puff");
+        AirPuff.sprite = BossPuff.sprite1;
 
         Player.soundEffect[0] = Content.Load<SoundEffect>("Sounds/Effects/bossDefeated");
         Player.soundEffect[1] = Content.Load<SoundEffect>("Sounds/Effects/enemyHit");
@@ -239,7 +250,7 @@ public class Game : Microsoft.Xna.Framework.Game
                 if (input.Start)
                 {
                     GameState = GameStates.Playing;
-                    level.Load(5);
+                    level.Load(true, 1, new Player(level));
                 }
                 break;
             case GameStates.Playing:

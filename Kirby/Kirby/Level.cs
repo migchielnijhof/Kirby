@@ -13,12 +13,17 @@ class Level : GameObjectList
     /// <summary>
     /// The currently loaded level.
     /// </summary>
-    public byte CurrentLevel;
+    public byte currentLevel;
 
     /// <summary>
     /// Health of the boss that might be on screen.
     /// </summary>
     public byte bossHealth;
+
+    /// <summary>
+    /// All the warps in the current level.
+    /// </summary>
+    public List<Door> Doors;
 
     /// <summary>
     /// Position of the level's camera.
@@ -49,7 +54,8 @@ class Level : GameObjectList
     /// </summary>
     public Level(GameObject parent) : base(parent, ObjectType.Level)
     {
-        CurrentLevel = 0;
+        Doors = new List<Door>();
+        currentLevel = 0;
         Clear();
     }
 
@@ -59,8 +65,15 @@ class Level : GameObjectList
     public override void Update(GameTime gameTime)
     {
         base.Update(gameTime);
-        // Update camera position based on the position of the player.
-        if (Find(ObjectType.Player) is Player p && !p.level.cameraLocked)
+        UpdateCamera();
+    }
+
+    /// <summary>
+    /// Updates the camera position based on the player's position.
+    /// </summary>
+    public void UpdateCamera()
+    {
+        if (Find(ObjectType.Player) is Player p && !cameraLocked)
         {
             // Player too far to the right.
             if ((p.Position.X - CameraPosition.X) > Game.ScreenWidth * Game.SpriteScale * cameraFollowing)
@@ -98,10 +111,10 @@ class Level : GameObjectList
     /// Loads a new level.
     /// </summary>
     /// <param name="level">The level to load.</param>
-    public void Load(byte level)
+    public void Load(bool newLevel, byte level, Player p)
     {
         Clear();
-        CurrentLevel = level; //Sets the current level
+        currentLevel = level; //Sets the current level
         List<string> instructions = new List<string>();
         StreamReader reader = new StreamReader(path + level + ".txt"); //Loads the file that contains the level
         string nextLine = reader.ReadLine();
@@ -146,13 +159,12 @@ class Level : GameObjectList
             startIndex = 0;
         }
         Add(grid);
-
-        Player p = new Player(this);
+        
         Add(p);
 
         reader = new StreamReader(path + level + "-.txt");
         nextLine = reader.ReadLine();
-        Enemy e = null;
+        PhysicsObject e = null;
         while (nextLine != null)
         {
             switch (nextLine[0])
@@ -186,6 +198,7 @@ class Level : GameObjectList
                     break;
                 case 'S':
                     e = null;
+                    Doors.Add(new Door(byte.Parse(nextLine.Substring(1, 3)), byte.Parse(nextLine.Substring(4, 2)), byte.Parse(nextLine.Substring(6, 1)), byte.Parse(nextLine.Substring(7, 3)), byte.Parse(nextLine.Substring(10, 2))));
                     break;
                 case 'H':
                     e = null;
@@ -220,9 +233,13 @@ class Level : GameObjectList
                     break;
                 case 'P':
                     e = null;
+                    Doors.Add(new Door(byte.Parse(nextLine.Substring(1, 3)), byte.Parse(nextLine.Substring(4, 2)), byte.Parse(nextLine.Substring(6, 1)), byte.Parse(nextLine.Substring(7, 3)), byte.Parse(nextLine.Substring(10, 2))));
                     break;
                 case 'Y':
-                    e = null;
+                    e = new WhispyWoods(this);
+                    break;
+                case 'Q':
+                    e = new BossHitBox(this);
                     break;
                 default:
                     e = null;
@@ -238,7 +255,9 @@ class Level : GameObjectList
         reader.Close();
 
         Add(new UI(p));
-        MediaPlayer.Play(greenGreens);
+
+        if (newLevel)
+            MediaPlayer.Play(greenGreens);
     }
 
 }

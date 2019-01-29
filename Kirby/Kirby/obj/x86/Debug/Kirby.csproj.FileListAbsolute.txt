@@ -1,602 +1,3 @@
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappy.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyCap.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\poppoBrosJr.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\puff.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyes.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\nose.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\tear.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.wma
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.wma
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.wma
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.wma
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bomb.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\main.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\bossDefeated.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enemyHit.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enterRoom.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\explosion.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\grabFinishStar.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healthUpPerBar.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healWhenFull.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\jump.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\land.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\landFromHigh.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\miniBossDefeated.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\playerHit.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\puffOut.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\spit.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succ.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succIn.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\swallow.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\warpStar.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossHealth.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossIcon.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossUIVB.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeEmpty.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeFull.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UI.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UIVB.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\VB.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\0.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\1.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\2.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\3.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\4.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\5.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\6.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\7.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\8.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\9.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\A-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\a.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\B-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\b.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\C-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\c.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\D-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\d.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\E-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\e.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\F-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\f.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\G-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\g.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\H-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\h.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\I-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\i.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\J-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\j.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\K-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\k.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\L-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\l.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\M-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\m.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\N-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\n.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\O-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\o.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\P-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\p.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Q-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\q.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\R-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\r.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\S-.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\s.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\t.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\u.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\v.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\w.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\x.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\y.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\z.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\1.txt
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\titleScreen.xnb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.exe
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.pdb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.dll
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.dll
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.dll
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.dll
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.xml
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.xml
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.xml
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.xml
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
-C:\Users\Fatih\source\repos\Kirby\Kirby\obj\x86\Debug\Kirby.csprojAssemblyReference.cache
-C:\Users\Fatih\source\repos\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CoreCompileInputs.cache
-C:\Users\Fatih\source\repos\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CopyComplete
-C:\Users\Fatih\source\repos\Kirby\Kirby\obj\x86\Debug\Kirby.exe
-C:\Users\Fatih\source\repos\Kirby\Kirby\obj\x86\Debug\Kirby.pdb
-C:\Users\Fatih\source\repos\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\1.txt
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappy.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyCap.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\poppoBrosJr.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\puff.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyes.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\nose.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\tear.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.wma
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.wma
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.wma
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.wma
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bomb.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\main.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\bossDefeated.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enemyHit.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enterRoom.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\explosion.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\grabFinishStar.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healthUpPerBar.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healWhenFull.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\jump.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\land.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\landFromHigh.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\miniBossDefeated.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\playerHit.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\puffOut.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\spit.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succ.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succIn.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\swallow.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\warpStar.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\0.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\1.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\2.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\3.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\4.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\5.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\6.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\7.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\8.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\9.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\A-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\a.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\B-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\b.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\C-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\c.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\D-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\d.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\E-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\e.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\F-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\f.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\G-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\g.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\H-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\h.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\I-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\i.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\J-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\j.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\K-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\k.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\L-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\l.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\M-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\m.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\N-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\n.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\O-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\o.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\P-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\p.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Q-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\q.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\R-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\r.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\S-.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\s.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\t.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\u.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\v.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\w.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\x.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\y.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\z.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossHealth.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossIcon.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossUIVB.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeEmpty.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeFull.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UI.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UIVB.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\VB.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Content\titleScreen.xnb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.exe
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.pdb
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.dll
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.dll
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.dll
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.dll
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.xml
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.xml
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.xml
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.xml
-D:\Downloads\Kirby (1)\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
-D:\Downloads\Kirby (1)\Kirby\Kirby\obj\x86\Debug\Kirby.csprojAssemblyReference.cache
-D:\Downloads\Kirby (1)\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CoreCompileInputs.cache
-D:\Downloads\Kirby (1)\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CopyComplete
-D:\Downloads\Kirby (1)\Kirby\Kirby\obj\x86\Debug\Kirby.exe
-D:\Downloads\Kirby (1)\Kirby\Kirby\obj\x86\Debug\Kirby.pdb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\1.txt
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappy.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyCap.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\poppoBrosJr.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\puff.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyes.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\nose.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\tear.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.wma
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.wma
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.wma
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.wma
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bomb.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\main.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\bossDefeated.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enemyHit.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enterRoom.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\explosion.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\grabFinishStar.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healthUpPerBar.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healWhenFull.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\jump.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\land.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\landFromHigh.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\miniBossDefeated.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\playerHit.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\puffOut.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\spit.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succ.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succIn.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\swallow.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\warpStar.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\0.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\3.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\4.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\5.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\6.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\7.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\8.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\9.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\A-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\a.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\B-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\b.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\C-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\c.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\D-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\d.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\E-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\e.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\F-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\f.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\G-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\g.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\H-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\h.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\I-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\i.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\J-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\j.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\K-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\k.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\L-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\l.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\M-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\m.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\N-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\n.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\O-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\o.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\P-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\p.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Q-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\q.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\R-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\r.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\S-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\s.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\t.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\u.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\v.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\w.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\x.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\y.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\z.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossHealth.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossIcon.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossUIVB.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeEmpty.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeFull.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UI.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UIVB.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\VB.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\titleScreen.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.exe
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.pdb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.dll
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.dll
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.dll
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.dll
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.xml
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.xml
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.xml
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.xml
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
-H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csprojAssemblyReference.cache
-H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CoreCompileInputs.cache
-H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CopyComplete
-H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.exe
-H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.pdb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyes.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\main.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\1.txt
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\¿.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\crouch.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\danceSpin.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\deathSpin.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\fall.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\fallFromHigh.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\fly1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\fly2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\flyOpen1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\flyOpen2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\idle.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\pose.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\spit1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succ.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succIn1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succIn2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succJump.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succStartup.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succWalk.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\swallow.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\warpStar.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\block.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\explosionBase.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\explosionPuff1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\explosionPuff2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\fire.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\particleStar.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\particleStarAlt.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\puff.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\puffAlt.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\warpStar.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\warpStarAlt.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\bombExplosion.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\bossDeath.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\enemyDeath.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\slightlyBiggerExplosion.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\smallExplosion.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\spitExplosion.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\starBundle.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\starBundle2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappy.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyCap.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\poppoBrosJr.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\puff.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\nose.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\tear.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye3.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye4.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyeBlink.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyeDefeated.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth3.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouthDefeated.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouthPuff.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bomb.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThow.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.wma
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.wma
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.wma
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.wma
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossHealth.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossIcon.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossUIVB.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeEmpty.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeFull.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UI.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UIVB.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\VB.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\0.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\3.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\4.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\5.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\6.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\7.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\8.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\9.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\A-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\a.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\B-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\b.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\C-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\c.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\D-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\d.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\E-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\e.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\F-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\f.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\G-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\g.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\H-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\h.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\I-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\i.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\J-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\j.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\K-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\k.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\L-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\l.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\M-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\m.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\N-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\n.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\O-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\o.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\P-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\p.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Q-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\q.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\R-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\r.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\S-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\s.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\t.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\u.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\v.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\w.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\x.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\y.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\z.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\bossDefeated.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enemyHit.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enterRoom.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\explosion.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\grabFinishStar.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healthUpPerBar.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healWhenFull.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\jump.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\land.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\landFromHigh.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\miniBossDefeated.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\playerHit.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\puffOut.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\spit.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succ.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succIn.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\swallow.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\warpStar.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\titleScreen.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.exe
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.pdb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.dll
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.dll
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.dll
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.dll
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.xml
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.xml
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.xml
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.xml
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
-E:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csprojAssemblyReference.cache
-E:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CoreCompileInputs.cache
-E:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CopyComplete
-E:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.exe
-E:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.pdb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\¿.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\crouch.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\danceSpin.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\deathSpin.xnb
@@ -617,7 +18,52 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succStartup.
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succWalk.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\swallow.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk3.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\warpStar.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\¿.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succWalk1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succWalk2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappy.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyCap.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\poppoBrosJr.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\puff.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\poppoBrosJr1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\poppoBrosJr2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyHidden.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyPanic1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyPanic2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\bombExplosion.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\bossDeath.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\enemyDeath.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\slightlyBiggerExplosion.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\smallExplosion.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\spitExplosion.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\starBundle.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\starBundle2.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\block.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\explosionBase.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\explosionPuff1.xnb
@@ -629,412 +75,154 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\puff.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\puffAlt.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\warpStar.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\warpStarAlt.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\bombExplosion.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\bossDeath.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\enemyDeath.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\slightlyBiggerExplosion.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\smallExplosion.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\spitExplosion.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\starBundle.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\starBundle2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\succParticle.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.wma
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.wma
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.wma
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.wma
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye1.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye2.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye3.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye4.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyeBlink.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyeDefeated.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyes.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth1.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth2.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth3.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouthDefeated.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouthPuff.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\nose.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\tear.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\sprite1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bomb.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk3.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk3.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ç.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ö.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ó.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\í.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ü.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\þ.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Z-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Y-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\X-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\W-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\V-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\U-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\T-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\2.txt
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\).xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\(.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\&.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\%.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\$.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\main.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp5.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow5.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\!.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\®.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¥.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\$.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\%.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\&.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\(.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\).xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\+.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\,.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\0.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\5.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\6.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\7.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\8.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\9.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\=.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\@.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\A-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\B-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\C-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\D-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\E-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\F-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\G-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\H-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\I-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\J-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\K-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\L-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\M-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\N-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\O-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\P-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Q-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\R-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\S-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\T-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\U-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\V-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\W-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\X-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Y-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Z-.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\[.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\].xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\^.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\_.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\a.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\b.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\c.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\d.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\e.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\f.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\g.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\h.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\i.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\j.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\k.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\l.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\m.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\n.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\o.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\p.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\q.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\r.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\s.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\t.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\u.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\v.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\w.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\x.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\y.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\z.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\{.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\}.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\~.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¡.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¤.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\^.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¿.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\×.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¥.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\©.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\«.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\®.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¯.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\´.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\».xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\«.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\~.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\€.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\[.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\}.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\{.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\=.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\_.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\+.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\-.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\@.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\,.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\].xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ø.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¿.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\×.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\á.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¯.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\©.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ç.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\í.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ó.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ö.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ø.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ü.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\þ.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ƒ.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\0.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\3.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\4.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\5.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\6.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\7.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\8.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\9.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyes.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\main.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\1.txt
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\2.txt
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\crouch.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\danceSpin.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\deathSpin.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\fall.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\fallFromHigh.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\fly1.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\fly2.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\flyOpen1.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\flyOpen2.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\idle.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\pose.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\spit1.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succ.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succIn1.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succIn2.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succJump.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succStartup.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succWalk.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\swallow.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk1.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk2.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\walk3.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\warpStar.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\¿.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappy.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyCap.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\poppoBrosJr.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\puff.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\bombExplosion.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\bossDeath.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\enemyDeath.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\slightlyBiggerExplosion.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\smallExplosion.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\spitExplosion.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\starBundle.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\starBundle2.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\block.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\explosionBase.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\explosionPuff1.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\explosionPuff2.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\fire.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\particleStar.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\particleStarAlt.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\puff.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\puffAlt.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\warpStar.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\warpStarAlt.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye1.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye2.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye3.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eye4.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyeBlink.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\eyeDefeated.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth1.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth2.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouth3.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouthDefeated.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\mouthPuff.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\nose.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\tear.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bomb.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThow.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\0.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\1.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\2.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\3.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\4.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\5.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\6.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\7.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\8.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\9.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.wma
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\bossTheme.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.wma
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\dance.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.wma
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\greenGreens.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.wma
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Music\sparklingStars.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\bossDefeated.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enemyHit.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enterRoom.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\explosion.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\grabFinishStar.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healthUpPerBar.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healWhenFull.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\jump.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\land.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\landFromHigh.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\miniBossDefeated.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\playerHit.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\puffOut.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\spit.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succ.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succIn.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\swallow.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\warpStar.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossHealth.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossIcon.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossUIVB.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeEmpty.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeFull.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UI.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UIVB.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\VB.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\!.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\$.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\%.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\&.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\(.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\).xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\+.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\,.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\0.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\1.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\2.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\3.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\4.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\5.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\6.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\7.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\8.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\9.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\=.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\@.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\A-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\a.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\B-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\b.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\C-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\c.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\D-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\d.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\E-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\e.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\F-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\f.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\G-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\g.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\H-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\h.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\I-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\i.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\J-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\j.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\K-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\k.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\L-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\l.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\M-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\m.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\N-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\n.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\O-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\o.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\P-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\p.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Q-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\q.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\R-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\r.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\S-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\s.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\T-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\t.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\U-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\u.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\V-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\v.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\W-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\w.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\X-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\x.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Y-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\y.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Z-.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\z.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\[.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\].xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\^.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\_.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\{.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\}.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\~.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¡.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¤.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¥.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\©.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\«.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\®.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¯.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\´.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\».xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¿.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\á.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ç.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\í.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ó.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ö.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\×.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ø.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ü.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\þ.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ƒ.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\€.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\titleScreen.xnb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.exe
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.pdb
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.dll
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.dll
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.dll
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.dll
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.xml
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.xml
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.xml
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.xml
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csprojAssemblyReference.cache
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CoreCompileInputs.cache
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CopyComplete
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.exe
-C:\Users\Zone Q11\Documents\GitHub\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.pdb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succWalk1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succWalk2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star3.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star4.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\2.txt
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succWalk1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby\succWalk2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\waddleDee2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star3.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\star4.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\0.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\1.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\2.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\3.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\4.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\5.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\6.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\7.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\8.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\9.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\!.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\$.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\%.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\&.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\(.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\).xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\+.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\,.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\=.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\@.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\T-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\U-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\V-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\W-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\X-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Y-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\Z-.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\[.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\].xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\^.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\_.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\{.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\}.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\~.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¡.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¤.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¥.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\©.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\«.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\®.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¯.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\´.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\».xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\¿.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\×.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\á.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ç.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\í.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ó.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ö.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ø.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ü.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\þ.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\ƒ.xnb
-E:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\€.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\€.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\101.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\102.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\103.xnb
@@ -1137,53 +325,90 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\90.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\91.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\92.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\93.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\112.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\113.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\114.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\115.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\bossDefeated.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enemyHit.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\enterRoom.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\explosion.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\grabFinishStar.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healWhenFull.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\healthUpPerBar.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\jump.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\land.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\landFromHigh.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\miniBossDefeated.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\playerHit.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\puffOut.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\spit.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succ.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\succIn.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\swallow.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sounds\Effects\warpStar.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\0.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\5.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\6.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\7.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\8.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers\9.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\Numbers.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UI.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\UIVB.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\VB.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossHealth.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossIcon.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossUIVB.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeEmpty.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\lifeFull.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossUI.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\1.txt
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\2.txt
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\1-.txt
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\2-.txt
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\3.txt
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\3-.txt
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\4.txt
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\4-.txt
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\112.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\twizzy3.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\brontoBurt2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\poppoBrosJr1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\poppoBrosJr2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyHidden.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyPanic1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\cappyPanic2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\grizzo2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\UI\bossUI.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump3.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\idleJump4.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp3.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp4.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombWindUp5.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow3.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow4.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow5.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\succParticle.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a3.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a4.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple1.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple2.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple3.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple4.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Microsoft.Kinect.dll
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Microsoft.Kinect.xml
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\5.txt
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\5-.txt
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\113.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\114.xnb
-H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\115.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Kirby.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\titleScreen.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\sprite2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.exe
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Microsoft.Kinect.dll
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.dll
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.dll
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.dll
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Microsoft.Kinect.xml
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\MonoGame.Framework.xml
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.xml
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.XInput.xml
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csprojAssemblyReference.cache
+H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CoreCompileInputs.cache
+H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.csproj.CopyComplete
+H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.exe
+H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.pdb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.pdb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\hitbox.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\sprite3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\sprite4.xnb

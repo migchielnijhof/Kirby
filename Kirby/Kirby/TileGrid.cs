@@ -38,16 +38,16 @@ class TileGrid : GameObject
     /// Retrieves the x index of a position x on the tilegrid.
     /// </summary>
     /// <param name="x">The x position.</param>
-    public byte GetIndexX(float x)
+    public static byte GetIndexX(float x)
     {
-        return (byte) ((x - 0.5) / Tile.SpriteWidth);
+        return (byte)((x - 0.5) / Tile.SpriteWidth);
     }
 
     /// <summary>
     /// Retrieves the y index of a position y on the tilegrid.
     /// </summary>
     /// <param name="x">The y position.</param>
-    public byte GetIndexY(float y)
+    public static byte GetIndexY(float y)
     {
         return (byte)((y - 0.5) / Tile.SpriteHeight);
     }

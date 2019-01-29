@@ -44,9 +44,15 @@ abstract class Enemy : PhysicsObject
     public void CheckForLoad()
     {
         Player p = (parent as Level).Find(ObjectType.Player) as Player;
-        if (p.Position.X > Position.X - (1800 / Game.SpriteScale))
+        if (this is WhispyWoods && p.Position.Y < 335 * Game.SpriteScale && alive)
+        {
+            loaded = false;
+        }
+        else if (p.Position.X > Position.X - (1800 / Game.SpriteScale))
         {
             loaded = true;
+            if (this is Boss)
+                p.level.cameraLocked = true;
         }
     }
 
@@ -72,7 +78,7 @@ abstract class Enemy : PhysicsObject
         if (!alive)
             return false;
         Player p = (parent as Level).Find(ObjectType.Player) as Player;
-        if (p.BoundingBox.Intersects(BoundingBox))
+        if (p.invulnerabilityTime <= 0 && p.BoundingBox.Intersects(BoundingBox))
             if (beingSucked && p.absorbedEnemy == null)
             {
                 p.absorbedEnemy = this;

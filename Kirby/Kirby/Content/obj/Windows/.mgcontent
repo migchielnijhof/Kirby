@@ -274,5 +274,10 @@
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/113.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/114.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Tiles/115.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/sprite1.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/sprite2.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/hitbox.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/sprite3.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/whispyWoods/sprite4.png</File>
   </SourceFiles>
 </SourceFileCollection>

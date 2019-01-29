@@ -17,14 +17,19 @@ class Tile
     public bool Solid;
 
     /// <summary>
+    /// Whether you can jump through this tile or not;
+    /// </summary>
+    public bool JumpThrough;
+
+    /// <summary>
     /// The width of a tile's sprite.
     /// </summary>
-    public const int SpriteWidth = (int) (16 * Game.SpriteScale);
+    public const int SpriteWidth = (int)(16 * Game.SpriteScale);
 
     /// <summary>
     /// The height of a tile's sprite.
     /// </summary>
-    public const int SpriteHeight = (int) (16 * Game.SpriteScale);
+    public const int SpriteHeight = (int)(16 * Game.SpriteScale);
 
     /// <summary>
     /// The highest tile ID;
@@ -32,9 +37,14 @@ class Tile
     public const byte MaxID = 115;
 
     /// <summary>
-    /// The tiles that are solid;
+    /// The tiles that are solid.
     /// </summary>
-    protected static byte[] SolidTiles = new byte[] { 25, 26, 27, 28, 30, 34, 35, 36, 37, 41, 101, 103, 104, 105, 106, 107, 108};
+    protected static byte[] SolidTiles = new byte[] { 25, 26, 27, 28, 30, 34, 35, 36, 37, 41, 101, 104, 105, 106, 107 };
+
+    /// <summary>
+    /// The tiles that can be jumped through.
+    /// </summary>
+    protected static byte[] JumpThroughTiles = new byte[] { 103, 108 };
 
     /// <summary>
     /// The sprites of all tiles.
@@ -47,11 +57,18 @@ class Tile
     public Tile(byte tileID)
     {
         ID = tileID; //Sets the ID for the tile
-        Solid = false; //Not solid, unless proven otherwise
+        Solid = false;
+        JumpThrough = false;
         for (int i = 0; i < SolidTiles.Length; i++)
             if (ID == SolidTiles[i]) //Makes the tile solid if it should be solid
             {
                 Solid = true;
+                break;
+            }
+        for (int i = 0; i < JumpThroughTiles.Length; i++)
+            if (ID == JumpThroughTiles[i]) //Makes the tile jumpthrough if it should be
+            {
+                JumpThrough = true;
                 break;
             }
     }

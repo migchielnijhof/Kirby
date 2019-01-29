@@ -22,7 +22,6 @@ class Bomb : Enemy
         {
             DoPhysics();
             beingSucked = false;
-            Console.WriteLine(Position.X);
             if (Position.X < 5)
             {
                 alive = false;

@@ -7,8 +7,8 @@ class Star : PhysicsObject
 
     public const float Speed = 3 * Game.SpriteScale;
 
-    public const int BoundingBoxX = (int) (16 * Game.SpriteScale);
-    public const int BoundingBoxY = (int) (16 * Game.SpriteScale);
+    public const int BoundingBoxX = (int)(15 * Game.SpriteScale);
+    public const int BoundingBoxY = (int)(15 * Game.SpriteScale);
 
     public static Texture2D[] sprites = new Texture2D[4];
 
@@ -20,7 +20,7 @@ class Star : PhysicsObject
 
     protected SpriteEffects s;
 
-    public Star(GameObject parent) : base (parent, ObjectType.PlayerProjectile)
+    public Star(GameObject parent) : base(parent, ObjectType.PlayerProjectile)
     {
         collided = false;
         Gravity = 0;
@@ -60,7 +60,7 @@ class Star : PhysicsObject
         {
             if (e.alive && Box.Intersects(e.BoundingBox))
             {
-               (parent as Level).Remove(this);
+                (parent as Level).Remove(this);
                 collided = true;
                 e.TakeHit(false);
                 return false;

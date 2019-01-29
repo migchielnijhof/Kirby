@@ -20,6 +20,11 @@ class Player : PhysicsObject
     public byte Health;
 
     /// <summary>
+    /// The player's start position.
+    /// </summary>
+    public Vector2 StartPosition;
+
+    /// <summary>
     /// The X size of the player's bounding box.
     /// </summary>
     const int BoundingBoxSizeX = (int)(16 * Game.SpriteScale);
@@ -159,7 +164,7 @@ class Player : PhysicsObject
     /// <summary>
     /// The amount of time the player will remain invulnerable.
     /// </summary>
-    protected double invulnerabilityTime;
+    public double invulnerabilityTime;
 
     /// <summary>
     /// Offset used when Kirby grows in size so that he remains in the same position.
@@ -186,6 +191,8 @@ class Player : PhysicsObject
     protected const int SuckY = (int)(32 * Game.SpriteScale);
 
     protected bool previousSuck;
+
+    protected bool previousDoor;
 
     /// <summary>
     /// Create a new player.
@@ -229,7 +236,18 @@ class Player : PhysicsObject
 
     protected void Die()
     {
-
+        Game.PlayerLives--;
+        if (Game.PlayerLives == 0)
+        {
+            Game.PlayerLives = Game.basePlayerLives;
+            level.Load(true, 1, new Player(level));
+            return;
+        }
+        Player p = new Player(parent);
+        p.Position = StartPosition;
+        p.StartPosition = StartPosition;
+        p.score = score;
+        level.Load(true, level.currentLevel, p);
     }
 
     public override void HandleInput(Input input)
@@ -447,6 +465,24 @@ class Player : PhysicsObject
 
         if (input.Jump) //Jumps when you press the jump key
         {
+            if (!previousDoor)
+            {
+                foreach (Door w in (parent as Level).Doors)
+                {
+                    if (w.X == TileGrid.GetIndexX(BoundingBox.Center.X) && w.Y == TileGrid.GetIndexY(BoundingBox.Center.Y))
+                    {
+                        Player p = new Player(parent);
+                        p.Position = new Vector2(Tile.SpriteWidth * w.DX, Tile.SpriteHeight * w.DY);
+                        p.StartPosition = p.Position;
+                        p.Health = Health;
+                        p.score = score;
+                        p.previousDoor = true;
+                        (parent as Level).Load(false, w.Destination, p);
+                        previousDoor = true;
+                        return;
+                    }
+                }
+            }
             if (flying)
                 Fly();
             else
@@ -454,6 +490,7 @@ class Player : PhysicsObject
         }
         else if (!input.Fly)
         {
+            previousDoor = false;
             flyingUp = false;
             previousFrameJump = false;
             if (Velocity.Y < 0 && !flying) //If the player isn't holding the jump key anymore, they will stop going up immediately.
@@ -645,6 +682,17 @@ class Player : PhysicsObject
 
         spriteSizeOffset.X = (playerSprites[0].Width - playerSprites[playerState].Width) / 2;
         spriteSizeOffset.Y = playerSprites[0].Height - playerSprites[playerState].Height;
+
+        if (Position.Y < 0)
+        {
+            Velocity.Y = 0;
+            Position.Y = 0;
+        }
+        else if (Position.Y > Game.ScreenHeight * Game.SpriteScale)
+        {
+            Die();
+            return;
+        }
     }
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)

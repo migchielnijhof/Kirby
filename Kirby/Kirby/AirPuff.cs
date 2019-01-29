@@ -7,8 +7,8 @@ class AirPuff : PhysicsObject
 
     public const float Speed = 4 * Game.SpriteScale;
 
-    public const int BoundingBoxX = (int)(16 * Game.SpriteScale);
-    public const int BoundingBoxY = (int)(16 * Game.SpriteScale);
+    public const int BoundingBoxX = (int)(15 * Game.SpriteScale);
+    public const int BoundingBoxY = (int)(15 * Game.SpriteScale);
 
     public static Texture2D sprite;
 
@@ -19,7 +19,7 @@ class AirPuff : PhysicsObject
 
     protected SpriteEffects s;
 
-    public AirPuff(GameObject parent) : base (parent, ObjectType.PlayerProjectile)
+    public AirPuff(GameObject parent) : base(parent, ObjectType.PlayerProjectile)
     {
         collided = false;
         lifeTime = 30;

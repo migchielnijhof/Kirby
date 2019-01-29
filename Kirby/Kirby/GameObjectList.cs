@@ -90,8 +90,14 @@ class GameObjectList : GameObject
     /// </summary>
     public override void Update(GameTime gameTime)
     {
-        for (int i = objects.Count - 1; i >= 0; i--)
-            objects[i].Update(gameTime);
+        try
+        {
+            for (int i = objects.Count - 1; i >= 0; i--)
+                objects[i].Update(gameTime);
+        }
+        catch (System.ArgumentOutOfRangeException)
+        {
+        }
     }
 
     /// <summary>
