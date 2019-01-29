@@ -581,7 +581,7 @@ class Player : PhysicsObject
             if (!flying)
             {
                 Velocity.Y += Gravity;
-                if (succAnimationTimer == 1)
+                if (succAnimationTimer == 1 && spitAnimationTimer == 0)
                 {
                     if (fat)
                     {

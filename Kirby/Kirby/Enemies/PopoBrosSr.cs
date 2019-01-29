@@ -57,6 +57,7 @@ class PopoBrosSr : Boss
 
     public override void Update(GameTime gameTime)
     {
+        beingSucked = false;
         if (alive && loaded)
         {
             switch (attackState)
