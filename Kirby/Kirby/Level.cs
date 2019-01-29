@@ -89,7 +89,7 @@ class Level : GameObjectList
         else
         {
             // End of the level displaying somewhere else than the far right of the screen.
-            if (Find(ObjectType.TileGrid) is TileGrid t && CameraPosition.Y + Game.ScreenHeight * Game.SpriteScale + 16 * Game.SpriteScale > t.height * Tile.SpriteHeight && !cameraLocked)
+            if (Find(ObjectType.TileGrid) is TileGrid t && CameraPosition.Y + Game.ScreenHeight * Game.SpriteScale - 16 * Game.SpriteScale > t.height * Tile.SpriteHeight && !cameraLocked)
                 CameraPosition.Y = t.height * Tile.SpriteHeight - Game.ScreenHeight * Game.SpriteScale + 16 * Game.SpriteScale;
         }
     }
