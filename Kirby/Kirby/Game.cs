@@ -189,7 +189,19 @@ public class Game : Microsoft.Xna.Framework.Game
 
         SuccParticle.sprite = Content.Load<Texture2D>("Sprites/Effects/succParticle");
 
+        EnemyDefeatParticle.sprites[0] = Content.Load<Texture2D>("Sprites/ElaborateEffects/spitExplosion1");
+        EnemyDefeatParticle.sprites[1] = Content.Load<Texture2D>("Sprites/ElaborateEffects/spitExplosion2");
+        EnemyDefeatParticle.sprites[2] = Content.Load<Texture2D>("Sprites/ElaborateEffects/spitExplosion3");
+        EnemyDefeatParticle.sprites[3] = Content.Load<Texture2D>("Sprites/ElaborateEffects/spitExplosion4");
+        EnemyDefeatParticle.sprites[4] = Content.Load<Texture2D>("Sprites/ElaborateEffects/spitExplosion5");
+        EnemyDefeatParticle.sprites[5] = Content.Load<Texture2D>("Sprites/ElaborateEffects/spitExplosion6");
+        EnemyDefeatParticle.sprites[6] = Content.Load<Texture2D>("Sprites/ElaborateEffects/spitExplosion7");
+
         AirPuff.sprite = BossPuff.sprite1;
+
+        HealingItem.sprite = Content.Load<Texture2D>("Sprites/Effects/healingItem");
+
+        MaximTomato.sprite = Content.Load<Texture2D>("Sprites/Effects/maximTomato");
 
         Player.soundEffect[0] = Content.Load<SoundEffect>("Sounds/Effects/bossDefeated");
         Player.soundEffect[1] = Content.Load<SoundEffect>("Sounds/Effects/enemyHit");
@@ -210,6 +222,8 @@ public class Game : Microsoft.Xna.Framework.Game
         Player.soundEffect[16] = Content.Load<SoundEffect>("Sounds/Effects/swallow");
         Player.soundEffect[17] = Content.Load<SoundEffect>("Sounds/Effects/warpStar");
 
+        Enemy.hitEffect = Content.Load<SoundEffect>("Sounds/Effects/enemyHit");
+        
         level.greenGreens = Content.Load<Song>("Sounds/Music/greenGreens");
     }
 

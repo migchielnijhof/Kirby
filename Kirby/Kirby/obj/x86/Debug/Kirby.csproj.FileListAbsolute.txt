@@ -412,3 +412,12 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.pdb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\hitbox.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\sprite3.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\whispyWoods\sprite4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\healingItem.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\maximTomato.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\spitExplosion1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\spitExplosion2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\spitExplosion3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\spitExplosion4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\spitExplosion5.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\spitExplosion6.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\spitExplosion7.xnb

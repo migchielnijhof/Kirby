@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 
 abstract class Enemy : PhysicsObject
 {
@@ -25,6 +26,8 @@ abstract class Enemy : PhysicsObject
     protected Vector2 spriteSizeOffset = new Vector2 (0,0);
 
     public SpriteEffects spriteEffect;
+
+    public static SoundEffect hitEffect;
 
     public Enemy(GameObject parent, ushort suckScore, ushort starKill, ushort puffKill, ushort pushKill) : base(parent, ObjectType.Enemy)
     {
@@ -67,8 +70,20 @@ abstract class Enemy : PhysicsObject
     {
         Player p = (parent as Level).Find(ObjectType.Player) as Player;
         alive = false;
+        hitEffect.Play();
         if (airPuff)
+        {
             p.score += PuffKill;
+            EnemyDefeatParticle pa = new EnemyDefeatParticle(parent as Level);
+            (parent as Level).Add(pa);
+            if (Position.X > p.Position.X)
+                pa.Position = new Vector2(Position.X + currentSprite.Width, Position.Y - 15 * Game.SpriteScale);
+            else
+            {
+                pa.Position = new Vector2(Position.X - EnemyDefeatParticle.sprites[1].Width * Game.SpriteScale, Position.Y - 15 * Game.SpriteScale);
+                pa.s = SpriteEffects.FlipHorizontally;
+            }
+        }
         else
             p.score += StarKill;
     }
@@ -94,6 +109,15 @@ abstract class Enemy : PhysicsObject
                     if (!(this is Boss))
                     {
                         alive = false;
+                        EnemyDefeatParticle pa = new EnemyDefeatParticle(parent as Level);
+                        (parent as Level).Add(pa);
+                        if (Position.X > p.Position.X)
+                            pa.Position = new Vector2(Position.X + currentSprite.Width, Position.Y - 15 * Game.SpriteScale);
+                        else
+                        {
+                            pa.Position = new Vector2(Position.X - EnemyDefeatParticle.sprites[1].Width * Game.SpriteScale, Position.Y - 15 * Game.SpriteScale);
+                            pa.s = SpriteEffects.FlipHorizontally;
+                        }
                         p.score += PushKill;
                     }
                     return false;

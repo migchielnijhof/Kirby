@@ -61,6 +61,14 @@ class Star : PhysicsObject
             if (e.alive && Box.Intersects(e.BoundingBox))
             {
                 (parent as Level).Remove(this);
+                EnemyDefeatParticle p = new EnemyDefeatParticle(parent as Level);
+                (parent as Level).Add(p);
+                if (Velocity.X > 0)
+                    p.Position = new Vector2(Position.X + sprites[1].Width, Position.Y - 15 * Game.SpriteScale);
+                else {
+                    p.Position = new Vector2(Position.X - EnemyDefeatParticle.sprites[1].Width * Game.SpriteScale, Position.Y - 15 * Game.SpriteScale);
+                    p.s = SpriteEffects.FlipHorizontally;
+                }
                 collided = true;
                 e.TakeHit(false);
                 return false;
@@ -69,6 +77,15 @@ class Star : PhysicsObject
         if (base.MapCollisions(grid, objectMovement))
         {
             (parent as Level).Remove(this);
+            EnemyDefeatParticle p = new EnemyDefeatParticle(parent as Level);
+            (parent as Level).Add(p);
+            if (Velocity.X > 0)
+                p.Position = new Vector2(Position.X + sprites[1].Width, Position.Y - 15 * Game.SpriteScale);
+            else
+            {
+                p.Position = new Vector2(Position.X - EnemyDefeatParticle.sprites[1].Width * Game.SpriteScale, Position.Y - 15 * Game.SpriteScale);
+                p.s = SpriteEffects.FlipHorizontally;
+            }
             collided = true;
         }
         return false;

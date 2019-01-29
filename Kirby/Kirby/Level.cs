@@ -49,6 +49,8 @@ class Level : GameObjectList
 
     public Song greenGreens;
 
+    public Song bossTheme;
+
     /// <summary>
     /// Create a level.
     /// </summary>
@@ -201,7 +203,7 @@ class Level : GameObjectList
                     Doors.Add(new Door(byte.Parse(nextLine.Substring(1, 3)), byte.Parse(nextLine.Substring(4, 2)), byte.Parse(nextLine.Substring(6, 1)), byte.Parse(nextLine.Substring(7, 3)), byte.Parse(nextLine.Substring(10, 2))));
                     break;
                 case 'H':
-                    e = null;
+                    e = new HealingItem(this);
                     break;
                 case 'I':
                     e = new PopoBrosSr(this);
@@ -258,6 +260,8 @@ class Level : GameObjectList
 
         if (newLevel)
             MediaPlayer.Play(greenGreens);
+        MediaPlayer.IsRepeating = true;
+        MediaPlayer.Volume = 0.5f;
     }
 
 }
