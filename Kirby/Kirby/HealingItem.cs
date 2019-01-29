@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 using System.Collections.Generic;
 
 class HealingItem : PhysicsObject
@@ -8,6 +9,8 @@ class HealingItem : PhysicsObject
     public const int BoundingBoxY = (int)(15 * Game.SpriteScale);
 
     public static Texture2D sprite;
+
+    public static SoundEffect soundEffect;
 
     public HealingItem(GameObject parent) : base(parent, ObjectType.PlayerProjectile)
     {
@@ -32,7 +35,8 @@ class HealingItem : PhysicsObject
             {
                 p.Health = Player.maxHealth;
             }
-                return false;
+            soundEffect.Play();
+            return false;
             }
         return false;
     }

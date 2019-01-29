@@ -24,7 +24,6 @@ class BossDefeatParticle : PhysicsObject
             (parent as Level).Remove(this);
         }
         DoPhysics();
-        Console.WriteLine(timer);
     }
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)

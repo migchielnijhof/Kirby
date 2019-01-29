@@ -48,8 +48,6 @@ class WhispyWoods : Boss
         CheckForLoad();
         if (loaded)
         {
-            Console.WriteLine(attackState);
-            Console.WriteLine("timer: " + timer);
             if (currentHealth != (parent as Level).bossHealth)
             {
                 currentHealth = (parent as Level).bossHealth;
@@ -63,7 +61,6 @@ class WhispyWoods : Boss
                     {
                         if (timer == 120)
                         {
-                            Console.WriteLine("1");
                             timer = 0;
                             Random random = new Random();
                             int r = random.Next(2);

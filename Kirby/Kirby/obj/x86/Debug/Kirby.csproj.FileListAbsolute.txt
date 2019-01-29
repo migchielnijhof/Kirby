@@ -441,3 +441,8 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\b
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\bossDefeat-18.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\bossDefeat-19.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\ElaborateEffects\bossDefeat-20.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\endScreen.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.exe.manifest
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Kirby.application
+H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.exe.manifest
+H:\UU\Kirby\Kirby\Kirby\obj\x86\Debug\Kirby.application

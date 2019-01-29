@@ -36,6 +36,7 @@ abstract class Boss : Enemy
             {
                 bdp.Position = new Vector2(Position.X - 15 * Game.SpriteScale, Position.Y - 50 * Game.SpriteScale);
                 MediaPlayer.Play((parent as Level).sparklingStars);
+                p.endTimer = 1;
             }
 
                 boossDefeatEffect.Play();

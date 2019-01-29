@@ -53,6 +53,8 @@ class Level : GameObjectList
 
     public Song sparklingStars;
 
+    public Song dance;
+
     /// <summary>
     /// Create a level.
     /// </summary>
@@ -230,7 +232,7 @@ class Level : GameObjectList
                     e = new Enemy15(this);
                     break;
                 case 'T':
-                    e = null;
+                    e = new MaximTomato(this);
                     break;
                 case 'K':
                     e = null;

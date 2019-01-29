@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Media;
 using System;
 using System.Collections.Generic;
 
@@ -121,6 +122,8 @@ class Player : PhysicsObject
     /// </summary>
     const int animationSpeed = 8;
 
+    public int endTimer;
+
     /// <summary>
     /// The timer used in the walking animation.
     /// </summary>
@@ -214,6 +217,7 @@ class Player : PhysicsObject
         particleTimer = 0;
         highJumpTimer = highJumpFrames;
         level = parent as Level;
+        endTimer = 0;
     }
 
     public void TakeDamage(float a)
@@ -551,6 +555,16 @@ class Player : PhysicsObject
 
     public override void Update(GameTime gameTime)
     {
+        if (endTimer > 0)
+        {
+            endTimer++;
+            if (endTimer == 300)
+            {
+                Game.GameState = Game.GameStates.End;
+                MediaPlayer.Play(level.dance);
+                MediaPlayer.IsRepeating = false;
+            }
+        }
         flickerBool = !flickerBool;
         if (flickerBool)
             slowFlickerBool = !slowFlickerBool;
