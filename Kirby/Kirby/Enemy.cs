@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Media;
 
 abstract class Enemy : PhysicsObject
 {
@@ -47,15 +48,18 @@ abstract class Enemy : PhysicsObject
     public void CheckForLoad()
     {
         Player p = (parent as Level).Find(ObjectType.Player) as Player;
-        if (this is WhispyWoods && p.Position.Y < 335 * Game.SpriteScale && alive)
+        if (this is WhispyWoods && p.Position.Y < 335 * Game.SpriteScale && alive && loaded == false)
         {
             loaded = false;
         }
         else if (p.Position.X > Position.X - (1800 / Game.SpriteScale))
         {
-            loaded = true;
-            if (this is Boss)
+            if (this is Boss && loaded == false)
+            {
                 p.level.cameraLocked = true;
+                MediaPlayer.Play((parent as Level).bossTheme);
+            }
+            loaded = true;
         }
     }
 

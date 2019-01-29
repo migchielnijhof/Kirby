@@ -31,7 +31,7 @@ class WhispyWoods : Boss
         spriteSizeOffset.Y = -49;
         spriteSizeOffset.X = -19;
         Gravity = 0;
-        loaded = true;
+        loaded = false;
         timer = 0;
         spriteState = 1;
         attackState = 1;

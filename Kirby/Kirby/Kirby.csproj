@@ -42,6 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AirPuff.cs" />
+    <Compile Include="BossDefeatParticle.cs" />
     <Compile Include="MaximTomato.cs" />
     <Compile Include="EnemyDefeatParticle.cs" />
     <Compile Include="HealingItem.cs" />

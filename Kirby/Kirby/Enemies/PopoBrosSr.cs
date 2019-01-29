@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Media;
 using System;
 
 class PopoBrosSr : Boss
@@ -51,6 +52,9 @@ class PopoBrosSr : Boss
         attackState = 1;
         attackTimer = 0;
         p.level.bossHealth = 3;
+
+        MediaPlayer.Stop();
+        MediaPlayer.Play((parent as Level).bossTheme);
 
         p.level.cameraLocked = true;
     }

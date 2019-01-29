@@ -27,12 +27,12 @@ class Player : PhysicsObject
     /// <summary>
     /// The X size of the player's bounding box.
     /// </summary>
-    const int BoundingBoxSizeX = (int)(15.9 * Game.SpriteScale);
+    const int BoundingBoxSizeX = (int)(16 * Game.SpriteScale);
 
     /// <summary>
     /// The Y size of the player's bounding box.
     /// </summary>
-    const int BoundingBoxSizeY = (int)(15.9 * Game.SpriteScale);
+    const int BoundingBoxSizeY = (int)(16 * Game.SpriteScale);
 
     /// <summary>
     /// Maximum health of the player.
@@ -188,7 +188,7 @@ class Player : PhysicsObject
     protected const float SuckAcceleration = 0.3f * Game.SpriteScale;
 
     protected const int SuckX = (int)(32 * Game.SpriteScale);
-    protected const int SuckY = (int)(24 * Game.SpriteScale);
+    protected const int SuckY = (int)(32 * Game.SpriteScale);
 
     protected bool previousSuck;
 
@@ -237,11 +237,10 @@ class Player : PhysicsObject
     protected void Die()
     {
         Game.PlayerLives--;
-        level.cameraLocked = false;
         if (Game.PlayerLives == 0)
         {
             Game.PlayerLives = Game.basePlayerLives;
-            Game.GameState = Game.GameStates.TitleScreen;
+            level.Load(true, 1, new Player(level));
             return;
         }
         Player p = new Player(parent);
@@ -334,21 +333,20 @@ class Player : PhysicsObject
                     succBox = new Rectangle(new Point(BoundingBox.Right, BoundingBox.Top), new Point(SuckX, SuckY));
                 else
                     succBox = new Rectangle(new Point(BoundingBox.Left - SuckX, BoundingBox.Top), new Point(SuckX, SuckY));
-
+                
                 List<GameObject> enemies = level.FindAll(ObjectType.Enemy) as List<GameObject>;
                 foreach (Enemy e in enemies)
                     if (e.BoundingBox.Intersects(succBox) || succBox.Contains(e.BoundingBox))
                     {
                         e.beingSucked = true;
-                        if (!e.succResistance)
+                        if (e.succResistance == false)
                         {
                             if (!mirrored)
+                            {
                                 e.Velocity.X -= SuckAcceleration;
-                            else e.Velocity.X += SuckAcceleration;
-                            if (e.BoundingBox.Center.Y < succBox.Center.Y)
-                                e.Velocity.Y += SuckAcceleration;
-                            else
-                                e.Velocity.Y -= SuckAcceleration;
+                                continue;
+                            }
+                            e.Velocity.X += SuckAcceleration;
                         }
                     }
                 previousSuck = true;
@@ -479,7 +477,6 @@ class Player : PhysicsObject
                         p.Health = Health;
                         p.score = score;
                         p.previousDoor = true;
-                        (parent as Level).Load(false, w.Destination, p);
                         previousDoor = true;
                         return;
                     }
@@ -690,7 +687,7 @@ class Player : PhysicsObject
             Velocity.Y = 0;
             Position.Y = 0;
         }
-        else if (Position.Y > Game.ScreenHeight * Game.SpriteScale)
+        else
         {
             TileGrid grid = level.Find(ObjectType.TileGrid) as TileGrid;
             if (Position.Y > grid.height * Tile.SpriteHeight * Game.SpriteScale)

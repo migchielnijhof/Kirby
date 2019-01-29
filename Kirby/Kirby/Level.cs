@@ -51,6 +51,8 @@ class Level : GameObjectList
 
     public Song bossTheme;
 
+    public Song sparklingStars;
+
     /// <summary>
     /// Create a level.
     /// </summary>

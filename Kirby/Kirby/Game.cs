@@ -197,6 +197,9 @@ public class Game : Microsoft.Xna.Framework.Game
         EnemyDefeatParticle.sprites[5] = Content.Load<Texture2D>("Sprites/ElaborateEffects/spitExplosion6");
         EnemyDefeatParticle.sprites[6] = Content.Load<Texture2D>("Sprites/ElaborateEffects/spitExplosion7");
 
+        for (int i = 1; i <= 19; i++)
+            BossDefeatParticle.sprites[i] = Content.Load<Texture2D>($"Sprites/ElaborateEffects/bossDefeat-{i}");
+
         AirPuff.sprite = BossPuff.sprite1;
 
         HealingItem.sprite = Content.Load<Texture2D>("Sprites/Effects/healingItem");
@@ -223,8 +226,13 @@ public class Game : Microsoft.Xna.Framework.Game
         Player.soundEffect[17] = Content.Load<SoundEffect>("Sounds/Effects/warpStar");
 
         Enemy.hitEffect = Content.Load<SoundEffect>("Sounds/Effects/enemyHit");
-        
+
+        Boss.boossDefeatEffect = Content.Load<SoundEffect>("Sounds/Effects/bossDefeated");
+
+
         level.greenGreens = Content.Load<Song>("Sounds/Music/greenGreens");
+        level.bossTheme = Content.Load<Song>("Sounds/Music/bossTheme");
+        level.sparklingStars = Content.Load<Song>("Sounds/Music/sparklingStars");
     }
 
     /// <summary>
