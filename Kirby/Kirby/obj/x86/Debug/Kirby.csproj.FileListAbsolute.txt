@@ -1172,3 +1172,11 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow4.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Bosses\popoBrosSr\bombThrow5.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Effects\succParticle.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\a4.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple1.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple2.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple3.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple4.xnb

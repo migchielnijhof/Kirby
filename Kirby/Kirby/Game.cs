@@ -130,6 +130,14 @@ public class Game : Microsoft.Xna.Framework.Game
         Enemy8.sprite2 = Enemy1.waddleDeeSprite2;
         Enemy9.sprite1 = Content.Load<Texture2D>("Sprites/Enemies/poppoBrosJr1");
         Enemy9.sprite2 = Content.Load<Texture2D>("Sprites/Enemies/poppoBrosJr2");
+        Enemy11.sprite1 = Content.Load<Texture2D>("Sprites/Enemies/a1");
+        Enemy11.sprite2 = Content.Load<Texture2D>("Sprites/Enemies/a2");
+        Enemy11.sprite3 = Content.Load<Texture2D>("Sprites/Enemies/a3");
+        Enemy11.sprite4 = Content.Load<Texture2D>("Sprites/Enemies/a4");
+        Enemy11.asprite1 = Content.Load<Texture2D>("Sprites/Enemies/apple1");
+        Enemy11.asprite2 = Content.Load<Texture2D>("Sprites/Enemies/apple2");
+        Enemy11.asprite3 = Content.Load<Texture2D>("Sprites/Enemies/apple3");
+        Enemy11.asprite4 = Content.Load<Texture2D>("Sprites/Enemies/apple4");
         Enemy12.sprite1 = Content.Load<Texture2D>("Sprites/Enemies/grizzo1");
         Enemy12.sprite2 = Content.Load<Texture2D>("Sprites/Enemies/grizzo2");
 

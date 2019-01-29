@@ -27,7 +27,6 @@
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Music/dance.mp3</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Music/greenGreens.mp3</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sounds/Music/sparklingStars.mp3</File>
-    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/apple.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/brontoBurt.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/cappy.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/cappyCap.png</File>
@@ -264,5 +263,13 @@
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombThrow4.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Bosses/popoBrosSr/bombThrow5.png</File>
     <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Effects/succParticle.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/a1.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/a2.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/a3.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/a4.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/apple1.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/apple2.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/apple3.png</File>
+    <File>H:/UU/Kirby/Kirby/Kirby/Content/Sprites/Enemies/apple4.png</File>
   </SourceFiles>
 </SourceFileCollection>

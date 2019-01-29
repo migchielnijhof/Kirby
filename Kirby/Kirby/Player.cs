@@ -221,9 +221,9 @@ class Player : PhysicsObject
             return;
         }
         if (Position.X < a)
-            Velocity.X = -10 * Game.SpriteScale;
+            Velocity.X = -2 * Game.SpriteScale;
         else
-            Velocity.X = 10 * Game.SpriteScale;
+            Velocity.X = 2 * Game.SpriteScale;
         invulnerabilityTime = invulnerability; //gives the player invulnerability
     }
 
@@ -236,10 +236,18 @@ class Player : PhysicsObject
     {
         if (Health == 0)
             return;
+        if (invulnerabilityTime <= invulnerability * 0.8)
+            Velocity.X = 0;
+        else
+        {
+            if (fat)
+                playerState = 16;
+            else
+                playerState = 2;
+            return;
+        }
 
-        Velocity.X = 0;
-
-        if (input.Fly)
+            if (input.Fly)
         {
             if (fat)
             {
@@ -349,11 +357,19 @@ class Player : PhysicsObject
                         {
                             SuccParticle c = new SuccParticle(level);
                             level.Add(c);
-                            c.Position.X = Position.X + 30 * Game.SpriteScale;
-                            Random random = new Random();
+                            if (s == SpriteEffects.None)
+                            {
+                                c.Position.X = Position.X + 30 * Game.SpriteScale;
+                                c.Velocity.X = -8;
+                            }
+                            else
+                            {
+                                c.Position.X = Position.X + (playerSprites[playerState].Width - 32) * Game.SpriteScale;
+                                c.Velocity.X = +8;
+                            }
+                                Random random = new Random();
                             int r = random.Next(-5, 15);
                             c.Position.Y = Position.Y + r * Game.SpriteScale;
-                            c.Velocity.X = -8;
                             c.Velocity.Y = ((r - 5) * -1) / 3;
                             particleTimer = 0;
                         }

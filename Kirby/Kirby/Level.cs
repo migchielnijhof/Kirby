@@ -180,7 +180,7 @@ class Level : GameObjectList
                     e = new PopoBrosSr(this);
                     break;
                 case 'A':
-                    e = null;
+                    e = new Enemy11(this);
                     break;
                 case 'E':
                     e = new Enemy12(this);
