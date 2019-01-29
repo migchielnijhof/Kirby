@@ -187,6 +187,11 @@ public class Game : Microsoft.Xna.Framework.Game
         Star.sprites[2] = Content.Load<Texture2D>("Sprites/Effects/star3");
         Star.sprites[3] = Content.Load<Texture2D>("Sprites/Effects/star4");
 
+        WarpStar.sprites[1] = Star.sprites[0];
+        WarpStar.sprites[2] = Star.sprites[1];
+        WarpStar.sprites[3] = Star.sprites[2];
+        WarpStar.sprites[4] = Star.sprites[3];
+
         SuccParticle.sprite = Content.Load<Texture2D>("Sprites/Effects/succParticle");
 
         EnemyDefeatParticle.sprites[0] = Content.Load<Texture2D>("Sprites/ElaborateEffects/spitExplosion1");
@@ -229,6 +234,7 @@ public class Game : Microsoft.Xna.Framework.Game
 
         Boss.boossDefeatEffect = Content.Load<SoundEffect>("Sounds/Effects/bossDefeated");
 
+        WhispyWoods.puffSound = Player.soundEffect[12];
 
         level.greenGreens = Content.Load<Song>("Sounds/Music/greenGreens");
         level.bossTheme = Content.Load<Song>("Sounds/Music/bossTheme");

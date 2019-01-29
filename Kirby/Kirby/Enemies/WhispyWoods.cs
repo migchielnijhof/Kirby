@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Audio;
 using System;
 
 class WhispyWoods : Boss
@@ -16,6 +17,8 @@ class WhispyWoods : Boss
     protected byte attackState;
 
     protected byte currentHealth;
+
+    public static SoundEffect puffSound;
 
     protected byte otherAttackChance = 0;
 
@@ -83,6 +86,7 @@ class WhispyWoods : Boss
                                 Enemy e = new BossPuff(parent as Level);
                                 e.Position = new Vector2(Position.X - 10 * Game.SpriteScale, Position.Y - 15 * Game.SpriteScale);
                                 (parent as Level).Add(e);
+                                puffSound.Play();
                                 break;
                             case 40:
                                 currentSprite = sprite2;
@@ -92,6 +96,7 @@ class WhispyWoods : Boss
                                 Enemy e2 = new BossPuff(parent as Level);
                                 e2.Position = new Vector2(Position.X - 10 * Game.SpriteScale, Position.Y - 15 * Game.SpriteScale);
                                 (parent as Level).Add(e2);
+                                puffSound.Play();
                                 break;
                             case 60:
                                 currentSprite = sprite2;
@@ -101,6 +106,7 @@ class WhispyWoods : Boss
                                 Enemy e3 = new BossPuff(parent as Level);
                                 e3.Position = new Vector2(Position.X - 10 * Game.SpriteScale, Position.Y - 15 * Game.SpriteScale);
                                 (parent as Level).Add(e3);
+                                puffSound.Play();
                                 break;
                             case 80:
                                 attackState = 1;

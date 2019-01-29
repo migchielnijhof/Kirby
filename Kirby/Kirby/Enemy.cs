@@ -6,8 +6,8 @@ using Microsoft.Xna.Framework.Media;
 abstract class Enemy : PhysicsObject
 {
 
-    const int BoundingBoxSizeX = (int) (16 * Game.SpriteScale);
-    const int BoundingBoxSizeY = (int) (16 * Game.SpriteScale);
+    const int BoundingBoxSizeX = (int) (15 * Game.SpriteScale);
+    const int BoundingBoxSizeY = (int) (15 * Game.SpriteScale);
 
     protected readonly ushort SuckScore;
     protected readonly ushort StarKill;

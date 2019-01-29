@@ -266,7 +266,7 @@ class Player : PhysicsObject
             return;
         }
 
-            if (input.Fly)
+        if (input.Fly)
         {
             if (fat)
             {
@@ -355,7 +355,7 @@ class Player : PhysicsObject
 
                 //if (succAnimationTimer == 1)
                 {
-                //    soundEffect[14].Play();
+                    //    soundEffect[14].Play();
                 }
 
                 if (succAnimationTimer < 4)
@@ -387,7 +387,7 @@ class Player : PhysicsObject
                                 c.Position.X = Position.X + (playerSprites[playerState].Width - 32) * Game.SpriteScale;
                                 c.Velocity.X = +8;
                             }
-                                Random random = new Random();
+                            Random random = new Random();
                             int r = random.Next(-5, 15);
                             c.Position.Y = Position.Y + r * Game.SpriteScale;
                             c.Velocity.Y = ((r - 5) * -1) / 3;
@@ -439,7 +439,7 @@ class Player : PhysicsObject
                 spitAnimationTimer++;
             return;
         }
-        
+
         if (absorbedEnemy != null)
         {
             if (fat == false)
@@ -469,20 +469,10 @@ class Player : PhysicsObject
         {
             if (!previousDoor)
             {
-                foreach (Door w in (parent as Level).Doors)
+                foreach (Door d in (parent as Level).Doors)
                 {
-                    if (w.X == TileGrid.GetIndexX(BoundingBox.Center.X) && w.Y == TileGrid.GetIndexY(BoundingBox.Center.Y))
-                    {
-                        Player p = new Player(parent);
-                        p.Position = new Vector2(Tile.SpriteWidth * w.DX, Tile.SpriteHeight * w.DY);
-                        p.StartPosition = p.Position;
-                        p.Health = Health;
-                        p.score = score;
-                        p.previousDoor = true;
-                        (parent as Level).Load(false, w.Destination, p);
-                        previousDoor = true;
+                    if (TryDoor(d))
                         return;
-                    }
                 }
             }
             if (flying)
@@ -505,8 +495,8 @@ class Player : PhysicsObject
         {
             highJumpTimer++;
         }
-        
-        
+
+
         if (landingTimer >= 1 && onGround) //The following code is to make sure Kirby crouches when landing, and resets some code relating to the jumop height timer
         {
             highJumpTimer = 1;
@@ -556,7 +546,7 @@ class Player : PhysicsObject
             flyStage = 1;
         flying = true;
         flyingUp = true;
-        Velocity.Y = (-3 * Game.SpriteScale)/2;
+        Velocity.Y = (-3 * Game.SpriteScale) / 2;
     }
 
     public override void Update(GameTime gameTime)
@@ -565,7 +555,7 @@ class Player : PhysicsObject
         if (flickerBool)
             slowFlickerBool = !slowFlickerBool;
         if (invulnerabilityTime > 0)
-                invulnerabilityTime -= gameTime.ElapsedGameTime.TotalSeconds;
+            invulnerabilityTime -= gameTime.ElapsedGameTime.TotalSeconds;
 
         DoPhysics();
 
@@ -699,6 +689,23 @@ class Player : PhysicsObject
                 return;
             }
         }
+    }
+
+    public bool TryDoor(Door door)
+    {
+        if (door.X == TileGrid.GetIndexX(BoundingBox.Center.X) && door.Y == TileGrid.GetIndexY(BoundingBox.Center.Y))
+        {
+            Player p = new Player(parent);
+            p.Position = new Vector2(Tile.SpriteWidth * door.DX, Tile.SpriteHeight * door.DY);
+            p.StartPosition = p.Position;
+            p.Health = Health;
+            p.score = score;
+            p.previousDoor = true;
+            (parent as Level).Load(false, door.Destination, p);
+            previousDoor = true;
+            return true;
+        }
+        return false;
     }
 
     public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)

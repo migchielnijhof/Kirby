@@ -201,8 +201,8 @@ class Level : GameObjectList
                     e = new Enemy9(this);
                     break;
                 case 'S':
-                    e = null;
-                    Doors.Add(new Door(byte.Parse(nextLine.Substring(1, 3)), byte.Parse(nextLine.Substring(4, 2)), byte.Parse(nextLine.Substring(6, 1)), byte.Parse(nextLine.Substring(7, 3)), byte.Parse(nextLine.Substring(10, 2))));
+                    e = new WarpStar(this);
+                    Add(new Warp(this, new Door(byte.Parse(nextLine.Substring(1, 3)), byte.Parse(nextLine.Substring(4, 2)), byte.Parse(nextLine.Substring(6, 1)), byte.Parse(nextLine.Substring(7, 3)), byte.Parse(nextLine.Substring(10, 2)))));
                     break;
                 case 'H':
                     e = new HealingItem(this);
@@ -251,7 +251,7 @@ class Level : GameObjectList
             }
             if (e != null)
             {
-                e.Position = new Vector2(Tile.SpriteWidth * byte.Parse(nextLine.Substring(1, 3)), Tile.SpriteHeight * byte.Parse(nextLine.Substring(4, 2)));
+                e.Position = new Vector2(1 + Tile.SpriteWidth * byte.Parse(nextLine.Substring(1, 3)), Tile.SpriteHeight * byte.Parse(nextLine.Substring(4, 2)));
                 Add(e);
             }
             nextLine = reader.ReadLine();

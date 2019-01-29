@@ -150,7 +150,7 @@ abstract class PhysicsObject : GameObject
     {
         try
         {
-            return (grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].Solid || grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].Solid || (TileGrid.GetIndexY(BoundingBox.Bottom) != TileGrid.GetIndexY(BoundingBox.Bottom + 1) && (grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].JumpThrough || grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].JumpThrough)));
+            return grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].Solid || grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].Solid || grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].JumpThrough || grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Bottom + 1)].JumpThrough;
         }
         catch (IndexOutOfRangeException)
         {
@@ -174,7 +174,7 @@ abstract class PhysicsObject : GameObject
                     Position -= objectMovement;
                     return true;
                 }
-                else if (TileGrid.GetIndexY(BoundingBox.Bottom) != TileGrid.GetIndexY(BoundingBox.Bottom - 1) && (grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Bottom)].JumpThrough || grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Bottom)].JumpThrough))
+                else if (objectMovement.Y >= 0 && (grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Top)].JumpThrough | grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Top)].JumpThrough | grid.tiles[TileGrid.GetIndexX(BoundingBox.Left), TileGrid.GetIndexY(BoundingBox.Bottom)].JumpThrough | grid.tiles[TileGrid.GetIndexX(BoundingBox.Right), TileGrid.GetIndexY(BoundingBox.Bottom)].JumpThrough))
                 {
                     Position -= objectMovement;
                     return true;
