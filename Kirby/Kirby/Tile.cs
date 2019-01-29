@@ -29,7 +29,7 @@ class Tile
     /// <summary>
     /// The highest tile ID;
     /// </summary>
-    public const byte MaxID = 112;
+    public const byte MaxID = 115;
 
     /// <summary>
     /// The tiles that are solid;

@@ -1182,3 +1182,8 @@ H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple3.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Sprites\Enemies\apple4.xnb
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Microsoft.Kinect.dll
 H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Microsoft.Kinect.xml
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\5.txt
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\levels\5-.txt
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\113.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\114.xnb
+H:\UU\Kirby\Kirby\Kirby\bin\Windows\x86\Debug\Content\Tiles\115.xnb

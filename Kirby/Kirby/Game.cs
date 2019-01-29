@@ -239,7 +239,7 @@ public class Game : Microsoft.Xna.Framework.Game
                 if (input.Start)
                 {
                     GameState = GameStates.Playing;
-                    level.Load(2);
+                    level.Load(1);
                 }
                 break;
             case GameStates.Playing:

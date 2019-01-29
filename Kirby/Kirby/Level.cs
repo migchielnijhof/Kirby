@@ -68,6 +68,12 @@ class Level : GameObjectList
             // Player too far to the left.
             else if ((p.Position.X - CameraPosition.X) < Game.ScreenWidth * Game.SpriteScale * (1 - cameraFollowing))
                 CameraPosition.X = p.Position.X - Game.ScreenWidth * Game.SpriteScale * (1 - cameraFollowing);
+            // Player too far to the right.
+            if ((p.Position.Y - CameraPosition.Y) > Game.ScreenHeight * Game.SpriteScale * cameraFollowing)
+                CameraPosition.Y = p.Position.Y - Game.ScreenHeight * Game.SpriteScale * cameraFollowing;
+            // Player too far to the left.
+            else if ((p.Position.Y - CameraPosition.Y) < Game.ScreenHeight * Game.SpriteScale * (1 - cameraFollowing))
+                CameraPosition.Y = p.Position.Y - Game.ScreenHeight * Game.SpriteScale * (1 - cameraFollowing);
         }
         // Beginning of the level displaying somewhere else than the far left of the screen.
         if (CameraPosition.X < 0)
@@ -75,8 +81,16 @@ class Level : GameObjectList
         else
         {
             // End of the level displaying somewhere else than the far right of the screen.
-            if (Find(ObjectType.TileGrid) is TileGrid t && CameraPosition.X + Game.ScreenWidth > t.width * Tile.SpriteWidth && !cameraLocked)
-                CameraPosition.X = t.width * Tile.SpriteWidth - Game.ScreenWidth;
+            if (Find(ObjectType.TileGrid) is TileGrid t && CameraPosition.X + Game.ScreenWidth * Game.SpriteScale > t.width * Tile.SpriteWidth && !cameraLocked)
+                CameraPosition.X = t.width * Tile.SpriteWidth - Game.ScreenWidth * Game.SpriteScale;
+        }
+        if (CameraPosition.Y < 0)
+            CameraPosition.Y = 0;
+        else
+        {
+            // End of the level displaying somewhere else than the far right of the screen.
+            if (Find(ObjectType.TileGrid) is TileGrid t && CameraPosition.Y + Game.ScreenHeight * Game.SpriteScale + 16 * Game.SpriteScale > t.height * Tile.SpriteHeight && !cameraLocked)
+                CameraPosition.Y = t.height * Tile.SpriteHeight - Game.ScreenHeight * Game.SpriteScale + 16 * Game.SpriteScale;
         }
     }
 
