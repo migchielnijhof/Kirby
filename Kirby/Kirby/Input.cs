@@ -35,7 +35,8 @@ class Input
         Crouch = false;
         Fly = false;
         Succ = false;
-        if (tracker.skeleton != null)
+
+        if (tracker != null && tracker.skeleton != null)
         {
             kin.Joint j = tracker.skeleton.Joints[kin.JointType.HandRight];
             kin.Joint i = tracker.skeleton.Joints[kin.JointType.HandLeft];
