@@ -19,13 +19,14 @@ class Enemy9 : Enemy
         currentSprite = sprite1;
         WalkTimer = 0;
         Gravity = 0.04f * Game.SpriteScale;
+        succResistance = false;
     }
 
     public override void Update(GameTime gameTime)
     {
         if (alive && loaded)
         {
-            if (!beingSucked)
+            if (!beingSucked && !succResistance)
             {
                 if (animationTimer < 8)
                     animationTimer++;

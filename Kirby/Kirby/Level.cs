@@ -193,10 +193,10 @@ class Level : GameObjectList
                         null;
                     break;
                 case 'R':
-                    e = null;
+                    e = new Enemy14(this);
                     break;
                 case 'C':
-                    e = null;
+                    e = new Enemy15(this);
                     break;
                 case 'T':
                     e = null;

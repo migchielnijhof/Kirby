@@ -6,11 +6,9 @@ class Enemy15 : Enemy
 {
 
     protected const float movementSpeed = 0.6f * Game.SpriteScale;
-
-    public static Texture2D sprite1;
+    
     public static Texture2D sprite2;
     public static Texture2D sprite3;
-    public bool panicing;
 
     public Enemy15(GameObject parent) : base(parent, 200, 400, 400, 400)
     {

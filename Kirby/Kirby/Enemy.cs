@@ -24,7 +24,7 @@ abstract class Enemy : PhysicsObject
 
     protected Vector2 spriteSizeOffset = new Vector2 (0,0);
 
-    protected SpriteEffects spriteEffect;
+    public SpriteEffects spriteEffect;
 
     public Enemy(GameObject parent, ushort suckScore, ushort starKill, ushort puffKill, ushort pushKill) : base(parent, ObjectType.Enemy)
     {
